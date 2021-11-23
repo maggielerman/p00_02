@@ -1,0 +1,9 @@
+
+  {% set css %}
+    {% include "../../assets/css/main.css" %} 
+    {% include "../../assets/css/blog.css" %}
+  {% endset %}
+
+  <style>
+    {{ css | cssmin | safe }}
+  </style>

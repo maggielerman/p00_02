@@ -1,0 +1,189 @@
+<header class="header" data-module="header">
+            <a href="/" class="main-logo js-link">
+                <img src="/images/logo.svg" width="45" height="45" class="img-fluid logo-main" alt="ML">
+                <img src="/images/logo-white.svg" width="45" height="45" class="img-fluid logo-white" alt="ML">
+            </a>
+            <!--progress bar-->
+            <div class="scroll-progress">
+                <div class="scroll-progress__bar">
+                    <div class="scroll-progress__fill js-scroll-progress-fill" style="height: 23%;"></div>
+                </div>
+            </div>
+            <!--hamburger button-->
+            <button type="button" class="toggle-menu js-toggle-menu" data-module="menu">
+                <span class="toggle-menu__bar"></span>
+                <span class="toggle-menu__bar"></span>
+            </button>
+            <!--main menu shelf nav-->
+            <div class="menu js-menu">
+                <div class="container-fluid menu__container">
+                {# darkmode toggle #}
+                {# <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                        <em>Enable Dark Mode!</em>
+                    </div> #}
+                {# darkmode toggle end #}
+                    <div class="row menu__row">
+                        <div class="col-lg-6 menu__col-left">
+                            <ul class="navigation"> <!--main nav-->
+                                {# <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/" class="navigation__link js-link">Strategy & Operations</a>
+                                </li>
+                                <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/" class="navigation__link js-link">Design & Development</a>
+                                    future proofing
+                                    <p class="text-md"> from concept to delivery, unlike most shops I offer </p>
+                                </li> #}
+                                <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/resume" class="navigation__link js-link">CV</a>
+                                </li>
+                                <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/contact" class="navigation__link js-link">Contact</a>
+                                </li>
+                                {# <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/contact" class="navigation__link js-link">Business Coaching</a> #}
+                                </li>
+                                <li class="navigation__item js-hover-link js-menu-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                                    <a href="/projects" class="navigation__link js-link">Project Archive</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 menu__col-right">
+                            <div class="menu__col-right-inner"> <!--contact card-->
+                                <div class="mb-30 text-white"> <!--email-->
+                                    <span class="header js-infos-item" style="opacity: 1;">Maggie Lerman</span>
+                                </div>
+                                <div class="mb-30"> <!--email-->
+                                    <a href="mailto:lerman.maggie@gmail.com" class="button color-white js-infos-item" style="fopacity: 1;">lerman.maggie@gmail.com</a>
+                                </div>
+                                <div class="mb-30"> <!--phone number-->
+                                    <a href="tel:06 67 35 26 44" class="button color-white js-infos-item" style="opacity: 1;">646 467 4522</a>
+                                </div>
+                                <ul class="social js-infos-item" style="opacity: 1;"> <!--social icons -->
+                                    <li class="social__item"> <!--linkedin-->
+                                        <a href="https://www.linkedin.com/in/maggielerman/" target="_blank" class="social__link">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <path class="st0" d="M16.7,11.4c0-0.7-0.1-1.2-0.3-1.7c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.7
+				                                                    c-0.4-0.2-0.8-0.2-1.3-0.2c-0.4,0-0.7,0-1,0.1c-0.3,0.1-0.5,0.2-0.7,0.4c-0.2,0.1-0.4,0.3-0.5,0.5C11,8.7,10.9,8.8,10.8,9V7.8
+				                                                    H7.9c0,0.2,0,0.7,0,1.4v2.6c0,0,0,1.6,0,4.7h2.9v-4.8c0-0.1,0-0.2,0-0.4c0-0.1,0-0.2,0.1-0.3c0.1-0.3,0.3-0.5,0.5-0.7
+				                                                    c0.2-0.2,0.6-0.3,1-0.3c0.5,0,0.9,0.2,1.1,0.5c0.2,0.4,0.3,0.8,0.3,1.4v4.6h2.9V11.4L16.7,11.4z M4.9,6.6c0.5,0,0.9-0.1,1.2-0.4
+				                                                    c0.3-0.3,0.4-0.6,0.4-1.1c0-0.4-0.1-0.8-0.4-1.1C5.8,3.7,5.4,3.6,4.9,3.6S4,3.7,3.7,4C3.4,4.3,3.3,4.7,3.3,5.1
+				                                                    c0,0.4,0.1,0.8,0.4,1.1C4,6.4,4.4,6.6,4.9,6.6L4.9,6.6L4.9,6.6z M6.3,7.8H3.5v8.7h2.9V7.8z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="social__item"> <!-- Dribbble -->
+                                        <a href="https://dribbble.com/maggielerman" target="_blank" class="social__link">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <path class="st0" d="M8.4,9.5c0.4-0.2,0.6-0.4,0.8-0.6c0.3-0.4,0.5-0.9,0.5-1.6c0-0.6-0.2-1.2-0.5-1.6C8.7,4.9,7.8,4.5,6.5,4.5
+				                                                        H1.2v10.7h4.9c0.5,0,1.1,0,1.5-0.1c0.5-0.1,0.9-0.3,1.2-0.5c0.3-0.2,0.6-0.5,0.8-0.8c0.3-0.5,0.5-1.1,0.5-1.7
+					                                                    c0-0.6-0.1-1.1-0.4-1.6C9.4,10,9,9.7,8.4,9.5z M3.4,6.4h2.4c0.5,0,0.9,0.1,1.3,0.2c0.4,0.2,0.6,0.5,0.6,1c0,0.4-0.1,0.8-0.4,0.9
+					                                                    C6.9,8.6,6.5,8.7,6,8.7H3.4V6.4z M7.1,13.2c-0.3,0.1-0.6,0.2-1.1,0.2H3.4v-2.8h2.7c0.5,0,0.8,0.1,1.1,0.2
+					                                                    c0.5,0.2,0.7,0.6,0.7,1.1C7.8,12.5,7.6,12.9,7.1,13.2z">
+                                                                    </path>
+                                                                    <rect x="12.4" y="5" class="st0" width="4.6" height="1.3"></rect>
+                                                                    <path class="st0" d="M18.7,10.3c-0.1-0.6-0.3-1.2-0.6-1.6c-0.4-0.5-0.8-0.9-1.4-1.2c-0.6-0.2-1.2-0.4-1.9-0.4
+					                                                    c-1.2,0-2.1,0.4-2.9,1.1c-0.7,0.7-1.1,1.8-1.1,3.1c0,1.5,0.4,2.5,1.2,3.2c0.8,0.6,1.8,1,2.8,1c1.3,0,2.3-0.4,3-1.2
+					                                                    c0.5-0.5,0.7-1,0.8-1.4h-2.1c-0.1,0.2-0.3,0.4-0.4,0.5c-0.3,0.2-0.7,0.4-1.2,0.4c-0.5,0-0.8-0.1-1.2-0.3
+					                                                    c-0.5-0.3-0.8-0.9-0.8-1.7h5.8C18.8,11.2,18.7,10.6,18.7,10.3z M13,10.5c0.1-0.5,0.3-0.9,0.6-1.2c0.3-0.3,0.7-0.5,1.2-0.5
+					                                                    c0.5,0,0.9,0.1,1.2,0.4c0.3,0.3,0.5,0.7,0.6,1.2H13z">
+                                                                    </path>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="social__item"> <!-- instagram -->
+                                        <a href="https://codepen.io/maggielerman/" target="_blank" class="social__link">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <g>
+                                                                    <g>
+                                                                        <path class="st0" d="M12.6,4H6.9C5.1,4,3.6,5.5,3.6,7.3V13c0,1.8,1.5,3.4,3.4,3.4h5.7c1.8,0,3.4-1.5,3.4-3.4V7.3
+						                                                    C16,5.5,14.5,4,12.6,4z M15,13c0,1.3-1.1,2.4-2.4,2.4H6.9c-1.3,0-2.4-1.1-2.4-2.4V7.3C4.6,6,5.6,5,6.9,5h5.7
+						                                                    C13.9,5,15,6,15,7.3V13z">
+                                                                        </path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                            <g>
+                                                                <g>
+                                                                    <g>
+                                                                        <path class="st0" d="M12.6,9.7c-0.1-0.6-0.4-1.1-0.8-1.6c-0.4-0.4-1-0.7-1.6-0.8c-0.3,0-0.5,0-0.8,0C8.7,7.5,8,7.9,7.6,8.5
+						                                                    S7,9.8,7.1,10.5c0.1,0.7,0.5,1.4,1.1,1.8c0.5,0.4,1.1,0.5,1.7,0.5c0.1,0,0.3,0,0.4,0c0.7-0.1,1.4-0.5,1.8-1.1
+						                                                    C12.5,11.2,12.7,10.5,12.6,9.7z M10.1,11.9c-0.5,0.1-0.9,0-1.3-0.3c-0.4-0.3-0.6-0.7-0.7-1.2C8,9.9,8.1,9.5,8.4,9.1
+						                                                    c0.3-0.4,0.7-0.6,1.2-0.7c0.1,0,0.2,0,0.3,0s0.2,0,0.3,0c0.8,0.1,1.4,0.7,1.5,1.5C11.7,10.8,11,11.8,10.1,11.9z"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                            <g>
+                                                                <g>
+                                                                    <g>
+                                                                        <path class="st0" d="M13.3,6.7c-0.1-0.1-0.2-0.1-0.4-0.1s-0.3,0.1-0.4,0.1c-0.1,0.1-0.1,0.2-0.1,0.4c0,0.1,0.1,0.3,0.1,0.4
+						                                                    c0.1,0.1,0.2,0.1,0.4,0.1s0.3-0.1,0.4-0.1c0.1-0.1,0.1-0.2,0.1-0.4C13.4,6.9,13.4,6.8,13.3,6.7z">
+                                                                        </path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--bottom social content -->
+            <div class="main-social d-none d-md-block js-main-social"> <!--bottom social content/plus sign-->
+                <button type="button" class="main-social__button js-main-social-button front-page">
+                    <span class="sr-only">+</span>
+                </button>
+                <div class="social-wrapper">
+                    <ul class="social is-text">
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/in/maggielerman/" target="_blank" class="social__link">
+							    Linkedin
+					        </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://dribbble.com/maggielerman" target="_blank" class="social__link">
+							    Dribbble
+					        </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://codepen.io/maggielerman" target="_blank" class="social__link">
+							    Codepen
+					        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+</header>

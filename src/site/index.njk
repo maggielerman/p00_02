@@ -1,0 +1,27 @@
+---
+layout: layouts/layout.njk
+title: home | Magg1e.com
+permalink : "{{page.fileSlug}}/"
+---
+
+    <div class="main-wrapper home js-home">
+        <main class="js-scroll-container" data-scrollbar="true" tabindex="-1" style="overflow: hidden; outline: none;">
+            <div class="scroll-content" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="home " data-module="home">
+                    <div class="mainscreen-trigger"></div>
+                        {% include "components/index/intro.njk" %}  
+                        {% include "components/index/projects.njk" %}               
+                        {% include "components/index/contact.njk" %}               
+                    </div>
+                </div> 
+                {%include "components/footer.njk"%}
+            </div>
+            <div class="scrollbar-track scrollbar-track-x" style="display: none;">
+                <div class="scrollbar-thumb scrollbar-thumb-x" style="width: 1431px; transform: translate3d(0px, 0px, 0px);"></div>
+            </div>
+            <div class="scrollbar-track scrollbar-track-y" style="display: block;">
+                <div class="scrollbar-thumb scrollbar-thumb-y" style="height: 72.5499px; transform: translate3d(0px, 0px, 0px);"></div>
+            </div>
+        </main>
+        <div class="main-overlay js-main-overlay"></div>
+    </div>
