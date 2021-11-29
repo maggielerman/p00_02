@@ -1,0 +1,4 @@
+<svg>
+    <circle vector-effect="non-scaling-stroke" stroke-opacity=".2" stroke="#000" cx="17" cy="17" r="16.5"></circle>
+    <circle vector-effect="non-scaling-stroke" stroke="#000" cx="17" cy="17" r="16.5" stroke-dashoffset="103.67" stroke-dasharray="103.67" id="progress" style="stroke-dashoffset: 103.67;"></circle>
+</svg>

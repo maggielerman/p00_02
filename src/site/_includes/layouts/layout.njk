@@ -1,0 +1,22 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+    	{% include "./head.njk" %}
+	<body class="body" aria-live="polite">
+		<main>
+		{# {% include "components/nav.njk" %} #}
+		  {{ content | safe }}
+		</main>
+		{% include "components/js.njk" %}
+	<script>
+            function videofallback(video) {
+                var img = video.querySelector('img')
+                if (img) 
+                    video.parentNode.replaceChild(img, video)
+                
+                document.querySelector('body').classList.add('no-webm')
+            }
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>

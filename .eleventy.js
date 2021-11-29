@@ -154,7 +154,7 @@ module.exports = function(eleventyConfig) {
 
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
-  eleventyConfig.addPassthroughCopy("./src/site/assets/js");
+  eleventyConfig.addPassthroughCopy("./src/site/assets");
   eleventyConfig.addPassthroughCopy("./src/site/admin");
 
 
@@ -196,22 +196,6 @@ module.exports = function(eleventyConfig) {
     })
   })
 
-  eleventyConfig.addNunjucksFilter('forFrontpage', function (products) {
-    return products.filter(prod => prod.collections.edges.some(n => n.node.handle === 'frontpage'))
-  })
-
-  eleventyConfig.addNunjucksFilter('prodOptions', function (nodes) {
-    return nodes.reduce((opts, node) => {
-      node.node.selectedOptions.forEach((opt) => {
-        if (opts[opt.name]) {
-          opts[opt.name].add(opt.value)
-        } else {
-          opts[opt.name] = new Set([opt.value])
-        }
-      })
-      return opts
-    }, {})
-  })
 
   eleventyConfig.addCollection('collections', collection => {
     return collection.getFilteredByGlob('_collections/*.md')

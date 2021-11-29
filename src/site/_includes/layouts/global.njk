@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="It’s (j)ust (e)leventy and (t)ailwind … OK, and a few other things; it’s still really small though.">
+    {# <title>{{ title }}</title> #}
+     {# <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/css/blog.css"> #}
+      {% if build.env == "development" %}
+         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        {% include "components/css-dev.njk" %}
+    {% else %}
+    
+    {% include "components/css-prod.njk" %}
+    
+    {% endif %}
+  </head>
+  <body>
+    <main>
+      {{ content | safe }}
+    </main>
+    <script src="/assets/js/hero.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
