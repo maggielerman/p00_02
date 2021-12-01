@@ -7,16 +7,18 @@
 	<meta property="og:description" content="Maggie Lerman" />
 	<meta name="p:domain_verify" content=""/>
 	<meta property="og:url" content="/">
+  <meta name="robots" content="[PARAMETER]">
+
 	<title>Maggie Lerman | NYC based creative strategist, front-end developer, and cross-functional designer</title>
     {% include "../favicon.njk" %}
     <meta name="theme-color" content="#ffffff">	
     
     {% if build.env == "development" %}
+      {% include "css-dev.njk" %}
          <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        {% include "components/css-dev.njk" %}
     {% else %}
     
-    {% include "components/css-prod.njk" %}
+    {% include "css-prod.njk" %}
     
     {% endif %}
     {# {% include "components/js.njk" %} #}

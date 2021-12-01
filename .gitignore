@@ -15,3 +15,5 @@
 #cache
 .cache
 .vercel
+# Local Netlify folder
+.netlify

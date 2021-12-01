@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="/assets/css/blog.css"> #}
       {% if build.env == "development" %}
          <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        {% include "components/css-dev.njk" %}
+        {% include "css-dev.njk" %}
     {% else %}
-    
-    {% include "components/css-prod.njk" %}
-    
+    {% include "css-prod.njk" %}
     {% endif %}
   </head>
   <body>

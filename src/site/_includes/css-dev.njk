@@ -1,0 +1,10 @@
+
+  {% set css %}
+    {# {% include "../assets/css/hero.css" %}  #}
+    {% include "../assets/css/rocketrip.css" %} 
+    {% include "../assets/css/global.css" %} 
+  {% endset %}
+
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
