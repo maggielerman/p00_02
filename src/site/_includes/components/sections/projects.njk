@@ -42,7 +42,7 @@
         </div>
         
   {# {%include "components/projects/crowdtap.njk"%} #}
-            <div class="fullHeight lazyloaded" data-lazyload-children=".dynamic-images" id="crowdtap">
+           <div class="fullHeight clickable lazyloaded" id="crowdtap">
                 <div class="containerCrop">
                     <div class="containerFixed"></div>
                     <div class="description">
@@ -58,9 +58,14 @@
                     </div>
                     <div class="composition">
                         <div class="picture-container">
-                            <picture>
-                                <img data-src="/images/crowdtap/01a.png" alt="" class="dynamic-images lazyloaded" src="/images/crowdtap/01a.png">
-                            </picture>
+                            {# <img src="/images/crowdtap/01a.png" loading="lazy" alt="" width="full" height=""> #}
+                          <picture>
+                            <img data-src="/images/crowtap/01a.png" alt="crowdtap" class=" lazyloaded" src="/images/crowdtap/01a.png">
+                        </picture>
+
+                            {# <picture>
+                                <img data-src="/images/crowdtap/01a.png" alt="" class=" ls-is-cached lazyloaded" src="/images/crowdtap/01a.png">
+                            </picture> #}
                         </div>
                     </div>
                         {# <div class="counter">4 / 7</div> #}
