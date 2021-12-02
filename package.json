@@ -35,7 +35,6 @@
     "@sir_koty/json-extractor": "^1.0.1",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
-    "alpinejs": "^3.5.2",
     "axios": "^0.21.1",
     "bash": "^0.0.1",
     "critical": "^4.0.1",
