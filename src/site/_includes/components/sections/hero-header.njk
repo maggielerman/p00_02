@@ -1,27 +1,24 @@
 <!-- header.njk-->
-<div id="spaceman-wrapper">
-  {# <div class="containerCrop"> #}
-    {# <div class="containerFixed"></div> #}
-    {# <div class="counter animated"><span class="text-animate-10"><span>0 / 7</span></span></div> #}
+<div id="spaceman-wrapper"> 
+  <div class="containerCrop">
+    <div class="containerFixed"></div>
+    <div class="counter animated"><span class="text-animate-10"><span>0 / 7</span></span></div>
     <div id="header" class="fullHeight animated">
-        <a href="https://maggielerman.com/">
-          {%include "../../img/ml-logo/logo1.svg"%}
-        </a>
-      {# <h1> Maggie is a <span class="hero-underline">creative technologist</span> and <span class="hero-underline">cross-functional designer</span> based in New York City.</h1> #}
+      <a href="https://maggielerman.com/">{%include "src/site/images/logo-white.svg"%}</a>
       <h1 class="rainbow">Maggie is a creative technologist and cross-functional designer based in New York City.</h1>
     
       <div><div class="scrolldown"></div></div>
     </div>
      <canvas id="galaxy" width="" height=""></canvas>
 
-    {# <div id="spaceman-duration"> #}
-      {# <div id="intro-spaceman-trigger"></div> #}
-      {# <div id="spaceman-container" class="fullHeight"> #}
-  			{# <canvas id="intro-spaceman" class="gentS" data-type="alpha" data-path="./img/gent/spaceman/" data-duration="2" data-frames="47" data-trigger="intro-spaceman-trigger" width="2690" height="1446"></canvas> #}
-              {# <canvas id="galaxy" width="" height=""></canvas> #}
-        {# <div id="dream"></div> #}
-      {# </div> #}
-    {# </div>  #}
+    <div id="spaceman-duration">
+      <div id="intro-spaceman-trigger"></div>
+      <div id="spaceman-container" class="fullHeight">
+  			<canvas id="intro-spaceman" class="gentS" data-type="alpha" data-path="/img/gent/spaceman/" data-duration="2" data-frames="47" data-trigger="intro-spaceman-trigger" width="2690" height="1446"></canvas>
+              <canvas id="galaxy" width="" height=""></canvas>
+        <div id="dream"></div>
+      </div>
+    </div>  
     
   </div>
-{# </div> #}
+</div>

@@ -652,18 +652,6 @@ video {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .fixed {
   position: fixed;
 }
@@ -911,6 +899,10 @@ video {
   width: 100%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -933,10 +925,6 @@ video {
 
 .w-2\/4 {
   width: 50%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .w-auto {
@@ -1072,16 +1060,21 @@ video {
   border-width: 4px;
 }
 
-.border-t {
-  border-top-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
 }
 
 .border-gray-300 {
@@ -1092,11 +1085,6 @@ video {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-}
-
-.border-gray-100 {
-  --tw-border-opacity: 1;
-  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
 }
 
 .border-gray-600 {
@@ -1182,16 +1170,16 @@ video {
      object-position: center;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .p-4 {
@@ -1310,14 +1298,14 @@ video {
   line-height: 1;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm {
@@ -1503,14 +1491,14 @@ video {
   background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
 }
 
-.hover\:text-gray-900:hover {
-  --tw-text-opacity: 1;
-  color: rgba(17, 24, 39, var(--tw-text-opacity));
-}
-
 .hover\:text-pink-500:hover {
   --tw-text-opacity: 1;
   color: rgba(236, 72, 153, var(--tw-text-opacity));
+}
+
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 
 .hover\:text-black:hover {
@@ -1621,12 +1609,16 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-0 {
-    margin-bottom: 0px;
+  .md\:ml-auto {
+    margin-left: auto;
   }
 
   .md\:mr-auto {
     margin-right: auto;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:ml-4 {
@@ -1635,10 +1627,6 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:ml-auto {
-    margin-left: auto;
   }
 
   .md\:w-2\/3 {

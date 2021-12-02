@@ -1,13 +1,13 @@
 <!-- layout.nunjucks -->
 <!DOCTYPE html>
 <html lang="en">
-    	{% include "./head.njk" %}
+  {% include "layouts/head.njk" %}
 	<body class="body" aria-live="polite">
-		<main>
+		{# <main> #}
 		{# {% include "components/nav.njk" %} #}
 		  {{ content | safe }}
-		</main>
-		{% include "components/js.njk" %}
+		{# </main> #}
+		{% include "js.njk" %}
 	<script>
             function videofallback(video) {
                 var img = video.querySelector('img')
@@ -18,7 +18,6 @@
             }
     </script>
     <script type="text/javascript" src="chrome-extension://hjbfbllnfhppnhjdhhbmjabikmkfekgf/windowscript.js"></script>
-
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

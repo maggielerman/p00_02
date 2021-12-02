@@ -3,96 +3,21 @@
 <!-- mlPortfolio.njk -->
 
     <div class="mlPortfolio"> 
-    <div id="header" class="fullHeight animated">
 
-        <a href="https://maggielerman.com/">{%include "src/site/images/logo-white.svg"%}</a>
-        {# <a href="https://maggielerman.com/">{% include "src/site/images/logo-white.svg"%}</a> #}
-        <div class="w-3/4 h1 rainbow">
-            I am a cross-functional designer & creative strategist based out of New York City.</div>
+               {% include "components/projects/suzy.njk"%}
+                {% include "components/projects/crowdtap.njk"%}
+                 {% include "components/projects/ecommerce.njk"%}
+                 {% include "components/projects/rocketrip.njk"%}
+                
+                {% include "components/projects/crazybaby.njk"%}
 
-        <div>
-            <div class="scrolldown"></div>
-        </div>
-    </div>
+                {% include "components/projects/loop.njk"%}
 
-  {# {%include "components/projects/suzy.njk"%} #}
-        <div class="fullHeight lazyloaded" data-lazyload-children=".dynamic-images" id="suzy">
-            <div class="containerCrop">
-                <div class="containerFixed"></div>
-                <div class="description">
-                    <div class="h2">suzy</div>
-                    <div class="h6">marketing design lead
-                        <span style="margin-left: 10px">|</span>
-                        <span style="text-transform: lowercase; margin-left: 10px;">case study coming soon.</span>
-                    </div>
-                    <div class="h3">enterprise software startup leading the way in agile market research.</div>
-                    <a href="http://suzy.com/" class="button h5 inverted" target="_blank">view company website</a>
-                </div>
-                <div class="composition">
-                    <div class="picture-container">
-                        <picture>
-                            {# {% image "src/site/images/suzy/suzy01-transparent-bg.png", "suzy", '(min-width: 30em) 50vw, 100vw', "dynamic-images lazyloaded"%} #}
-                            <img data-src="/images/suzy/suzy01-transparent-bg.png" alt="" class="dynamic-images lazyloaded" src="/images/suzy/suzy01-transparent-bg.png">
-                        </picture>
-                    </div>
-                </div>
-                    {# <div class="counter">2 / 7</div> #}
-
-            </div>
-        </div>
-        
-  {# {%include "components/projects/crowdtap.njk"%} #}
-           <div class="fullHeight clickable lazyloaded" id="crowdtap">
-                <div class="containerCrop">
-                    <div class="containerFixed"></div>
-                    <div class="description">
-                        <div class="h2">crowdtap</div>
-                        <div class="h6">visual design & motion graphics
-                            <span style="margin-left: 10px">
-                                |</span>
-                            <span style="text-transform: lowercase; margin-left: 10px;">case study coming soon.
-                            </span>
-                        </div>
-                        <div class="h3">make your opinions work for you. the more you answer, the more you earn.</div>
-                        <a href="http://crowdtap.com/" class="button h5 inverted" target="_blank">view app and download.</a>
-                    </div>
-                    <div class="composition">
-                        <div class="picture-container">
-                            {# <img src="/images/crowdtap/01a.png" loading="lazy" alt="" width="full" height=""> #}
-                          <picture>
-                            <img data-src="/images/crowtap/01a.png" alt="crowdtap" class=" lazyloaded" src="/images/crowdtap/01a.png">
-                        </picture>
-
-                            {# <picture>
-                                <img data-src="/images/crowdtap/01a.png" alt="" class=" ls-is-cached lazyloaded" src="/images/crowdtap/01a.png">
-                            </picture> #}
-                        </div>
-                    </div>
-                        {# <div class="counter">4 / 7</div> #}
-                </div>
-            </div>
-
-
- {%include "components/projects/ecommerce.njk"%}
-            <div class="fullHeight clickable lazyloaded" id="rocketrip" data-href="/">
-                <div class="containerCrop">
-                <div class="containerFixed"></div>
-                <div class="description">
-                    <div class="h2">rocketrip</div>
-                    <div class="h6">visual & marketing design <span style="margin-left: 10px"> |</span> <span style="text-transform: lowercase; margin-left: 10px;">case study coming soon. </span> </div>
-                    <div class="h3">travel industry startup.</div>
-                </div>
-                <div class="composition">
-                    <div class="picture-container">
-                    <picture>
-                    {# {% image "src/site/images/sections/prefix/prefix.jpg", "Prefix", '(min-width: 30em) 50vw, 100vw', 'absolute w-full rounded shadow-md' %} #}
-                    <img data-src="/images/rocketrip/rocketrip_lg.png" alt="rocketrip" class=" ls-is-cached lazyloaded" src="/images/rocketrip/rocketrip_lg.png">
-                    </picture>
-                    </div>
-                </div>
-                <div class="counter">1 / 7</div>
-                </div>
-            </div>
+                {% include "components/projects/manrope.njk"%}
+                {% include "components/projects/huawei.njk"%}
+                {% include "components/projects/kudolo.njk"%}
+                {% include "components/projects/alcatel.njk"%}
+                {% include "components/projects/oneplus.njk"%}
 
             {# <div class="fullHeight clickable" id="lottie" data-href="/">
                 <div class="containerCrop">
@@ -116,19 +41,5 @@
               </div> #}
 
 
-            <div class="fullHeight clickable lazyload" id="alcatel" data-href="https://www.behance.net/gallery/56894269/Product-Experience-design-for-Alcatel-mobile">
-                <div class="containerCrop">
-                    <div class="containerFixed"></div>
-                    {# <div class="counter">6 / 7</div> #}
-                    <div class="description">
-                        <div class="h2">alcatel</div>
-                        <div class="h3">Product experience for a legendary smartphone brand.</div>
-                        <a href="https://www.behance.net/gallery/56894269/Product-Experience-design-for-Alcatel-mobile" class="button h5" target="_blank">view case study on Behance</a>
-                    </div>
-                    <div class="composition">
-                        <div class="picture-container"></div>
-                    </div>
-                </div>
-            </div>
-
+          
     </div>
