@@ -1313,6 +1313,17 @@ body.loaded .svg-line-animation path {
 #huawei.lazyloaded {
     background: #f1f3f5 url(/assets/img/showcase2/huawei/bg.svg) center center/84vw auto no-repeat;
 }
+#suzy {
+    color: #fff
+}
+
+#suzy .containerFixed {
+    background-image: linear-gradient( #4C06B7 0%, #351E58 100%);
+}
+
+#suzy .picture-container {
+    margin: auto 0
+}
 
 #loop {
     color: #fff;
@@ -1460,7 +1471,10 @@ body.loaded .svg-line-animation path {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-
+#crowdtap .containerCrop {
+    color: #fff;
+    background-color: #242034;
+}
 #kudolo.lazyloaded .containerFixed::before {
     background-color: #000;
     background-image: url(/assets/img/showcase2/kudolo.jpg);
@@ -1598,6 +1612,8 @@ body.loaded .svg-line-animation path {
         transform: translate(-77%, 0);
     }
 
+    
+
     #oneplusTrigger {
         margin-top: -50%;
     }
@@ -1634,7 +1650,7 @@ body.loaded .svg-line-animation path {
         -o-object-fit: 50% 0;
         object-fit: 50% 0;
     }
-
+   
     #kudolo.lazyloaded .containerFixed::before {
         background-color: #000;
         background-image: url(/assets/img/showcase/kudolo-mobile.jpg);
