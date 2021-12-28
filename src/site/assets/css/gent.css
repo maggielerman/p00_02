@@ -1410,12 +1410,12 @@ body.loaded .svg-line-animation path {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    /* transform: translate(-50%, 0); */
 }
 
 #manrope .picture-container picture img {
     will-change: transform;
-    bottom: 0;
+    bottom: 50;
     top: auto;
     height: auto;
     -o-object-fit: unset;
@@ -1487,6 +1487,8 @@ body.loaded .svg-line-animation path {
     color: #fff;
     background-color: #242034;
 }
+
+
 #kudolo.lazyloaded .containerFixed::before {
     background-color: #000;
     background-image: url(/assets/img/showcase2/kudolo.jpg);
