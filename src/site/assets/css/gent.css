@@ -1325,6 +1325,18 @@ body.loaded .svg-line-animation path {
     margin: auto 0
 }
 
+#rocketrip {
+    color: #000
+}
+
+#rocketrip .containerFixed {
+    background-image: linear-gradient( #E2E5EA 0%, #F1F5FC 100%);
+}
+
+#rocketrip .picture-container {
+    margin: auto 0
+}
+
 #loop {
     color: #fff;
 }
