@@ -3,20 +3,8 @@
 <html lang="en">
   {% include "layouts/head.njk" %}
 	<body class="body" aria-live="polite">
-		{# <main> #}
-		{# {% include "components/nav.njk" %} #}
 		  {{ content | safe }}
-		{# </main> #}
 		{% include "js.njk" %}
-	<script>
-            function videofallback(video) {
-                var img = video.querySelector('img')
-                if (img) 
-                    video.parentNode.replaceChild(img, video)
-                
-                document.querySelector('body').classList.add('no-webm')
-            }
-    </script>
     <script type="text/javascript" src="chrome-extension://hjbfbllnfhppnhjdhhbmjabikmkfekgf/windowscript.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
