@@ -4,8 +4,7 @@
   {% include "layouts/head.njk" %}
 	<body class="body" aria-live="polite">
 		  {{ content | safe }}
-		{% include "js.njk" %}
-    <script type="text/javascript" src="chrome-extension://hjbfbllnfhppnhjdhhbmjabikmkfekgf/windowscript.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		{# {% include "js.njk" %} #}
+    <script type="text/javascript" src="chrome-extension://hjbfbllnfhppnhjdhhbmjabikmkfekgf/windowscript.js"></script>    
   </body>
 </html>

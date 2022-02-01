@@ -154,8 +154,8 @@ module.exports = function(eleventyConfig) {
 
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
-  eleventyConfig.addPassthroughCopy("./src/site/assets");
-  eleventyConfig.addPassthroughCopy("./src/site/admin");
+  eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
+  // eleventyConfig.addPassthroughCopy("./src/site/admin");
 
 
  eleventyConfig.addNunjucksFilter('keys', function (value) {
