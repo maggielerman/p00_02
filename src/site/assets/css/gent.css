@@ -1743,7 +1743,7 @@ body.loaded .svg-line-animation path {
 }
 
 #about {
-    background: #1e5d5b;
+    background: #000;
     position: relative;
     padding: var(--content-padding);
 }
@@ -1890,7 +1890,7 @@ article table p {
 }
 
 article table p sup {
-    position: absolute;
+    /* position: absolute; */
     margin: -.33em 0 0 .125em;
 }
 
