@@ -502,7 +502,7 @@ body.loaded::after {
         height: 100vh;
         padding: 30px 20px;
         flex-direction: column;
-        transform: rotate(180deg);
+        /* transform: rotate(180deg); */
     }
 
     nav li {
@@ -518,7 +518,7 @@ body.loaded::after {
     }
 
     nav svg {
-        transform: rotate(180deg);
+        /* transform: rotate(180deg); */
     }
 
     nav .copy {
@@ -718,11 +718,11 @@ ul.no-style li {
     display: inline-block;
 }
 
-#scrollTrigger {
+#scrollTrigger 
+{
     position: absolute;
     top: 0;
 }
-
 @supports((-webkit-clip-path:inset(0 0 0 0)) or (clip-path:inset(0 0 0 0))) {
     .containerFixed {
         position: fixed;
