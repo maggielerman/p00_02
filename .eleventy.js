@@ -112,7 +112,6 @@ module.exports = function(eleventyConfig) {
 
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/layout.njk');
-  eleventyConfig.addLayoutAlias('conf', 'layouts/conf.njk');
   eleventyConfig.addLayoutAlias('base', 'layouts/resume-base.njk');
   eleventyConfig.addLayoutAlias('resume', 'layouts/resume.njk');
 
@@ -121,8 +120,7 @@ module.exports = function(eleventyConfig) {
     return util.inspect(obj)
   });
   
-    // Icon Sprite
-  
+  // Icon Sprite
   eleventyConfig.addNunjucksAsyncShortcode('iconsprite', require("./src/utils/iconsprite.js") );
   // grab excerpts and sections from a file
   eleventyConfig.addFilter("section", require("./src/utils/grabSection.js") );
@@ -130,22 +128,19 @@ module.exports = function(eleventyConfig) {
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js") );
 
-   eleventyConfig.addFilter("cssmin", function(code) {
+  eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
+  
+  eleventyConfig.addWatchTarget("./src/site/assets/css/");
 
+// run purgecss when running in prod
   if (process.env.NODE_ENV == "production") {
   eleventyConfig.addPlugin(purgeCssPlugin, {
       config: "./purgecss.config.js",
       quiet: false,
     });
   }
-  eleventyConfig.addWatchTarget("./src/site/assets/css/");
-
-// eleventyConfig.addPlugin(purgeCssPlugin, {
-//       config: "./purgecss.config.js",
-//       quiet: false,
-//     });
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
@@ -155,52 +150,11 @@ module.exports = function(eleventyConfig) {
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
-  eleventyConfig.addPassthroughCopy("./src/site/assets/js/app.js");
-
-
- eleventyConfig.addNunjucksFilter('keys', function (value) {
-    return Object.keys(value)
-  })
-
-  eleventyConfig.addNunjucksFilter('fmtPrice', function (price) {
-    return parseFloat(price).toFixed(2)
-  })
+  // eleventyConfig.addPassthroughCopy("./src/site/assets/js/app.js");
 
   eleventyConfig.addNunjucksFilter('dateDisplay', function (date) {
     return date.toISOString()
   })
-
-  eleventyConfig.addNunjucksFilter('isPreorder', function (tags) {
-    return tags.some(t => t === 'Preorder')
-  })
-
-  eleventyConfig.addNunjucksFilter('filterFrontpage', function (colls) {
-    return colls.filter(coll => coll.handle !== 'frontpage')
-  })
-
-  eleventyConfig.addNunjucksFilter('prepend', function (value, pre) {
-    return `${pre}${value}`
-  })
-
-  eleventyConfig.addNunjucksFilter('productImage', function (product) {
-    return product && product.images.edges[0] && product.images.edges[0].node.originalSrc
-  })
-
-  eleventyConfig.addNunjucksFilter('collectionImage', function (collection) {
-    return collection && collection.image && collection.image.originalSrc
-  })
-
-  eleventyConfig.addNunjucksFilter('firstValue', function (values) {
-    return values.find((val) => {
-      return val !== null && val !== '' && val !== undefined
-    })
-  })
-
-
-  eleventyConfig.addCollection('collections', collection => {
-    return collection.getFilteredByGlob('_collections/*.md')
-  })
-  // eleventyConfig.addPassthroughCopy({"./src/admin": "./admin"});
 
   //browserSync settings
   eleventyConfig.setBrowserSyncConfig({
@@ -226,7 +180,6 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       output: "dist",
       data: "_data",
-      feeds: "feeds",
     },
     passthroughFileCopy: true,
     templateFormats : ["njk", "md"],
