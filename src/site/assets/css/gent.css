@@ -125,7 +125,7 @@ h6 {
 
 a:link,
 a:visited {
-    color: #0058ff;
+    color: #D9C6BE;
     transition: color ease-in-out .1s;
     text-decoration: none;
 }
@@ -139,13 +139,13 @@ a.inverted:visited {
 
 .inverted a:hover,
 a.inverted:hover {
-    color: #0058ff;
+    color: #D9C6BE;
 }
 
 .active a:hover,
 .active a:link,
 .active a:visited {
-    color: #0058ff;
+    color: #D9C6BE;
 }
 
 .muted {
@@ -158,7 +158,7 @@ a.inverted:hover {
 }
 
 .brand-primary {
-    color: #0058ff;
+    color: #D9C6BE;
 }
 
 .img-fluid {
@@ -181,7 +181,7 @@ a.link-subtle:visited {
 }
 
 a.link-subtle:hover {
-    color: #0058ff;
+    color: #D9C6BE;
 }
 
 .text-center {
@@ -911,7 +911,7 @@ a.button::after {
 a.button:hover {
     cursor: pointer;
     color: inherit !important;
-    border-color: #0058ff !important;
+    border-color: #D9C6BE !important;
 }
 
 a.button:hover::after {
@@ -936,13 +936,13 @@ a.action-button:visited {
     line-height: 44px;
     border: 0;
     margin: 0;
-    color: #0058ff;
+    color: #D9C6BE;
     font-weight: 700;
     font-size: 18px;
     position: relative;
     letter-spacing: .2px;
     background: 0 0;
-    border: 2px solid #0058ff;
+    border: 2px solid #D9C6BE;
     border-radius: 24px;
     display: inline-block;
 }
@@ -957,8 +957,8 @@ a.action-button:hover {
 .background-container a.action-button:hover,
 .mockup-container .action-button:hover,
 .mockup-container a.action-button:hover {
-    border-color: #0058ff;
-    color: #0058ff;
+    border-color: #D9C6BE;
+    color: #D9C6BE;
     background-color: #fff;
 }
 
@@ -1176,7 +1176,7 @@ body.loaded .svg-line-animation path {
 }
 
 #intro .description .h2 {
-    color: #fcd12a;
+    color: #D9C6BE;
 }
 
 #intro #intro-img,
@@ -1215,7 +1215,8 @@ body.loaded .svg-line-animation path {
 
 .aboutActive a.about-link:link,
 .aboutActive a.about-link:visited {
-    color: #0058ff;
+    /* color: #D9C6BE; */
+    color: #D9C6BE;
 }
 
 .aboutActive #intro {
@@ -1778,7 +1779,7 @@ body.loaded .svg-line-animation path {
     width: 100%;
     height: 100%;
     transition: opacity 1s ease;
-    opacity: 0;
+    opacity: 1;
 }
 
 .portrait-active #about-back-img img {
@@ -1820,7 +1821,7 @@ body.loaded .svg-line-animation path {
 .article-section h2 {
     text-transform: lowercase;
     margin-top: 0;
-    color: #fcd12a;
+    color: #D9C6BE;
     line-height: 1em;
 }
 
@@ -1869,11 +1870,11 @@ article {
 
 article a:link,
 article a:visited {
-    color: #fcd12a;
+    color: #D9C6BE;
 }
 
 article .highlight {
-    color: #fcd12a;
+    color: #D9C6BE;
 }
 
 article table {
@@ -1926,7 +1927,7 @@ article table thead th {
     text-align: left;
     padding: .5em;
     transition: background 1s 1s ease;
-    background: #1e5d5b;
+    color: #D9C6BE;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .25);
     text-transform: uppercase;
     letter-spacing: .2em;
