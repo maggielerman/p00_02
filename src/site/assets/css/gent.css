@@ -31,7 +31,7 @@ html {
     font-smoothing: antialiased;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
-    letter-spacing: calc(-.0233333333em + .3666666667px);
+    /* letter-spacing: calc(-.0233333333em + .3666666667px); */
 }
 
 ::-moz-selection {
@@ -125,7 +125,7 @@ h6 {
 
 a:link,
 a:visited {
-    color: #D9C6BE;
+    /* color: #D9C6BE; */
     transition: color ease-in-out .1s;
     text-decoration: none;
 }
@@ -379,8 +379,10 @@ nav {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-size: 1.1vh;
-    color: #c5c5c5;
+    align-items: middle;
+    font-size: 8.1vh;
+    /* color:hover: #c5c5c5; */
+    /* color:not(:hover): black; */
     z-index: 1000;
     background: #fff;
 }
@@ -390,27 +392,31 @@ nav i {
 }
 
 nav li {
-    font-size: 1.5vh;
-    display: inline-block;
-    line-height: 34px;
+    font-size: 7vw;
+    display: block;
+    /* line-height: 34px; */
     list-style: none;
     padding: 0;
     margin: 0;
-    opacity: 0;
-    transition: opacity 3s 2s ease-out;
+    color: #000;
+    transition: color 1s;
 }
 
-nav li span {
-    display: inline-block;
+nav li:hover {
+    transition: color 0s;
+    color: #5E64F0;
 }
+
+/* nav li span {
+    display: block;
+} */
 
 nav li a:link,
 nav li a:visited {
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: .2em;
-    color: #000;
+    /* color: #000; */
 }
 
 nav svg {
@@ -491,7 +497,98 @@ body.loaded::after {
     background: #fff;
     z-index: 999;
 }
+  .rainbow myColor {
+    transition: 1s;
+    /* color: blue; */
+    /* letter-spacing: .2em; */
 
+  }
+
+  
+  .rainbow myColor:hover {
+    transition: color 0s;
+    color: blue;
+
+    /* color:#a11414; */
+  }
+  
+  
+  .rainbow myColor:nth-child(1n):hover{
+
+    color: #ff5202;
+  }
+  
+  .rainbow myColor:nth-child(2n):hover{
+
+    color: #0fdf81;
+  }
+  
+  .rainbow myColor:nth-child(3n):hover{
+    color: #185bd6;
+  }
+
+  .rainbow myColor:nth-child(4n):hover{
+    color: hsl(54, 79%, 38%);
+
+  }
+  
+  .rainbow myColor:nth-child(4n):hover{
+    color: #22bd14;
+
+  }
+  
+/* HERO DARK ENDS */
+
+/* HERO LIGHT STARTS */
+
+.hero-underline-light {
+	background-image: linear-gradient( #BF8C7C 0%, #ddc0b4 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+
+	/* font-style: italic */
+  }
+  .hero-underline-light:hover {
+	background-size: 100% 88%;
+	background-image: linear-gradient( #ddc0b4 0%, #ddc0b4 100%);
+  font-style: normal;
+  color: #000
+	
+  }
+
+  /* rainbow-light text start */
+
+  .rainbow-light myColor {
+    transition: 1s;
+  }
+  
+  .rainbow-light myColor:hover {
+    transition: color 0s;
+    color:#a11414;
+  }
+  
+  
+  .rainbow-light myColor:nth-child(1n):hover{
+    color: #ac7861;
+  }
+  
+  .rainbow-light myColor:nth-child(2n):hover{
+    color: #D77B60;
+  }
+  
+  .rainbow-light myColor:nth-child(3n):hover{
+    color: #E29200;
+  }
+
+  .rainbow-light myColor:nth-child(4n):hover{
+    color: hsl(54, 79%, 38%);
+  }
+  
+  .rainbow-light myColor:nth-child(4n):hover{
+    color: #BF8C7C;
+  }
 @media(min-aspect-ratio:1001/1000) {
     body {
         padding: 20px 74px 20px 20px;
@@ -507,9 +604,8 @@ body.loaded::after {
 
     nav li {
         -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+        /* writing-mode: vertical-rl; */
     }
-
     nav a:link,
     nav a:visited,
     nav span {
@@ -522,7 +618,11 @@ body.loaded::after {
     }
 
     nav .copy {
+        writing-mode: vertical-rl;
+        color: #c5c5c5;
         margin-bottom: auto;
+        font-size: 1.5vh;
+
     }
 
     .showcase a,
@@ -579,7 +679,7 @@ body.loaded::after {
     }
 
     nav svg {
-        margin-right: -10px;
+        /* margin-right: -10px; */
     }
 
     nav i {
@@ -911,7 +1011,7 @@ a.button::after {
 a.button:hover {
     cursor: pointer;
     color: inherit !important;
-    border-color: #D9C6BE !important;
+    /* border-color: #D9C6BE !important; */
 }
 
 a.button:hover::after {
@@ -986,16 +1086,23 @@ a.action-button:active {
 }
 
 #header {
-    color: #fff;
+    /* color: #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-}
+    /* letter-spacing: .2em; */
 
-#header h1 {
-    margin-left: -.05em;
+}
+#header div:hover {
+    transition: color 0s;
+    color: #5E64F0;   
+}
+#header div {
+    color: #fff;
+    transition: color;
+    /* margin-left: -.05em; */
 }
 
 #header .description {
@@ -1021,6 +1128,7 @@ a.action-button:active {
 
 #spaceman-wrapper {
     height: 100vh;
+    /* height: calc(100vh - 40px); */
     background: #000;
     position: relative;
     color: #fff;
@@ -1086,7 +1194,6 @@ canvas#wow {
 #dream-trigger {
     position: absolute;
     height: 1px;
-    background: red;
     width: 100%;
     top: 250vh;
     z-index: 9999;
@@ -1327,11 +1434,11 @@ body.loaded .svg-line-animation path {
 }
 
 #rocketrip {
-    color: #000
+    color: #fff
 }
 
 #rocketrip .containerFixed {
-    background-image: linear-gradient( #E2E5EA 0%, #F1F5FC 100%);
+    background-image: linear-gradient( #F16022 0%, #D95E33 100%);
 }
 
 #rocketrip .picture-container {

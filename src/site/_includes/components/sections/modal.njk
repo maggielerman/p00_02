@@ -1,13 +1,24 @@
-
-
-
-    <div x-cloak x-ref="modal" 
+{# 
+    <div 
+    x-cloak 
+    x-ref="modal" 
     x-show.transition.slide="open" 
     x-transition
-    class="fixed z-10 top-0 right-0 w-2/3 h-screen bg-black flex items-center justify-center" 
+    x-transition.duration.500ms
+    class="ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center" 
     role="modal" 
     aria-modal="true">
-
-{# menu items go here #}
-
     </div>
+   #}
+
+    <div 
+    x-cloak 
+    x-ref="modal" 
+    x-show.transition.slide="open" 
+    x-transition
+    x-transition.duration.500ms
+    class="ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center" 
+    role="modal" 
+    aria-modal="true">
+    </div>
+  

@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html xml:lang="en" lang="en">
-  {% include "layouts/head.njk" %}
-	<body class="loaded gent-webp" aria-live="polite">
-		  {{ content | safe }}
-  <div id="progress-end"></div>
-		{# {% include "js.njk" %} #}
-    {# <script type="text/javascript" src="chrome-extension://hjbfbllnfhppnhjdhhbmjabikmkfekgf/windowscript.js"></script>     #}
-  </body>
+    {% include "layouts/head.njk" %}
+    <body class="loaded gent-webp" aria-live="polite">
+        {{ content | safe }}
+        <div id="progress-end"></div>
+        <script>
+            // rainbow text script start
+
+            function _toArray(arr) {
+                return Array.isArray(arr) ? arr : Array.from(arr)
+            }
+
+            function makeMyColors(selector) {
+                var _document$querySelect = document.querySelectorAll(selector)
+                var _document$querySelect2 = _toArray(_document$querySelect)
+                var elements = _document$querySelect2.slice(0)
+
+                return elements.map(function (element) {
+                    var text = element.innerText.split('')
+                    var myColors = text.map(function (letter) {
+                        return '<myColor>' + letter + '</myColor>'
+                    }).join('')
+                    return element.innerHTML = myColors
+                })
+            }
+
+            // usuage with single selector
+            makeMyColors('div.rainbow');
+            makeMyColors('a.rainbow');
+
+
+        </script>
+        <script>
+            function videofallback(video) {
+                var img = video.querySelector('img')
+                if (img) 
+                    video.parentNode.replaceChild(img, video)
+                
+                document.querySelector('body').classList.add('no-webm')
+            }
+        </script>
+    </body>
 </html>

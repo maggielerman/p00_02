@@ -1,89 +1,4 @@
-<style>
-  .rainbow myColor {
-    transition: 1s;
-  }
-  
-  .rainbow myColor:hover {
-    transition: color 0s;
-    color:#a11414;
-  }
-  
-  
-  .rainbow myColor:nth-child(1n):hover{
-    color: #ff5202;
-  }
-  
-  .rainbow myColor:nth-child(2n):hover{
-    color: #0fdf81;
-  }
-  
-  .rainbow myColor:nth-child(3n):hover{
-    color: #185bd6;
-  }
-
-  .rainbow myColor:nth-child(4n):hover{
-    color: hsl(54, 79%, 38%);
-  }
-  
-  .rainbow myColor:nth-child(4n):hover{
-    color: #22bd14;
-  }
-  
-/* HERO DARK ENDS */
-
-/* HERO LIGHT STARTS */
-
-.hero-underline-light {
-	background-image: linear-gradient( #BF8C7C 0%, #ddc0b4 100%);
-	background-repeat: no-repeat;
-	background-size: 100% 0.2em;
-	background-position: 0 88%;
-	transition: background-size 0.25s ease-in;
-
-	/* font-style: italic */
-  }
-  .hero-underline-light:hover {
-	background-size: 100% 88%;
-	background-image: linear-gradient( #ddc0b4 0%, #ddc0b4 100%);
-  font-style: normal;
-  color: #000
-	
-  }
-
-  /* rainbow-light text start */
-
-  .rainbow-light myColor {
-    transition: 1s;
-  }
-  
-  .rainbow-light myColor:hover {
-    transition: color 0s;
-    color:#a11414;
-  }
-  
-  
-  .rainbow-light myColor:nth-child(1n):hover{
-    color: #ac7861;
-  }
-  
-  .rainbow-light myColor:nth-child(2n):hover{
-    color: #D77B60;
-  }
-  
-  .rainbow-light myColor:nth-child(3n):hover{
-    color: #E29200;
-  }
-
-  .rainbow-light myColor:nth-child(4n):hover{
-    color: hsl(54, 79%, 38%);
-  }
-  
-  .rainbow-light myColor:nth-child(4n):hover{
-    color: #BF8C7C;
-  }
-  
-/* HERO LIGHT ENDS */
-</style>        
+   
         
         <div id="spaceman-wrapper">
             <div class="containerCrop">
@@ -92,8 +7,9 @@
                         <a href="https://maggielerman.com/">{%include "src/site/images/logo-white.svg"%}</a>
                     </div>
 
-                    <div class="rainbow text-2xl w-1/2 -mt-10">
-                     Maggie is a creative technologist and cross-functional designer based in New York City.
+                    <div class="rainbow cursor-default w-2/3 text-xl px-1 md:text-2xl md:px-0 md:w-1/2 -mt-10">
+                    <h1> Maggie is a creative technologist and cross-functional designer based in New York City.
+                    </h1>
                     </div>
                     <div>
                         <div class="scrolldown"></div>
@@ -131,26 +47,3 @@
                 </div>
             </div>
         </div>
-
-<script>
-    // rainbow text script start
-
-    function _toArray(arr) { return Array.isArray(arr) ? arr : Array.from(arr)}
-
-    function makeMyColors (selector) {
-    var _document$querySelect = document.querySelectorAll(selector)
-    var _document$querySelect2 = _toArray(_document$querySelect)
-    var elements = _document$querySelect2.slice(0)
-    
-    return elements.map(function (element) {
-        var text = element.innerText.split('')
-        var myColors = text.map(function (letter){
-        return '<myColor>' + letter + '</myColor>'
-        }).join('')
-        return element.innerHTML = myColors
-    })
-    }
-
-    // usuage with single selector
-    makeMyColors('div.rainbow');
-</script>
