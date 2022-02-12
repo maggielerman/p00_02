@@ -3,7 +3,8 @@
     {% include "layouts/head.njk" %}
     <body class="loaded gent-webp" aria-live="polite">
         {% include "components/sections/preloader.njk"%}
-        {% include "components/sections/nav.njk"%}
+        {% include "components/sections/nav-tmp.njk"%}
+        {# {% include "components/sections/nav.njk"%} #}
         {{ content | safe }}
         <div id="progress-end"></div>
         <script>
