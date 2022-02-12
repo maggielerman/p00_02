@@ -35,16 +35,11 @@
     }
 </style>
 <nav class="flex items-center"
-    x-data="{
-                open: false
-            }">
-    <li class="z-20 mt-3 md:-mt-10">
-        <button 
-        @click="open =! open"
-        @mousedown.away="open = false;"
-        @keydown.window.escape="open = false"
-        class="" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" 
-        aria-label="Main Menu">
+    x-data="{open: false}">
+    <li class="z-0 mt-3 md:-mt-10">
+        <button @click="open =! open" @mousedown.away="open = false;" @keydown.window.escape="open = false"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" 
+            class="" aria-label="Main Menu">
             <svg width="100" height="100" viewBox="0 0 100 100">
                 <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
                 <path class="line line2" d="M 20,50 H 80"/>
@@ -52,32 +47,87 @@
             </svg>
         </button>
     </li>
-     <div 
-        x-cloak 
-        x-ref="menu" 
-        x-show.transition.slide="open" 
-        x-transition
-        x-transition.duration.500ms
-        class="ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center" 
-        role="menu" 
-        aria-modal="true">
-        <ul class="">
-            <li><a class="rainbow" href="/item-one"> Item One</a> </li>
-            <li><a class="rainbow" href="/item-two"> Item Two </a> </li>
-            <li><a class="rainbow"href="/item-two"> Item Two </a> </li>
-        </ul>
+     <div x-cloak x-ref="menu" x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
+            class="text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center">
+        {# <div class="grid grid-cols-1 md:grid-cols-2  "> #}
+        <div class="grid grid-cols-1 my-auto mx-10 md:grid-cols-2 md:divide-x-2">
+            <div class="container">
+            <button 
+            class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+            Save Changes
+            </button>
+                <li><a class="mr-10 rainbow transition ease-in-out hover:translate-y-1 hover:scale-125" href="/contact">About</a> </li>
+                <button  class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" href="/resuwme">Resume</button>
+                <li><a class="mr-10 rainbow" href="/#portfolio">Select Work</a></li>
+                
+            </div>
+            <div class"container">
+                <li><a class="md:ml-10 rainbow " href="/contact">Contact</a> </li>
+                <li><a class="md:ml-10 " href="/contact">Maggie test</a> </li>
+                <h2 class="ml-10 font-black ">Maggie</h2>
+                <a href=""> <p class="mx-20 text-sm font-semibold">  +1-646-467-4522  </p> </a>
+                <p class="mx-20 text-sm font-semibold"> lerman@magg1e.com </p>
+                <p class="mx-20 text-smfont-semibold">  </p>
+                <a href="https://www.linkedin.com/in/maggielerman/" target="_blank" class="">
+                  <svg class="mx-20" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
+                                                
+                                                                    <path class="st0" d="M16.7,11.4c0-0.7-0.1-1.2-0.3-1.7c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.7
+                                                                        c-0.4-0.2-0.8-0.2-1.3-0.2c-0.4,0-0.7,0-1,0.1c-0.3,0.1-0.5,0.2-0.7,0.4c-0.2,0.1-0.4,0.3-0.5,0.5C11,8.7,10.9,8.8,10.8,9V7.8
+                                                                        H7.9c0,0.2,0,0.7,0,1.4v2.6c0,0,0,1.6,0,4.7h2.9v-4.8c0-0.1,0-0.2,0-0.4c0-0.1,0-0.2,0.1-0.3c0.1-0.3,0.3-0.5,0.5-0.7
+                                                                        c0.2-0.2,0.6-0.3,1-0.3c0.5,0,0.9,0.2,1.1,0.5c0.2,0.4,0.3,0.8,0.3,1.4v4.6h2.9V11.4L16.7,11.4z M4.9,6.6c0.5,0,0.9-0.1,1.2-0.4
+                                                                        c0.3-0.3,0.4-0.6,0.4-1.1c0-0.4-0.1-0.8-0.4-1.1C5.8,3.7,5.4,3.6,4.9,3.6S4,3.7,3.7,4C3.4,4.3,3.3,4.7,3.3,5.1
+                                                                        c0,0.4,0.1,0.8,0.4,1.1C4,6.4,4.4,6.6,4.9,6.6L4.9,6.6L4.9,6.6z M6.3,7.8H3.5v8.7h2.9V7.8z"/>
+                                                        
+
+                                                    </svg>
+                </a>
+            </div>
+        </div>
+        {# <div class="grid grid-cols-1 my-auto mx-5 md:grid-cols-2 md:divide-x md:mx-10">
+            <ol id=""class="list-none">
+                    <li><a class="mr-10 rainbow" href="/contact">About</a> </li>
+                    <li><a class="mr-10 rainbow" href="/resume">Resume</a> </li>
+                    <li><a class="mr-10 rainbow" href="/#portfolio">Select Work</a></li>
+
+                        <li><a href="/#suzy"> <i class="mx-20 font-semibold">  Suzy </a></li>
+                        <li><a href="/#suzy"> <i class="mx-20 font-semibold"> Rock Paper Scissors </i> </a></li>
+                        <p class="mx-20 font-semibold"> Crowdtap </p>
+            </ol>
+            
+            <ol class="">
+                        <h2 class="ml-10 font-black rainbow">Maggie</h2>
+                        <a href=""> <p class="mx-20 text-sm font-semibold">  +1-646-467-4522  </p> </a>
+                        <p class="mx-20 text-sm font-semibold"> lerman@magg1e.com </p>
+                        <p class="mx-20 text-smfont-semibold">  </p>
+                        <a href="https://www.linkedin.com/in/maggielerman/" target="_blank" class="">
+                                                    <svg class="mx-20" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
+                                                
+                                                                    <path class="st0" d="M16.7,11.4c0-0.7-0.1-1.2-0.3-1.7c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.7
+                                                                        c-0.4-0.2-0.8-0.2-1.3-0.2c-0.4,0-0.7,0-1,0.1c-0.3,0.1-0.5,0.2-0.7,0.4c-0.2,0.1-0.4,0.3-0.5,0.5C11,8.7,10.9,8.8,10.8,9V7.8
+                                                                        H7.9c0,0.2,0,0.7,0,1.4v2.6c0,0,0,1.6,0,4.7h2.9v-4.8c0-0.1,0-0.2,0-0.4c0-0.1,0-0.2,0.1-0.3c0.1-0.3,0.3-0.5,0.5-0.7
+                                                                        c0.2-0.2,0.6-0.3,1-0.3c0.5,0,0.9,0.2,1.1,0.5c0.2,0.4,0.3,0.8,0.3,1.4v4.6h2.9V11.4L16.7,11.4z M4.9,6.6c0.5,0,0.9-0.1,1.2-0.4
+                                                                        c0.3-0.3,0.4-0.6,0.4-1.1c0-0.4-0.1-0.8-0.4-1.1C5.8,3.7,5.4,3.6,4.9,3.6S4,3.7,3.7,4C3.4,4.3,3.3,4.7,3.3,5.1
+                                                                        c0,0.4,0.1,0.8,0.4,1.1C4,6.4,4.4,6.6,4.9,6.6L4.9,6.6L4.9,6.6z M6.3,7.8H3.5v8.7h2.9V7.8z"/>
+                                                        
+
+                                                    </svg>
+                             </a>
+
+            </ol>
+        
+        </div> #}
     </div>
-    <li class="copy">
+    <div class="copy">
         <span><i>© 2020-2022 Maggie Lerman
                 All rights reserved.</i>
         </span>
-    </li>
-    <li class=" -mb-2 md:-mb-5">
+    </div>
+    <div class=" -mb-2 md:-mb-5">
         <button href="/">
         {# {%include "src/site/images/logo.svg"%} #}
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM10.625 15.1365V14.794C10.625 14.5626 10.8126 14.375 11.0441 14.375H14.9506C15.1107 14.375 15.2569 14.4662 15.3271 14.6101L21.0095 26.2439C21.0646 26.3569 21.0662 26.4886 21.0136 26.6029L19.627 29.6184C19.5586 29.767 19.41 29.8622 19.2463 29.8622H18.4724C18.3159 29.8622 18.1725 29.7751 18.1004 29.6364L10.6721 15.3296C10.6412 15.27 10.625 15.2037 10.625 15.1365ZM10.625 18.9718V30.1595C10.625 30.3909 10.8126 30.5785 11.0441 30.5785H14.4125C14.644 30.5785 14.8316 30.3909 14.8316 30.1595V24.804C14.8316 24.7406 14.8173 24.678 14.7895 24.621L11.9596 18.7889C11.8896 18.6444 11.7432 18.5528 11.5826 18.5528H11.0441C10.8126 18.5528 10.625 18.7404 10.625 18.9718ZM23.6922 14.794V30.1594C23.6922 30.3909 23.8799 30.5785 24.1112 30.5785H26.704C26.9355 30.5785 27.1231 30.3909 27.1231 30.1594V14.794C27.1231 14.5626 26.9355 14.375 26.704 14.375H24.1112C23.8799 14.375 23.6922 14.5626 23.6922 14.794ZM30.017 29.9866C30.017 30.3135 30.282 30.5785 30.6089 30.5785H34.8188C35.0503 30.5785 35.2379 30.3909 35.2379 30.1594V26.79C35.2379 26.5586 35.0503 26.371 34.8188 26.371H34.3553C34.2588 26.371 34.1651 26.4043 34.0904 26.4653L30.1711 29.6619C30.0736 29.7414 30.017 29.8606 30.017 29.9866Z" fill="black"/>
             </svg>
         </button>
-    </li>
+    </div>
 </nav>

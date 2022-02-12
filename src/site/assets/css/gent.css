@@ -380,7 +380,7 @@ nav {
     justify-content: space-between;
     text-align: center;
     align-items: middle;
-    font-size: 8.1vh;
+    /* font-size: 8.1vh; */
     /* color:hover: #c5c5c5; */
     /* color:not(:hover): black; */
     z-index: 1000;
@@ -390,21 +390,24 @@ nav {
 nav i {
     font-style: normal;
 }
-
 nav li {
-    font-size: 7vw;
-    display: block;
-    /* line-height: 34px; */
     list-style: none;
+    font-size: 7vh;
+    font-size: 6vw;
+    /* line-height: 34px; */
     padding: 0;
     margin: 0;
     color: #000;
     transition: color 1s;
+    -webkit-transition: transform 0.5s ease-in-out;
 }
 
 nav li:hover {
     transition: color 0s;
+    -webkit-transition: transform 0.25s ease-in-out;
+    transform: scale(1.10);
     color: #5E64F0;
+    /* text-decoration: underline; */
 }
 
 /* nav li span {
@@ -415,7 +418,7 @@ nav li a:link,
 nav li a:visited {
     /* display: inline-block; */
     font-weight: 800;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     /* color: #000; */
 }
 
@@ -507,7 +510,7 @@ body.loaded::after {
   
   .rainbow myColor:hover {
     transition: color 0s;
-    color: blue;
+    /* color: blue; */
 
     /* color:#a11414; */
   }
@@ -539,24 +542,6 @@ body.loaded::after {
   
 /* HERO DARK ENDS */
 
-/* HERO LIGHT STARTS */
-
-.hero-underline-light {
-	background-image: linear-gradient( #BF8C7C 0%, #ddc0b4 100%);
-	background-repeat: no-repeat;
-	background-size: 100% 0.2em;
-	background-position: 0 88%;
-	transition: background-size 0.25s ease-in;
-
-	/* font-style: italic */
-  }
-  .hero-underline-light:hover {
-	background-size: 100% 88%;
-	background-image: linear-gradient( #ddc0b4 0%, #ddc0b4 100%);
-  font-style: normal;
-  color: #000
-	
-  }
 
   /* rainbow-light text start */
 
@@ -1433,12 +1418,24 @@ body.loaded .svg-line-animation path {
     margin: auto 0
 }
 
+#rock-paper-scissors {
+    color: #000
+}
+
+#rock-paper-scissors .containerFixed {
+    background-image: linear-gradient( #DAD0C0 0%, #DAD0C0 100%);
+}
+
+#rock-paper-scissors .picture-container {
+    margin: auto 0
+}
+
 #rocketrip {
     color: #fff
 }
 
 #rocketrip .containerFixed {
-    background-image: linear-gradient( #F16022 0%, #D95E33 100%);
+    background-image: linear-gradient( #607E91 0%, #607E91 100%);
 }
 
 #rocketrip .picture-container {
@@ -1458,7 +1455,8 @@ body.loaded .svg-line-animation path {
 }
 
 #crazybaby .containerFixed {
-    background-color: #6c6c6c;
+    /* background-color: #6c6c6c; */
+    background-color: #009688;
 }
 
 #crazybaby .composition {
@@ -1805,8 +1803,9 @@ body.loaded .svg-line-animation path {
     }
 
     #crazybaby .composition img {
-        -o-object-position: 50% 0;
-        object-position: 50% 0;
+        padding-top: 10px;
+        -o-object-position: 100% 0;
+        object-position: 100% 0;
     }
 
     #crazybaby.lazyloaded.containerFixed::after {

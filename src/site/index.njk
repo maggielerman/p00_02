@@ -4,13 +4,12 @@ title: home | Magg1e.com
 permalink : "{{page.fileSlug}}/"
 ---
   
-        {% include "components/sections/preloader.njk"%}
-        {# {% include "components/sections/nav.njk"%} #}
-        {% include "components/sections/nav-tmp.njk"%}
+
+        {# {% include "components/sections/nav-tmp.njk"%} #}
 
         {% include "components/sections/spaceman.njk"%}
 
-        <div class="showcase">
+        <div class="showcase" id="portfolio">
                 {% include "components/projects/suzy.njk"%}
                 {% include "components/projects/rock-paper-scissors.njk"%}
 
@@ -20,7 +19,7 @@ permalink : "{{page.fileSlug}}/"
                 {% include "components/projects/logo.njk"%}
                 {# {% include "components/projects/ecommerce.njk"%} #}
 
-                {# {% include "components/projects/crazybaby.njk"%} #}
+                {% include "components/projects/crazybaby.njk"%}
                 {# {% include "components/projects/loop.njk"%} #}
                 {# {% include "components/projects/manrope.njk"%} #}
                 {# {% include "components/projects/huawei.njk"%} #}
@@ -29,5 +28,5 @@ permalink : "{{page.fileSlug}}/"
                 {# {% include "components/projects/oneplus.njk"%} #}
 
             {# <div id="about-trigger"></div> #}
-                {# {% include "components/sections/about.njk"%} #}
+                {% include "components/sections/about.njk"%}
         </div>
