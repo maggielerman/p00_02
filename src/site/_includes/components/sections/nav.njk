@@ -48,60 +48,67 @@
         </button>
     </li>
      <div x-cloak x-ref="menu" x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
-            class="text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center">
+            class="text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen bg-white flex items-center justify-center align-middle">
         {# <div class="grid grid-cols-1 md:grid-cols-2  "> #}
-        <div class="grid grid-cols-1 my-auto mx-10 md:grid-cols-2 md:divide-x-2">
-            <div class="container">
-                <li><a class="mr-20 rainbow" href="/contact">About</a> </li>
-                <li><a class="mr-20 rainbow" href="/resume">Resume</a> </li>
-                <li><a class="mr-20 rainbow" href="/#portfolio">Select Work</a></li>  
-            </div>
-            <div class"container">
-                <li><a class="md:ml-20 rainbow " href="/contact">Contact</a> </li>
-                {# <li><a class="md:ml-20 " href="/contact">Maggie test</a> </li> #}
+        <div class="grid grid-cols-1 my-auto mx-auto md:grid-cols-2 md:divide-x-2">
+            <div class="container align-middle">
+                <li><a class="rainbow" href="/#about">About</a> </li>
+                <li><a class="rainbow" href="/resume">C.V.</a> </li>
+                <li><a class="rainbow" href="/#portfolio">Select Work</a></li>
+                <li><a class="rainbow " href="/contact">Contact</a> </li>
 
-                <div><a class="mx-20 text-sm font-semibold" href="tel:+16464674522">+1(646)467-4522 </a> </div>
-                <div><a class="mx-20 text-sm font-semibold" href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
-                <div><a href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                    <svg class="mx-20 mt-1.5" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.7 8.40001C13.7 7.70001 13.6 7.20001 13.4 6.70001C13.2 6.20001 13 5.80001 12.7 5.50001C12.4 5.20001 12.1 4.90001 11.7 4.80001C11.3 4.60001 10.9 4.60001 10.4 4.60001C10 4.60001 9.7 4.60001 9.4 4.70001C9.1 4.80001 8.9 4.90001 8.7 5.10001C8.5 5.20001 8.3 5.40001 8.2 5.60001C8 5.70001 7.9 5.80001 7.8 6.00001V4.80001H4.9C4.9 5.00001 4.9 5.50001 4.9 6.20001V8.80001C4.9 8.80001 4.9 10.4 4.9 13.5H7.8V8.70001C7.8 8.60001 7.8 8.50001 7.8 8.30001C7.8 8.20001 7.8 8.10001 7.9 8.00001C8 7.70001 8.2 7.50001 8.4 7.30001C8.6 7.10001 9 7.00001 9.4 7.00001C9.9 7.00001 10.3 7.20001 10.5 7.50001C10.7 7.90001 10.8 8.30001 10.8 8.90001V13.5H13.7V8.40001ZM1.9 3.60001C2.4 3.60001 2.8 3.50001 3.1 3.20001C3.4 2.90001 3.5 2.60001 3.5 2.10001C3.5 1.70001 3.4 1.30001 3.1 1.00001C2.8 0.700006 2.4 0.600006 1.9 0.600006C1.4 0.600006 1 0.700006 0.700003 1.00001C0.400003 1.30001 0.300003 1.70001 0.300003 2.10001C0.300003 2.50001 0.400003 2.90001 0.700003 3.20001C1 3.40001 1.4 3.60001 1.9 3.60001ZM3.3 4.80001H0.500003V13.5H3.4V4.80001H3.3Z" fill="black"/>
-                    </svg>
-                </a></div>
+            </div>
+            {# SELECT WORK #}
+            {# <div class"container">
+                <li><a class="md:ml-20 rainbow " href="/#portfolio">Select Work</a> </li>
+                <div><a class="mx-20 mb-2 text-md font-semibold  link-nav" href="/#suzy">Suzy ↗</a> </div>
+                <div><a class="mx-20  link-nav" href="/#rock-paper-scissors">Rock Paper Scissors ↗</a> </div>
+                <div><a class="mx-20  link-nav" href="/#rock-paper-scissors">Crowdtap ↗</a> </div>
+                <div><a class="mx-20  link-nav" href="/#rock-paper-scissors">Rocketrip ↗</a> </div>
+                <div><a class="mx-20  link-nav" href="/#rock-paper-scissors">Logos and Branding ↗</a> </div>
+            </div> #}
+
+            {# CONTACT ALT OPTION #}
+            <div class"container align-middle">
+                <div class="mt-10 pt-7 border-t-2 md:border-t-0 md:mt-0 md:pt-0 md:mx-32 text-3xl font-bold leading-loose tracking-wider">Maggie Lerman</div>
+                <div class="md:mx-32 text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
+                <div><a class="md:mx-32 text-sm font-semibold" href="tel:+16464674522">+1(646)467-4522 </a> </div>
+                <div><a class="md:mx-32 text-sm font-semibold" href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
+                <div class="flex flex-row align-middle -mt-0.5">
+                    <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
+                        <svg class="md:mx-32 "width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6_65)">
+                            <path d="M20.7752 24.093C20.7752 23.0078 20.6202 22.2326 20.3101 21.4574C20 20.6822 19.6899 20.062 19.2248 19.5969C18.7597 19.1318 18.2946 18.6667 17.6744 18.5116C17.0543 18.2016 16.4341 18.2016 15.6589 18.2016C15.0388 18.2016 14.5736 18.2016 14.1085 18.3566C13.6434 18.5116 13.3333 18.6667 13.0233 18.9768C12.7132 19.1318 12.4031 19.4419 12.2481 19.7519C11.938 19.907 11.7829 20.062 11.6279 20.3721V18.5116H7.13178C7.13178 18.8217 7.13178 19.5969 7.13178 20.6822V24.7132C7.13178 24.7132 7.13178 27.1938 7.13178 32H11.6279V24.5582C11.6279 24.4031 11.6279 24.2481 11.6279 23.938C11.6279 23.783 11.6279 23.6279 11.7829 23.4729C11.938 23.0078 12.2481 22.6977 12.5581 22.3876C12.8682 22.0775 13.4884 21.9225 14.1085 21.9225C14.8837 21.9225 15.5039 22.2326 15.814 22.6977C16.124 23.3178 16.2791 23.938 16.2791 24.8682V32H20.7752V24.093ZM2.48062 16.6512C3.25581 16.6512 3.87596 16.4961 4.34108 16.031C4.8062 15.5659 4.96124 15.1008 4.96124 14.3256C4.96124 13.7054 4.8062 13.0853 4.34108 12.6202C3.87596 12.155 3.25581 12 2.48062 12C1.70542 12 1.08527 12.155 0.620155 12.6202C0.155039 13.0853 0 13.7054 0 14.3256C0 14.9457 0.155039 15.5659 0.620155 16.031C1.08527 16.3411 1.70542 16.6512 2.48062 16.6512ZM4.65116 18.5116H0.310078V32H4.8062V18.5116H4.65116Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_6_65">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>                    
+                        </svg>
+                    </a>
+                    <a class="pl-3 md:ml-4" href="https://behance.com/maggielerman" target="_blank">
+                        <svg class="md:mx-32 "width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.369 23.2007C10.9451 22.9127 11.2331 22.6247 11.5212 22.3366C11.9532 21.7606 12.2412 21.0405 12.2412 20.0324C12.2412 19.1683 11.9532 18.3042 11.5212 17.7282C10.8011 16.5761 9.50495 16 7.63276 16H0V31.4096H7.05671C7.77678 31.4096 8.64086 31.4096 9.21692 31.2655C9.93699 31.1215 10.5131 30.8335 10.9451 30.5455C11.3771 30.2574 11.8092 29.8254 12.0972 29.3933C12.5293 28.6733 12.8173 27.8092 12.8173 26.9451C12.8173 26.081 12.6733 25.3609 12.2412 24.6409C11.8092 23.9208 11.2331 23.4888 10.369 23.2007ZM3.16832 18.7363H6.62466C7.34474 18.7363 7.92079 18.8803 8.49685 19.0243C9.07291 19.3123 9.36094 19.7444 9.36094 20.4644C9.36094 21.0405 9.21692 21.6166 8.78488 21.7606C8.20882 21.9046 7.63276 22.0486 6.91269 22.0486H3.16832V18.7363ZM8.49685 28.5293C8.06481 28.6733 7.63276 28.8173 6.91269 28.8173H3.16832V24.7849H7.05671C7.77678 24.7849 8.20882 24.9289 8.64087 25.0729C9.36094 25.3609 9.64897 25.937 9.64897 26.6571C9.50495 27.5212 9.21692 28.0972 8.49685 28.5293Z" fill="black"/>
+                            <path d="M22.7542 16.7201H16.1296V18.5923H22.7542V16.7201Z" fill="black"/>
+                            <path d="M25.2025 24.3528C25.0585 23.4887 24.7704 22.6247 24.3384 22.0486C23.7623 21.3285 23.1863 20.7525 22.3222 20.3204C21.4581 20.0324 20.594 19.7444 19.5859 19.7444C17.8578 19.7444 16.5616 20.3204 15.4095 21.3285C14.4014 22.3366 13.8253 23.9208 13.8253 25.793C13.8253 27.9532 14.4014 29.3933 15.5535 30.4014C16.7056 31.2655 18.1458 31.8416 19.5859 31.8416C21.4581 31.8416 22.8983 31.2655 23.9064 30.1134C24.6264 29.3933 24.9145 28.6733 25.0585 28.0972H22.0342C21.8902 28.3852 21.6021 28.6733 21.4581 28.8173C21.0261 29.1053 20.45 29.3933 19.7299 29.3933C19.0099 29.3933 18.5778 29.2493 18.0018 28.9613C17.2817 28.5293 16.8497 27.6652 16.8497 26.5131H25.2025C25.3465 25.649 25.2025 24.7849 25.2025 24.3528ZM16.9937 24.6409C17.1377 23.9208 17.4257 23.3447 17.8578 22.9127C18.2898 22.4806 18.8659 22.1926 19.5859 22.1926C20.306 22.1926 20.8821 22.3366 21.3141 22.7687C21.7461 23.2007 22.0342 23.7768 22.1782 24.4968H16.9937V24.6409Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a class="pl-3 md:ml-4" href="https://dribbble.com/maggielerman" target="_blank">
+                        <svg class="md:mx-32 "width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6_76)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 12C4.47941 12 0 16.4794 0 22C0 27.5206 4.47941 32 10 32C15.5098 32 20 27.5206 20 22C20 16.4794 15.5098 12 10 12ZM16.6052 16.6095C17.7983 18.0629 18.5141 19.9176 18.5358 21.9241C18.2538 21.8698 15.4338 21.295 12.5922 21.6529C12.5271 21.512 12.4729 21.3601 12.4078 21.2083C12.2343 20.7961 12.039 20.3731 11.8438 19.9718C14.9892 18.692 16.4208 16.8482 16.6052 16.6095ZM10 13.4751C12.1692 13.4751 14.154 14.2885 15.6616 15.6226C15.5098 15.8395 14.2191 17.564 11.1822 18.7028C9.78308 16.1323 8.23211 14.0282 7.99351 13.7028C8.6334 13.551 9.30586 13.4751 10 13.4751ZM6.36659 14.2777C6.59435 14.5813 8.1128 16.6963 9.53362 19.2126C5.54229 20.2755 2.01736 20.2538 1.63774 20.2538C2.19089 17.6074 3.98048 15.4056 6.36659 14.2777ZM1.45336 22.0108C1.45336 21.9241 1.45336 21.8373 1.45336 21.7505C1.82213 21.7614 5.9653 21.8156 10.2278 20.5358C10.4772 21.013 10.705 21.5011 10.9219 21.9892C10.8134 22.0217 10.6941 22.0542 10.5857 22.0868C6.18222 23.5076 3.83948 27.3905 3.64427 27.7158C2.2885 26.2082 1.45336 24.2017 1.45336 22.0108ZM10 30.5466C8.02604 30.5466 6.2039 29.8742 4.76138 28.7462C4.91324 28.4317 6.6486 25.0911 11.4642 23.41C11.4859 23.3991 11.4968 23.3991 11.5184 23.3883C12.7223 26.5011 13.2104 29.115 13.3406 29.8633C12.3102 30.308 11.1822 30.5466 10 30.5466ZM14.7614 29.0824C14.6746 28.5618 14.2191 26.0672 13.102 22.9978C15.7809 22.5749 18.1237 23.269 18.4165 23.3666C18.0477 25.7419 16.6811 27.7918 14.7614 29.0824Z" fill="black" stroke="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_6_76">
+                            <rect width="32" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>                    
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-        {# <div class="grid grid-cols-1 my-auto mx-5 md:grid-cols-2 md:divide-x md:mx-10">
-            <ol id=""class="list-none">
-                    <li><a class="mr-10 rainbow" href="/contact">About</a> </li>
-                    <li><a class="mr-10 rainbow" href="/resume">Resume</a> </li>
-                    <li><a class="mr-10 rainbow" href="/#portfolio">Select Work</a></li>
-
-                        <li><a href="/#suzy"> <i class="mx-20 font-semibold">  Suzy </a></li>
-                        <li><a href="/#suzy"> <i class="mx-20 font-semibold"> Rock Paper Scissors </i> </a></li>
-                        <p class="mx-20 font-semibold"> Crowdtap </p>
-            </ol>
-            
-            <ol class="">
-                        <h2 class="ml-10 font-black rainbow">Maggie</h2>
-                        <a href=""> <p class="mx-20 text-sm font-semibold">  +1-646-467-4522  </p> </a>
-                        <p class="mx-20 text-sm font-semibold"> lerman@magg1e.com </p>
-                        <p class="mx-20 text-smfont-semibold">  </p>
-                        <a href="https://www.linkedin.com/in/maggielerman/" target="_blank" class="">
-                                                    <svg class="mx-20" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 20 20">
-                                                
-                                                                    <path class="st0" d="M16.7,11.4c0-0.7-0.1-1.2-0.3-1.7c-0.2-0.5-0.4-0.9-0.7-1.2c-0.3-0.3-0.6-0.6-1-0.7
-                                                                        c-0.4-0.2-0.8-0.2-1.3-0.2c-0.4,0-0.7,0-1,0.1c-0.3,0.1-0.5,0.2-0.7,0.4c-0.2,0.1-0.4,0.3-0.5,0.5C11,8.7,10.9,8.8,10.8,9V7.8
-                                                                        H7.9c0,0.2,0,0.7,0,1.4v2.6c0,0,0,1.6,0,4.7h2.9v-4.8c0-0.1,0-0.2,0-0.4c0-0.1,0-0.2,0.1-0.3c0.1-0.3,0.3-0.5,0.5-0.7
-                                                                        c0.2-0.2,0.6-0.3,1-0.3c0.5,0,0.9,0.2,1.1,0.5c0.2,0.4,0.3,0.8,0.3,1.4v4.6h2.9V11.4L16.7,11.4z M4.9,6.6c0.5,0,0.9-0.1,1.2-0.4
-                                                                        c0.3-0.3,0.4-0.6,0.4-1.1c0-0.4-0.1-0.8-0.4-1.1C5.8,3.7,5.4,3.6,4.9,3.6S4,3.7,3.7,4C3.4,4.3,3.3,4.7,3.3,5.1
-                                                                        c0,0.4,0.1,0.8,0.4,1.1C4,6.4,4.4,6.6,4.9,6.6L4.9,6.6L4.9,6.6z M6.3,7.8H3.5v8.7h2.9V7.8z"/>
-                                                        
-
-                                                    </svg>
-                             </a>
-
-            </ol>
-        
-        </div> #}
     </div>
     <div class="copy">
         <span><i>© 2020-2022 Maggie Lerman
