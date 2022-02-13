@@ -716,7 +716,7 @@ body.loaded::after {
         top: 20px;
     }
 
-    #spaceman-wrapper::after,
+    #intro-wrapper::after,
     .fullHeight::after,
     .fullHeight::before,
     body.loaded::after,
@@ -727,7 +727,7 @@ body.loaded::after {
         content: "";
     }
 
-    #spaceman-wrapper::after,
+    #intro-wrapper::after,
     .fullHeight::after {
         position: absolute;
         height: 60px;
@@ -1063,7 +1063,7 @@ a.action-button:active {
     position: absolute;
 }
 
-#intro-spaceman {
+#intro {
     position: absolute;
     top: 0;
     left: 0;
@@ -1113,7 +1113,7 @@ a.action-button:active {
     }
 }
 
-#spaceman-wrapper {
+#intro-wrapper {
     height: 100vh;
     /* height: calc(100vh - 40px); */
     background: #000;
@@ -1122,26 +1122,26 @@ a.action-button:active {
     margin-bottom: 20px;
 }
 
-#spaceman-duration {
+#intro-duration {
     height: 0;
     position: relative;
     width: 100%;
 }
 
-#spaceman-container {
+#intro-container {
     position: sticky;
     top: 20px;
     box-shadow: none;
     margin-bottom: 0;
 }
 
-#spaceman-container::after,
-#spaceman-container::before {
+#intro-container::after,
+#intro-container::before {
     display: none;
 }
 
 @media(max-width:359.5px) {
-    #spaceman-container {
+    #intro-container {
         top: 0;
     }
 }
