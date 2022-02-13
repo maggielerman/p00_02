@@ -10,7 +10,7 @@ html {
     padding: 0;
     margin: 0;
     font-weight: 500;
-    color: #1e2022;
+    color: #000;
     font-feature-settings: "case"1;
 }
 
@@ -437,7 +437,7 @@ nav li a:visited {
 
 nav svg.sidebar {
     width: 34px;
-    width: 34px;
+    height: 34px;
 }
 
 body.loaded nav li {
@@ -457,7 +457,7 @@ body.loaded nav li {
     padding: var(--content-padding);
 }
 
-.counter {
+.toggle {
     z-index: 10;
     font-variant-numeric: tabular-nums;
     position: absolute;
@@ -484,7 +484,7 @@ p {
     line-height: 1.75em;
 }
 
-.counter,
+.toggle,
 .h5,
 h5 {
     font-size: calc(.46vw + 11.23px);
@@ -613,7 +613,7 @@ body.loaded::after {
 
     nav .copy {
         writing-mode: vertical-rl;
-        color: #c5c5c5;
+        /* color: #c5c5c5; */
         margin-bottom: auto;
         font-size: 1.5vh;
 
@@ -638,7 +638,7 @@ body.loaded::after {
         max-width: calc(44.6009389671vw + 57.7464788732px);
     }
 
-    .counter {
+    .toggle {
         top: 40px;
         left: 40px;
     }
@@ -725,7 +725,7 @@ body.loaded::after {
         height: calc(100vw - 40px);
     }
 
-    .counter {
+    .toggle {
         right: 20px;
         top: 20px;
     }
@@ -841,7 +841,7 @@ ul.no-style li {
         position: fixed;
     }
 
-    .counter {
+    .toggle {
         position: fixed;
     }
 
@@ -857,7 +857,7 @@ ul.no-style li {
             height: calc(100vh - 40px);
         }
 
-        .counter {
+        .toggle {
             top: 60px;
             left: 60px;
         }
@@ -875,7 +875,7 @@ ul.no-style li {
             right: 20px;
         }
 
-        .counter {
+        .toggle {
             right: 40px;
             top: 40px;
         }
@@ -1130,7 +1130,7 @@ a.action-button:active {
 #intro-wrapper {
     height: 100vh;
     /* height: calc(100vh - 40px); */
-    background: #000;
+    /* background: #000; */
     position: relative;
     color: #fff;
     margin-bottom: 20px;
@@ -1871,7 +1871,7 @@ body.loaded .svg-line-animation path {
     padding: var(--content-padding);
 }
 
-#about .counter {
+#about .toggle {
     position: absolute;
     color: #fff;
 }
