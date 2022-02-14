@@ -1,51 +1,43 @@
-            <div id="about" class="">
+            <div id="about" class="bg-stone-200 text-black">
             
-                <div class="containerCrop">
-                
+                <div id="about-intro" class="containerCrop">
                 
                         <picture class="w-full">
                             <img class="invisible md:visible lazyloaded bg-cover bg-no-repeat rounded-full h-48 w-48 md:ml-16 md:mt-40 lg:ml-44 lg:mt-44 xl:mt-44 xl:ml-40" data-src="/images/maggie-lerman-headshot.png" alt="Maggie Lerman"  src="/images/maggie-lerman-headshot.png">
                         </picture>
-                    {# </div> #}
                 </div>
                 <article>
                     <div class="article-section">
                         <h2 class="font-extrabold text-2xl">About</h2>
-                        
-                            {# <div id="about-portrait-trigger"></div> #}
-
-                            <p class="-mt-4 md:mt-32">
+                        <div>
+                            <p class="-mt-4 md:mt-28">
                                 I work at the intersection of techonology & design, 
                                 offering a multidisciplinary approach to every project. 
                                 I strive for cohesive, modular design systems and design
                                 & product teams that work in partnership with their tech counterparts.
-                                <br> <br>
-                           <span class="font-extrabold">  
-                     
-                          
-                                <li class="nav-repeat">
-                                    <a class="link" href="mailto:michael@sharanda.com" class="link-subtle">Contact  ↗</a>
-                                </li>
-                                <li>
-                                    <a class="ml-2 link" href="https://instagram.com/mike.gentle/" class="link-subtle" target="_blank">Instagram ↗</a>
-                                </li>
-                                <li>
-                                    <a class="ml-2 link" href="https://dribbble.com/gent" class="link-subtle" target="_blank">Dribbble ↗</a>
-                                </li>
-                                <li>
-                                    <a class="ml-2 link" href="http://be.net/gentme" class="link-subtle" target="_blank">Behance ↗</a>
-                                </li>
-                                <li>
-                                    <a class="ml-2 link" href="https://hk.linkedin.com/in/sharanda" class="link-subtle" target="_blank">LinkedIn ↗</a>
-                                </li>
-                           
-                            </span>
                             </p>
-
-                        
+                             <ul class=" no-style">
+                                <li class="">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
+                                        {%include "src/site/images/icons/social/linkedin.svg"%}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="no-style" href="https://behance.com/maggielerman" target="_blank">
+                                        {%include "src/site/images/icons/social/behance.svg"%}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="https://dribbble.com/maggielerman" target="_blank">
+                                        {%include "src/site/images/icons/social/dribbble.svg"%}
+                                    </a>
+                                </li>
+                            </ul>
+                
+                        {# </span> #}
+                       </div>
                     </div>
-
-                    <div class="about-extend">
+                    {# <div class="about-extend">
                         <div class="table-container">
                             <table>
                                 <thead>
@@ -196,33 +188,22 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div> #}
                     {# <div class="article-section">
                     {%include "./resume.njk"%}
                     </div> #}
                     <div class="article-section">
-                        <h2>Philosophy</h2>
+                        <h2>Design</h2>
                         <div>
                             <p>Do you remember how magical it was the first time you combined blue and yellow paint?</p>
                             <p>The control over colors and visual perceptions…</p>
-                            {# <div id="about-colors-trigger"></div>
-                            <div id="about-colors" class="">
-                                <div>
-                                    <div id="circle-1"></div>
-                                    <div id="circle-2"></div>
-                                    <div id="circle-3"></div>
-                                    <div id="circle-4"></div>
-                                    <div id="circle-5"></div>
-                                    <div id="circle-6"></div>
-                                </div>
-                            </div> #}
                             <p>I loved how influential I could be to the world around me. I made people feel surprised and smile. Tell a story, deliver a message.</p>
                             <p>There was nothing before. Now it works. It helps somebody. Makes their life slightly better.</p>
                             <p>Through all the hard things, I found love and excitement.</p>
                         </div>
                     </div>
                     <div class="article-section">
-                        <h2>there are no shortcuts</h2>
+                        <h2>Development</h2>
                         <div>
                             <p>I grew up in a bad neighborhood during an economic crisis in Russia. I can’t say my childhood was hard. I had everything I needed, but I clearly remember a strong feeling of rejection: I didn’t like anything around me and I didn’t want this place to leave its footprint on me. I wanted my life to be different, but I had neither skills nor knowledge.</p>
                             <p>When I started my first job I desperately wanted to succeed in my career and life… I often compromised my work and did “whatever it takes” just to get where I wanted.</p>
@@ -234,7 +215,7 @@
                         </div>
                     </div>
                     <div class="article-section">
-                        <h2>all that matters</h2>
+                        <h2>Strategy & Innovation</h2>
                         <div>
                             <p>I’ve been truly passionate about design and technology. My teenage dream was to become a lead designer of a world famous tech company.</p>
                             <p>The story of Jony Ive inspired me to make my own.</p>
@@ -245,7 +226,7 @@
                     <div class="article-section">
                         <h2>&nbsp;</h2>
                         <div>
-                            <p>Thank you for exploring.</p>
+                            <p>Get in Touch.</p>
                             <ul class="no-style">
                                 <li class="nav-repeat">
                                     <a href="mailto:michael@sharanda.com" class="link-subtle">Contact</a>

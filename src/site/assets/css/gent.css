@@ -225,9 +225,9 @@ footer ul {
 footer li {
     display: inline-block;
 }
-
+/* 
 footer li.nav-repeat {
-    display: none;
+    display: none; */
 }
 
 footer img {
@@ -581,6 +581,16 @@ body.loaded::after {
 
   }
 
+  .no-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+  .no-style li {
+    margin: .5em .5em .5em 0;
+    display: inline-block;
+    }
 @media(min-aspect-ratio:1001/1000) {
     body {
         padding: 20px 74px 20px 20px;
@@ -642,6 +652,7 @@ body.loaded::after {
         top: 40px;
         left: 40px;
     }
+
 }
 
 @media(max-aspect-ratio:1/1) {
@@ -808,16 +819,7 @@ body.loaded::after {
     }
 }
 
-ul.no-style {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-ul.no-style li {
-    margin: .5em .5em .5em 0;
-    display: inline-block;
-}
 
 #scrollTrigger 
 {
@@ -1324,7 +1326,7 @@ body.loaded .svg-line-animation path {
 .aboutActive a.about-link:link,
 .aboutActive a.about-link:visited {
     /* color: #D9C6BE; */
-    color: #D9C6BE;
+    color: black;
 }
 
 .aboutActive #intro {
@@ -1866,14 +1868,14 @@ body.loaded .svg-line-animation path {
 }
 
 #about {
-    background: #000;
+    /* background: #000; */
     position: relative;
     padding: var(--content-padding);
 }
 
 #about .toggle {
     position: absolute;
-    color: #fff;
+    /* color: #fff; */
 }
 
 #about-portrait-trigger {
@@ -1943,9 +1945,11 @@ body.loaded .svg-line-animation path {
 .article-section h2 {
     text-transform: lowercase;
     margin-top: 0;
-    color: #D9C6BE;
+    color: #000;
     line-height: 1em;
 }
+
+
 
 @media(min-aspect-ratio:1001/1000) {
     .article-section {
@@ -1962,6 +1966,7 @@ body.loaded .svg-line-animation path {
         min-width: calc(23.4741784038vw + 111.9718309859px);
         padding-right: calc(2.8169014085vw + 19.4366197183px);
     }
+
 }
 
 @media(max-aspect-ratio:1/1) {
@@ -2064,7 +2069,7 @@ article table tr.table-last .table-project {
 }
 
 article {
-    color: #fff;
+    color: #000;
 }
 
 @media(max-aspect-ratio:1/1) {
@@ -2163,12 +2168,12 @@ article {
     object-fit: cover;
 }
 
-#about-colors {
+/* #about-colors {
     position: relative;
     width: 450px;
     max-width: 100%;
     margin: 60px 0;
-}
+} */
 
 #about-colors::before {
     display: block;
