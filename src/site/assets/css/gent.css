@@ -618,7 +618,7 @@ body.loaded::after {
     }
 
     nav svg {
-        /* transform: rotate(180deg); */
+    left: 50%;
     }
 
     nav .copy {
@@ -746,7 +746,8 @@ body.loaded::after {
     .fullHeight::before,
     body.loaded::after,
     body.loaded::before {
-        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNjBIMFYwaDFjMCAxMSA5IDIwIDIwIDIwdjIwQzEwIDQwIDEgNDkgMSA2MHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==) left top no-repeat, url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDYwYzAtMTEtOS0yMC0yMC0yMFYyMGMxMSAwIDIwLTkgMjAtMjBoMXY2MGgtMXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==) right top no-repeat;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgNjBIMFYwaDFjMCAxMSA5IDIwIDIwIDIwdjIwQzEwIDQwIDEgNDkgMSA2MHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==) 
+        left top no-repeat, url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDYwYzAtMTEtOS0yMC0yMC0yMFYyMGMxMSAwIDIwLTkgMjAtMjBoMXY2MGgtMXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==) right top no-repeat;
         z-index: 999;
         display: block;
         content: "";
@@ -1078,6 +1079,7 @@ a.action-button:active {
     z-index: 10;
     position: absolute;
 }
+
 
 #intro {
     position: absolute;
@@ -1621,7 +1623,7 @@ body.loaded .svg-line-animation path {
 }
 #logo.lazyloaded .containerFixed {
     background-color: #000;
-    background-image: url(/images/logos/01.jpg);
+    background-image: url(/images/branding/01.jpg);
     background-size: contain;
     background-position: center bottom;
 }
@@ -1635,7 +1637,7 @@ body.loaded .svg-line-animation path {
 
 #kudolo.lazyloaded .containerFixed::before {
     background-color: #000;
-    background-image: url(/images/logos/01.jpg);
+    background-image: url(/images/branding/01.jpg);
 }
 
 #kudolo.lazyloaded picture {
@@ -1811,7 +1813,7 @@ body.loaded .svg-line-animation path {
    
     #kudolo.lazyloaded .containerFixed::before {
         background-color: #000;
-        background-image: url(/images/logos/01.jpg);
+        background-image: url(/images/brandings/01.jpg);
         background-size: contain;
         background-position: center bottom;
     }

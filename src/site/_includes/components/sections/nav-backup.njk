@@ -50,58 +50,42 @@
         </button>
     </li>
     <div x-cloak x-ref="menu" x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
-        class="bg-stone-200 text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
-        {# <div class="toggle">
-        {% include "components/sections/light-dark-toggle.njk"%}
-        </div> #}
-       {# <div class="place-items-center "> #}
-        <div class="grid grid-cols-1 md:grid-cols-2 divide-stone-400 md:divide-x-2 place-content-center md:place-items-start">
-            <div @click="open =! open"  onclick="buttonChange()"
-                class="container align-middle items-center md:pl-20">
-                <li><a class="rainbow" href="/#about">About</a> </li>
-                <li><a class="rainbow" href="/resume">C.V.</a> </li>
-                <li><a class="rainbow" href="/#portfolio">Select Work</a></li>
-                <li class="pb-5"><a class="rainbow" href="/contact">Contact</a> </li>
+    class="bg-stone-200 text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
+      
+            <div class="box grid grid-cols-1 md:grid-cols-3 place-content-center justify-items-center">
+                <div class="align-middle ">
+                    <li><a class="rainbow" href="/#about">About</a> </li>
+                    <li><a class="rainbow" href="/resume">C.V.</a> </li>
+                    <li class="pb-5"><a class="rainbow" href="/#portfolio">Select Work</a></li>
+                    {# <li class="pb-5"><a class="rainbow" href="/contact">Contact</a> </li> #}
+
+                </div>
+                <div class="hidden md:flex md:bg-stone-400 w-0.5 h-52 ">
+                </div>
+                <div class"align-middle">
+                    <div class="pt-2.5 md:pt-0 text-3xl leading-relaxed tracking-wider border-stone-400 border-t-2 md:border-t-0">
+                        <li><a class="rainbow" href="/contact">Let's Connect</a> </li>
+                    </div>
+                    <div class="text-3xl font-bold leading-normal tracking-wide">Maggie Lerman</div>
+                    <div class="text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
+                    <div class=" text-sm font-semibold leading-loose"><a href="tel:+16464674522">+1(646)467-4522 </a> </div>
+                    <div class=" text-sm font-semibold leading-loose"><a href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
+                    <div class=" leading-tighter flex flex-row align-middle space-x-3 md:space-x-6">
+                        <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
+                        {%include "src/site/images/icons/social/linkedin.svg"%}
+                        </a>
+                        <a class="" href="https://behance.com/maggielerman" target="_blank">
+                            {%include "src/site/images/icons/social/behance.svg"%}
+                        </a>
+                        <a class="" href="https://dribbble.com/maggielerman" target="_blank">
+                            {%include "src/site/images/icons/social/dribbble.svg"%}
+                        </a>
+                    </div>
+
+                </div>
 
             </div>
-            <div class"container align-middle">
-                <div class="pt-2.5 md:pt-0 md:mx-32 text-4xl font-black leading-relaxed tracking-widest border-stone-400 border-t-2 md:border-t-0">Let's Connect!</div>
-                <div class="md:mx-32 text-2xl font-black leading-relaxed tracking-widest">Maggie Lerman</div>
-                <div class="md:mx-32 text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
-                <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 text-sm font-semibold leading-loose"><a href="tel:+16464674522">+1(646)467-4522 </a> </div>
-                <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 text-sm font-semibold leading-loose"><a href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
-                <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 leading-tighter flex flex-row align-middle space-x-3 md:space-x-6">
-                    <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                       {%include "src/site/images/icons/social/linkedin.svg"%}
-                    </a>
-                    <a class="" href="https://behance.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/behance.svg"%}
-                    </a>
-                    <a class="" href="https://dribbble.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/dribbble.svg"%}
-                    </a>
-                </div>
-            </div>
-            {# CONTACT ALT OPTION #}
-            {# <div class"container align-middle">
-                <div class="mt-10 pt-7 border-t-2 md:border-t-0 md:mt-0 md:pt-0 md:mx-32 text-3xl font-bold leading-loose tracking-wider">Maggie Lerman</div>
-                <div class="mt-1 md:mx-32 text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
-                <div class="mt-1 md:mx-32 text-sm font-semibold"><a href="tel:+16464674522">+1(646)467-4522 </a> </div>
-                <div class="mt-1.5 md:mx-32 text-sm font-semibold"><a href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
-                <div class="md:mx-32 flex flex-row align-middle">
-                    <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                       {%include "src/site/images/icons/social/linkedin3.svg"%}
-                    </a>
-                    <a class="ml-3 md:ml-4" href="https://behance.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/behance3.svg"%}
-                    </a>
-                    <a class="ml-3 md:ml-4" href="https://dribbble.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/dribbble3.svg"%}
-                    </a>
-                </div>
-            </div> #}
-        </div>
-        {# </div> #}
+        
     </div>
     <div class="copy text-stone-600">
         <span><i>© 2020-2022 Maggie Lerman
