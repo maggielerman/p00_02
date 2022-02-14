@@ -227,8 +227,8 @@ footer li {
 }
 /* 
 footer li.nav-repeat {
-    display: none; */
-}
+    display: none;
+ } */
 
 footer img {
     width: 179px;
@@ -435,7 +435,7 @@ nav li a:visited {
     /* color: #000; */
 }
 
-nav svg.sidebar {
+nav .sidebar {
     width: 34px;
     height: 34px;
 }
@@ -616,10 +616,10 @@ body.loaded::after {
         width: 34px;
         padding: 10px 0 10px 0;
     }
-
+/* 
     nav svg {
     left: 50%;
-    }
+    } */
 
     nav .copy {
         writing-mode: vertical-rl;
@@ -805,6 +805,7 @@ body.loaded::after {
     nav {
         padding: 15px 10px 25px 10px;
         height: 74px;
+        align-items: middle;
     }
 
     body.loaded::after {
