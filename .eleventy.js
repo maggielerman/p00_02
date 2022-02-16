@@ -145,12 +145,12 @@ module.exports = function(eleventyConfig) {
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
   }
+
   // eleventyConfig.addTransform("htmlmin", require("./src/utils/minify-html.js") );
 
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
-  // eleventyConfig.addPassthroughCopy("./src/site/assets/js/app.js");
 
   eleventyConfig.addNunjucksFilter('dateDisplay', function (date) {
     return date.toISOString()
@@ -183,7 +183,7 @@ module.exports = function(eleventyConfig) {
     },
     passthroughFileCopy: true,
     templateFormats : ["njk", "md"],
-    htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
+    htmlTemplateEngine :["njk", "md"],
+    markdownTemplateEngine : ["njk", "md"]
   };
 };

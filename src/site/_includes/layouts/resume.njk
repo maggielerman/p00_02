@@ -1,32 +1,32 @@
 ---
-layout:resume-base
+layout:layouts/resume-base.njk
 ---
 
 <main class="main container">
 
-        {% if collections.introduction.length %}
-            {% set intro = collections.introduction|first %}
-            <section class="section" id="section-introduction">
-                <h2 class="section__title">{{ intro.data.title }}</h2>
-                <div class="lead p-summary">
-                    {{ intro.templateContent | safe }}
-                </div>
-            </section>
-        {% endif %}
-
-        <section class="section" id="section-experience">
-            <h2 class="section__title">{{ strings.titles.experience }}</h2>
-            {% set entries = collections.work %}
-            {% set microformat = "p-experience" %}
-            {% include "components/resume/entrylist.njk" %}
+    {% if collections.introduction.length %}
+        {% set intro = collections.introduction | first %}
+        <section class="section" id="section-introduction">
+            <h2 class="section__title">{{ intro.data.title }}</h2>
+            <div class="lead p-summary">
+                {{ intro.templateContent | safe }}
+            </div>
         </section>
+    {% endif %}
 
-        <section class="section" id="section-education">
-            <h2 class="section__title">{{ strings.titles.education }}</h2>
-            {% set entries = collections.education %}
-            {% set microformat = "p-education" %}
-            {% include "components/resume/entrylist.njk" %}
-        </section>
+    <section class="section" id="work-experience">
+        <h2 class="section__title">{{ strings.titles.experience }}</h2>
+        {% set entries = collection.experience %}
+        {% set microformat = "p-experience" %}
+        {% include "components/resume/resume-sections/entrylist.njk"%}
+    </section>
+
+    <section class="section" id="section-apps">
+        <h2 class="section__title">{{ strings.titles.apps }}</h2>
+        {% set entries = collections.apps %}
+        {% set microformat = "p-apps" %}
+        {% include "components/resume/resume-sections/entrylist.njk"%}
+    </section>
 
     {% if author.skills or author.languages %}
         <div class="grid grid--2col">
@@ -54,12 +54,19 @@ layout:resume-base
         </div>
     {% endif %}
 
-    {% if repositories.length %}
-        <section class="section" id="section-oss">
-            <h2 class="section__title">{{ strings.titles.open_source }}</h2>
-            {% include "components/resume/repositories.njk" %}
-        </section>
-    {% endif %}
+    <section class="section" id="section-education">
+        <h2 class="section__title">{{ strings.titles.education }}</h2>
+        {% set entries = collections.education %}
+        {% set microformat = "p-education" %}
+        {% include "components/resume/resume-sections/entrylist.njk"%}
+    </section>
+
+    <section class="section" id="section-volunteering">
+        <h2 class="section__title">{{ strings.titles.volunteering }}</h2>
+        {% set entries = collections.volunteering %}
+        {% set microformat = "p-volunteering" %}
+        {% include "components/resume/resume-sections/entrylist.njk"%}
+    </section>
 
     {% if collections.custom.length %}
         {% set custom = collections.custom|first %}
@@ -72,4 +79,42 @@ layout:resume-base
             </div>
         </section>
     {% endif %}
+
 </main>
+<script>
+
+import 'focus-visible'
+
+document.documentElement.classList.remove('no-js')
+
+const onScroll =
+    ({ scrollClassName, scrollTreshold }) =>
+    () => {
+        const isOverTreshold = window.scrollY > scrollTreshold
+
+        if (isOverTreshold) {
+            document.documentElement.classList.add(scrollClassName)
+        } else {
+            document.documentElement.classList.remove(scrollClassName)
+        }
+    }
+
+const onScrollOptions = {
+    scrollClassName: 'js-scrolled',
+    scrollTreshold: 200
+}
+
+window.addEventListener('scroll', onScroll(onScrollOptions), { passive: true })
+
+// When the user clicks on the avatar, scroll to the top of the document
+document.querySelector('.vcard__avatar').addEventListener('click', () => {
+    console.log('clicked on avatar!')
+    document.body.scrollTop = 0 // For Safari
+    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+})
+
+// Print Button
+document.querySelector('.js-print').addEventListener('click', () => {
+    window.print()
+})
+</script>

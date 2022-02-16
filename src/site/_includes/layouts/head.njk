@@ -18,11 +18,13 @@
         {% include "../favicon.njk" %}
 
         {% if build.env == "development" %}
-        {% include "css-dev.njk" %}
+            {% include "css-dev.njk" %}
             <script src="https://cdn.tailwindcss.com"></script>
         {% else %}
-        {% include "css-prod.njk" %}
+            {% include "css-prod.njk" %}
         {% endif %}
+
+        
         <!-- Alpine Core -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
