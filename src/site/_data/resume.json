@@ -1,0 +1,73 @@
+{
+    "sectionTitles": {
+        "experience": "Work Experience",
+        "education": "Education",
+        "skills": "Skills",
+        "languages": "Languages",
+        "apps": "Indie Apps",
+        "volunteering": "Volunteering"
+    },
+
+    "labels": {
+        "email": "Email",
+        "telephone": "Telephone",
+        "print": "Print Résumé",
+        "present": "Present",
+        "lastUpdated": "Last updated",
+        "sourceCode": "Source",
+        "appStore": "Store"
+    },
+    "jobs": [
+         {
+          "title": "Marketing Design Lead",
+          "company": "Suzy",
+          "companyUrl": "https://www.suzy.com/",
+          "location": "New York, NY",
+          "start": "May 2019",
+          "end": "September 2020",
+          "duties": [
+            "Owned all marketing collateral (one sheets, sales decks, etc.) for sales and customer service teams",
+            "Conceptualized and executed on trade show & presentation designs, including large scale print materials (booth wraps, etc) ",
+            "Recent projects included owning the art direction and project management for the COVID Insight Hub, and executing on weekly deck designs and social media campaigns for successful webinar series "
+            ]
+        },
+        {
+          "title": "Cross-Functional Designer (contract)",
+          "organization": "Rocketrip",
+          "organizationUrl": "https://www.rocketrip.com/",
+          "location": "New York, NY",
+          "start": "September 2018",
+          "end": "April 2019",
+          "duties": [
+            "Collaborated with marketing, product, executive team in conceptualization and execution of brand refresh ",
+            "Owned the design and execution of Rocketrip case studies in collaboration with sales team and enterprise customers (ex. Twitter, Kelloggs, H&M)"
+            ]        
+          },
+    
+         {
+          "title": "Freelance Graphic Designer",
+          "organization": "Self Employed",
+          "organizationUrl": "N/A",
+          "location": "New York, NY",
+          "start": "October 2016",
+          "end": "May 2019",
+          "duties": [
+          "Strategized, designed, and executed on countless web, social media, and traditional print advertising projects for eCommerce and small business clients looking to expand marketplace reach"
+          ]
+        },
+        {
+          "title": "Freelance Consultant",
+          "organization": "Ecommerce Operation and Brand Stratedy Consulting",
+          "organizationUrl": "N/A",
+          "location": "New York, NY",
+          "start": "August 2016",
+          "end": "January 2014",
+          "duties": [
+            "Worked with small businesses to improve web and marketplace presence",
+            "Developed and optimized private eCommerce websites",
+            "Collaborated with clients on white label brand development"        
+          ]
+        }
+    ]
+}
+
