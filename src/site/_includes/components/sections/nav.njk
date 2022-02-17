@@ -34,9 +34,10 @@
         stroke-width: 6;
     }
 </style>
-<nav class="flex items-center"
+<nav class="flex items-center justify-between"
     x-data="{open: false}">
-    <div class="z-20 mt-0 md:-mt-5">
+{# BUTTON (ITEM 1) #}
+    <div class="z-20">
         <a 
         id="hb" 
         @click="open =! open"
@@ -49,12 +50,14 @@
             </svg>
         </a>
     </div>
-    <div x-cloak x-ref="menu" x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
+{# BUTTON END #}
+    
+    {# popout - not relavant rn #}
+    <div x-cloak x-ref="menu"x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
         class="bg-stone-200 text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
         {# <div class="toggle">
         {% include "components/sections/light-dark-toggle.njk"%}
         </div> #}
-       {# <div class="place-items-center "> #}
         <div class="grid grid-cols-1 md:grid-cols-2 divide-stone-400 md:divide-x-2 place-content-center md:place-items-start">
             <div @click="open =! open"  onclick="buttonChange()"
                 class="container align-middle items-center md:pl-20">
@@ -82,40 +85,27 @@
                     </a>
                 </div>
             </div>
-            {# CONTACT ALT OPTION #}
-            {# <div class"container align-middle">
-                <div class="mt-10 pt-7 border-t-2 md:border-t-0 md:mt-0 md:pt-0 md:mx-32 text-3xl font-bold leading-loose tracking-wider">Maggie Lerman</div>
-                <div class="mt-1 md:mx-32 text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
-                <div class="mt-1 md:mx-32 text-sm font-semibold"><a href="tel:+16464674522">+1(646)467-4522 </a> </div>
-                <div class="mt-1.5 md:mx-32 text-sm font-semibold"><a href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
-                <div class="md:mx-32 flex flex-row align-middle">
-                    <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                       {%include "src/site/images/icons/social/linkedin3.svg"%}
-                    </a>
-                    <a class="ml-3 md:ml-4" href="https://behance.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/behance3.svg"%}
-                    </a>
-                    <a class="ml-3 md:ml-4" href="https://dribbble.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/dribbble3.svg"%}
-                    </a>
-                </div>
-            </div> #}
         </div>
-        {# </div> #}
     </div>
-    <div class="copy text-stone-600">
+    {# popout-end - relavant rn #}
+
+{# COPYRIGHT TEXT - ITEM3 #}
+    <div class="copy justify-self-center text-stone-600">
         <span><i>© 2020-2022 Maggie Lerman
                 All rights reserved.</i>
         </span>
     </div>
+{# COPYRIGHT TEXT END - ITEM3 #}
 
-    <div class="mb-1 md:-mb-1">
+{# LOGO (ITEM 3) #}
+    <div class="">
         <a href="/#home">
             <svg class="sidebar" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM10.625 15.1365V14.794C10.625 14.5626 10.8126 14.375 11.0441 14.375H14.9506C15.1107 14.375 15.2569 14.4662 15.3271 14.6101L21.0095 26.2439C21.0646 26.3569 21.0662 26.4886 21.0136 26.6029L19.627 29.6184C19.5586 29.767 19.41 29.8622 19.2463 29.8622H18.4724C18.3159 29.8622 18.1725 29.7751 18.1004 29.6364L10.6721 15.3296C10.6412 15.27 10.625 15.2037 10.625 15.1365ZM10.625 18.9718V30.1595C10.625 30.3909 10.8126 30.5785 11.0441 30.5785H14.4125C14.644 30.5785 14.8316 30.3909 14.8316 30.1595V24.804C14.8316 24.7406 14.8173 24.678 14.7895 24.621L11.9596 18.7889C11.8896 18.6444 11.7432 18.5528 11.5826 18.5528H11.0441C10.8126 18.5528 10.625 18.7404 10.625 18.9718ZM23.6922 14.794V30.1594C23.6922 30.3909 23.8799 30.5785 24.1112 30.5785H26.704C26.9355 30.5785 27.1231 30.3909 27.1231 30.1594V14.794C27.1231 14.5626 26.9355 14.375 26.704 14.375H24.1112C23.8799 14.375 23.6922 14.5626 23.6922 14.794ZM30.017 29.9866C30.017 30.3135 30.282 30.5785 30.6089 30.5785H34.8188C35.0503 30.5785 35.2379 30.3909 35.2379 30.1594V26.79C35.2379 26.5586 35.0503 26.371 34.8188 26.371H34.3553C34.2588 26.371 34.1651 26.4043 34.0904 26.4653L30.1711 29.6619C30.0736 29.7414 30.017 29.8606 30.017 29.9866Z" fill="black"/>
             </svg>
         </a>
     </div>
+{# LOGO END #}
 </nav>
 <script>
   function buttonChange() {
