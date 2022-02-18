@@ -59,31 +59,48 @@
         {% include "components/sections/light-dark-toggle.njk"%}
         </div> #}
         <div class="grid grid-cols-1 md:grid-cols-2 divide-stone-400 md:divide-x-2 place-content-center md:place-items-start">
-            <div @click="open =! open"  onclick="buttonChange()"
-                class="container align-middle items-center md:pl-20">
+            <div @click="open =! open"  onclick="buttonChange()"class="container align-middle items-center md:pl-20">
                 <li><a class="rainbow" href="/#about">About</a> </li>
                 <li><a class="rainbow" href="/resume">C.V.</a> </li>
-                <li><a class="rainbow" href="/#portfolio">Select Work</a></li>
-                <li class="pb-5"><a class="rainbow" href="/contact">Contact</a> </li>
+                <li class="pb-5 md:pb-0"><a class="rainbow" href="/#portfolio">Select Work</a></li>
+                {# <li class="pb-5"><a class="rainbow" href="/contact">Contact</a> </li> #}
 
             </div>
             <div class"container align-middle">
-                <div class="pt-2.5 md:pt-0 md:mx-32 text-4xl font-black leading-relaxed tracking-widest border-stone-400 border-t-2 md:border-t-0">Let's Connect!</div>
-                <div class="md:mx-32 text-2xl font-black leading-relaxed tracking-widest">Maggie Lerman</div>
-                <div class="md:mx-32 text-xl font-semibold leading-loose tracking-wide">  Strategy. Design. Development. </div>
+                <div class="pt-2.5 md:pt-0 md:mx-32 text-4xl font-semibold leading-relaxed tracking-widest border-stone-400 border-t-2 md:border-t-0">
+                    Maggie Lerman
+                </div>
+                <div class="md:mx-32 text-xl font-semibold leading-relaxed tracking-wide">  Strategy. Design. Development. </div>
+                <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 leading-relaxed flex flex-row align-bottom space-x-3 md:space-x-4">
+
+                    <a class="align-bottom" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="align-bottom" href="https://behance.com/maggielerman" target="_blank">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <a class="align-bottom" href="https://dribbble.com/maggielerman" target="_blank">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a>
+                    {# <a class="align-bottom" href="https://codepen.com/maggielerman" target="_blank">
+                        <i class="fa-brands fa-codepen"></i>
+                    </a>       #}
+                    <a class="align-bottom" href="https://github.com/maggielerman" target="_blank">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>                              
+                    {# <a class="align-bottom" href="tel:+16464674522" target="_blank">
+                        <i class="fa-solid fa-phone"></i>                     
+                    </a>         
+                   <a class="align-bottom" href="mailto:lerman@magg1e.com" target="_blank">
+                        <i class="fa-solid fa-at"></i>
+                    </a> #}
+                </div>
                 <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 text-sm font-semibold leading-loose"><a href="tel:+16464674522">+1(646)467-4522 </a> </div>
                 <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 text-sm font-semibold leading-loose"><a href="mailto:lerman@magg1e.com">lerman@magg1e.com </a></div>
-                <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32 leading-tighter flex flex-row align-middle space-x-3 md:space-x-6">
-                    <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                       {%include "src/site/images/icons/social/linkedin.svg"%}
-                    </a>
-                    <a class="" href="https://behance.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/behance.svg"%}
-                    </a>
-                    <a class="" href="https://dribbble.com/maggielerman" target="_blank">
-                         {%include "src/site/images/icons/social/dribbble.svg"%}
-                    </a>
-                </div>
+               
+                {# <div @click="open =! open"  onclick="buttonChange()" class="md:mx-32">
+                     <a href="https://www.behance.net/gallery/61620071/crazybaby-futuristic-audio-electronics-brand-design" class="button h5 " target="_blank">Book a Call</a>
+                </div> #}
             </div>
         </div>
     </div>
