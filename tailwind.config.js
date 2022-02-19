@@ -1,4 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
@@ -29,9 +28,9 @@ module.exports = {
     //   xl: "1280px",
     // },
     extend: {
-      fontFamily: {
-        "firago": ["FiraGO", ...defaultTheme.fontFamily.sans],
-      },
+      // fontFamily: {
+      //   "firago": ["FiraGO", ...defaultTheme.fontFamily.sans],
+      // },
       fontSize: {
         sm2: "0.9375rem", // 15px label
         base: "1rem", // 16px base
@@ -63,17 +62,6 @@ module.exports = {
         "3.2": "0.8125rem", // 16px
         "4.5": "1.125rem", // 8px
         "11": "2.75rem", // 44px (once)
-      },
-      colors: {
-        gray: {
-          "150": "hsl(210, 44%, 97%)",
-          "250": "hsl(210, 40%, 93.5%)",
-          "550": "hsl(218, 20%, 63%)",
-          "650": "hsl(216, 15%, 48%)",
-          "750": "hsl(214, 17%, 32%)",
-          ...defaultTheme.colors.gray
-        },
-        link: "#fbf3f3"
       },
     },
   },

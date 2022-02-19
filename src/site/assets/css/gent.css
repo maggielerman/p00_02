@@ -24,6 +24,12 @@ html {
     background: 0 0;
 }
 
+@media print {
+    .noprint {
+       visibility: hidden;
+    }
+ }
+ 
 *,
 :after,
 :before {

@@ -8,12 +8,25 @@
     "telephone": "+1 646 467 4522",
     "website": "https://magg1e.com",
     "skills": [
-        "HTML",
-        "CSS",
-        "Javascript / ES6",
-        "UI Design",
-        "React",
-        "Git"
+        "Expert Level Adobe Creative Suite (Photoshop, InDesign, Illustrator)",
+        "Fluency in HTML5 & CSS3",
+        "Fluency in the standard product design tools (Figma, Sketch, Webflow, etc.)",
+        "Modern bootstrap frameworks"
+    ],
+    "skills02": [
+        "Git/Version Control",
+        "Sketch",
+        "Invision",
+        "Shopify",
+        "Responsive Design",
+        "Art Direction",
+        "Brand Identity",
+        "Adobe Creative Suite"
+    ],
+    "summary": [
+        "Innovative cross-functional designer and creative strategist passionate about building great brands",
+        "Adept in the areas of design identity, brand unification, and seed-stage startup brand positioning",
+        "Expert knowledge of the Adobe Creative Suite, including Photoshop, InDesign, and Illustrator"
     ],
     "languages": [
         {
@@ -37,6 +50,21 @@
             "user": "maggielerman",
             "url": "https://dribbble.com/maggielerman"
         }
+    ],
+    "education": [
+        {
+            "name": "42 SILICON VALLEY",
+            "degree": "Continuing Education, Computer Science",
+            "year": "2017",
+            "details": "Six month intensive in the fundamentals of computer science taught in the C programming language "
+        },
+        {
+            "name": "FORDHAM UNIVERSITY, LINCOLN CENTER",
+            "degree": "BS, Cognitive Psychology",
+            "year": "2011",
+            "details": null
+        }
+       
     ]
 
 }
