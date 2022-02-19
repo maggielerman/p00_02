@@ -18,6 +18,8 @@
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
     color: black !important;
+    padding: 0;
+    margin: 0;
   }
 
   .page {
@@ -42,7 +44,7 @@ html {
   font-size: 13.176471px;
 }
 
-/* For Letter size */
+
 
 @screen sm {
   html {
@@ -56,19 +58,6 @@ html {
   }
 }
 
-/* For A4 size */
-
-/* @screen sm {
-  html {
-    font-size: calc( 13.176471px + (16 - 13.176471) * (100vw - 640px) / (811 - 640) );
-  }
-}
-
-@screen md {
-  html {
-    font-size: calc( 12.288px + (16 - 12.288) * (100vw - 811px) / (1051 - 811) );
-  }
-} */
 
 @screen lg {
   html {
