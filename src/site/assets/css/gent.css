@@ -1440,11 +1440,11 @@ body.loaded .svg-line-animation path {
 }
 
 #rock-paper-scissors {
-    color: #000
+    color: #fff
 }
 
 #rock-paper-scissors .containerFixed {
-    background-image: linear-gradient( #DAD0C0 0%, #DAD0C0 100%);
+    background-image: linear-gradient( #1B6348 0%, #1B6348 100%);
 }
 
 #rock-paper-scissors .picture-container {
@@ -1456,7 +1456,7 @@ body.loaded .svg-line-animation path {
 }
 
 #rocketrip .containerFixed {
-    background-image: linear-gradient( #607E91 0%, #607E91 100%);
+    background-image: linear-gradient( #CB402B 0%, #CB402B 100%);
 }
 
 #rocketrip .picture-container {
