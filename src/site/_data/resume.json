@@ -47,7 +47,7 @@
          {
           "title": "Freelance Graphic Designer",
           "company": "Self Employed",
-          "companyUrl": "N/A",
+          "companyUrl": null,
           "location": "New York, NY",
           "start": "October 2016",
           "end": "May 2019",
@@ -58,7 +58,7 @@
         {
           "title": "Freelance Consultant",
           "company": "Ecommerce Operation and Brand Stratedy Consulting",
-          "companyUrl": "N/A",
+          "companyUrl": null,
           "location": "New York, NY",
           "start": "August 2016",
           "end": "January 2014",

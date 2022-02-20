@@ -1169,10 +1169,6 @@ body {
   margin: 0.5rem;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .-m-2 {
   margin: -0.5rem;
 }
@@ -1204,11 +1200,6 @@ body {
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .my-3\.2 {
@@ -1371,6 +1362,10 @@ body {
   margin-top: 0.375rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -1393,10 +1388,6 @@ body {
 
 .-mb-2 {
   margin-bottom: -0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .-mb-px {
@@ -1917,12 +1908,12 @@ body {
   border-radius: 0.75rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-none {
@@ -2078,11 +2069,6 @@ body {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-stone-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 162 158 / var(--tw-bg-opacity));
-}
-
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -2091,6 +2077,16 @@ body {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-stone-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 162 158 / var(--tw-bg-opacity));
 }
 
 .bg-stone-500 {
@@ -2238,14 +2234,6 @@ body {
   padding: 3rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -2256,6 +2244,10 @@ body {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -3174,9 +3166,9 @@ body .icon-parent::before {
     max-width: 66.40625rem;
   }
 
-  .print\:bg-stone-400 {
+  .print\:bg-red-400 {
     --tw-bg-opacity: 1;
-    background-color: rgb(168 162 158 / var(--tw-bg-opacity));
+    background-color: rgb(248 113 113 / var(--tw-bg-opacity));
   }
 
   .print\:bg-stone-200 {
@@ -3255,6 +3247,14 @@ body .icon-parent::before {
 
   .sm\:-ml-3 {
     margin-left: -0.75rem;
+  }
+
+  .sm\:ml-3\.2 {
+    margin-left: 0.8125rem;
+  }
+
+  .sm\:ml-3 {
+    margin-left: 0.75rem;
   }
 
   .sm\:mt-0 {
@@ -3508,6 +3508,10 @@ body .icon-parent::before {
     max-width: 66.40625rem;
   }
 
+  .md\:max-w-digitalletter {
+    max-width: 75rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3582,10 +3586,6 @@ body .icon-parent::before {
 
   .md\:p-16 {
     padding: 4rem;
-  }
-
-  .md\:p-1 {
-    padding: 0.25rem;
   }
 
   .md\:p-2 {

@@ -53,13 +53,13 @@
     ],
     "education": [
         {
-            "name": "42 SILICON VALLEY",
+            "name": "42 Silicon Valley",
             "degree": "Continuing Education, Computer Science",
             "year": "2017",
             "details": "Six month intensive in the fundamentals of computer science taught in the C programming language "
         },
         {
-            "name": "FORDHAM UNIVERSITY, LINCOLN CENTER",
+            "name": "Fordham University, Lincoln Center",
             "degree": "BS, Cognitive Psychology",
             "year": "2011",
             "details": null

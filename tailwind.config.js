@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
@@ -42,6 +43,7 @@ module.exports = {
         normal: "1.34",
       },
       maxWidth: {
+        "digitalletter": "75rem",
         "letter": "66.40625rem",
         "a4": "64.609375rem"
       },

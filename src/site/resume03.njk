@@ -2,283 +2,291 @@
 layout: layouts/layout.njk
 permalink : "{{page.fileSlug}}/"
 ---
-{# <main id="resume" class="w-full p-0 m-0"> #}
-<div class="bg-stone-200 print:bg-stone-400 hyphens-manual items-center">
-    {# <div class="border border-gray-300 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10"> #}
+
+<div class="bg-stone-200 print:bg-stone-200 hyphens-manual items-center h-full py-10">
 
     <!-- Page -->
-    <div class="pt-8 p-8 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
-    {# <div class="pt-8 p-8 mx-2 page max-w-2xl print:max-w-auto md:max-w-letter print:bg-stone-200 bg-stone-200 md:bg-stone-100 "> #}
 
-    {# <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-1"> #}
+      <div class="shadow-lg rounded-lg pt-8 p-8 mx-auto xsm:p-8 sm:p-9 md:p-16 page max-w-2xl print:max-w-letter md:max-w-digitalletter md:h-letter print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
 
-      <!-- Name -->
-      <header class="flex items-center mb-8 md:mb-11">
-        <div   class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-          style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
-          <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">M</div>
-          <div class="text-center initial">M</div>
-        </div>
-        <h1 class="text-2xl font-semibold text-gray-800 pb-px">
-          {{author.name}}
-        </h1>
-      </header>
-      <!-- end Name -->
-
-      <!-- Column -->
-      <div class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto">
-
-        <section class="mt-8 first:mt-0">
-
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              ABOUT ME
-            </h2>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  {{author.occupation}}
-                </h3>
-              </header>
+        <!-- Name -->
+        <header class="flex items-left mb-8 md:mb-11">
+          {# <div   class="initials-container mr-5 text-base leading-none"
+            style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+             <a href="/#home">{%include "src/site/images/icons/logos/logo-black.svg"%}</a>
+          </div>
+          <h1 class="text-2xl font-semibold text-gray-800 pb-px">
+            {{author.name}}
+          </h1> #}
+          <div class="px-2 mb-12">
+            <img
+              src={{author.avatar}}
+              alt="Profile Picture"
+              class="rounded-full w-48 mb-2"
+            />
+            <h1 class="text-left text-3xl font-semibold mb-2">{{author.name}}</h1>
+            <h2 class="text-left text-xl font-light">{{author.occupation}}</h2>
             <ul class="">
-            {%for item in author.summary %}
-              <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                {{item}}
-              </li>
-            {%endfor%}
+              {%for item in author.summary %}
+                <li class=" ml-3 sm:ml-3.2 mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="-ml-3 sm:-ml-3.2 absolute select-none transform -translate-y-px">›</span>
+                  {{item}}
+                </li>
+              {%endfor%}
             </ul>
-            </section>
 
           </div>
+              <section class="mt-8 first:mt-0">
 
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
 
-        </section>
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                CONTACT
+              </h2>
 
-        <section class="mt-8 first:mt-0">
-
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              EXPERIENCE
-            </h2>
-
-          </div>
-          {%for job in resume.jobs%}
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  {{job.title}}
-                </h3>
-                <p class="leading-normal text-md text-gray-600">
-                  {{job.start}} – {{job.end}} | {{job.company}}, {{job.location}}
-                </p>
-              </header>
-              <ul class="">
-                {%for duty in job.duties%}
-                  <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                    <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                    {{duty}}
+              <section class="mb-4.5 break-inside-avoid">
+                <ul class="list-inside pr-7">
+                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                    <a href="{{author.website}}" class="group">
+                      {{author.website}}
+                      <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                    </a>
                   </li>
-                {%endfor%}
-              </ul>
-            </section>
-          {%endfor%}
+                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                    {{author.location}}
+                  </li>
+                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                    {{author.email}}
+                  </li>
+                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                    {{author.telephone}}
+                  </li>
+                </ul>
+              </section>
 
-        </section>
+            </div>
 
-        <section class="mt-8 first:mt-0">
+          </section>
+        </header>
+        <!-- end Name -->
 
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
+        <!-- Column -->
+        <div class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto">
 
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              EDUCATION
-            </h2>
-          </div>
-            {%for school in author.education%}
+          <section class="mt-8 first:mt-0">
+
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
+
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                ABOUT ME
+              </h2>
+
               <section class="mb-4.5 break-inside-avoid">
                 <header>
                   <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                    {{school.name}}
+                    {{author.occupation}}
+                  </h3>
+                </header>
+              <ul class="">
+              {%for item in author.summary %}
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  {{item}}
+                </li>
+              {%endfor%}
+              </ul>
+              </section>
+
+            </div>
+
+
+          </section>
+
+          <section class="mt-8 first:mt-0">
+
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
+
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                EXPERIENCE
+              </h2>
+
+            </div>
+            {%for job in resume.jobs%}
+              <section class="mb-4.5 break-inside-avoid">
+                <header>
+                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                    {{job.title}}
                   </h3>
                   <p class="leading-normal text-md text-gray-600">
-                    {{school.year}} | {{school.degree}}
+                    {{job.start}} – {{job.end}} | {{job.company}}, {{job.location}}
                   </p>
                 </header>
-                  <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                    {{school.details}}
-                  </p>
+                <ul class="">
+                  {%for duty in job.duties%}
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                      {{duty}}
+                    </li>
+                  {%endfor%}
+                </ul>
               </section>
             {%endfor%}
-        </section>
 
-        {# <section class="mt-8 first:mt-0">
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              PROJECTS
-            </h2>
-          </div>
-          <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  <a href="https://github.com/WebPraktikos/universal-resume" class="group">
-                    Universal Resume
-                    <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
-                  </a>
-                </h3>
-                <p class="leading-normal text-md text-gray-600">
-                  Since 2019 | HTML CSS
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Good design is as little design as possible. Less, but better — because it concentrates on the essential
-                aspects, and the pro&shy;ducts are not burdened with non-essentials.
-              </p>
           </section>
-        </section> #}
 
-        <section class="mt-8 first:mt-0">
+          <section class="mt-8 first:mt-0">
 
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
 
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              SKILLS
-            </h2>
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                EDUCATION
+              </h2>
+            </div>
+              {%for school in author.education%}
+                <section class="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                      {{school.name}}
+                    </h3>
+                    <p class="leading-normal text-md text-gray-600">
+                      {{school.year}} | {{school.degree}}
+                    </p>
+                  </header>
+                    <p class="mt-2.1 text-md text-gray-700 leading-normal">
+                      {{school.details}}
+                    </p>
+                </section>
+              {%endfor%}
+          </section>
+
+          {# <section class="mt-8 first:mt-0">
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                PROJECTS
+              </h2>
+            </div>
+            <section class="mb-4.5 break-inside-avoid">
+                <header>
+                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                    <a href="https://github.com/WebPraktikos/universal-resume" class="group">
+                      Universal Resume
+                      <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                    </a>
+                  </h3>
+                  <p class="leading-normal text-md text-gray-600">
+                    Since 2019 | HTML CSS
+                  </p>
+                </header>
+                <p class="mt-2.1 text-md text-gray-700 leading-normal">
+                  Good design is as little design as possible. Less, but better — because it concentrates on the essential
+                  aspects, and the pro&shy;ducts are not burdened with non-essentials.
+                </p>
+            </section>
+          </section> #}
+
+          <section class="mt-8 first:mt-0">
+
+            <!-- To keep in the same column -->
+            <div class="break-inside-avoid">
+
+              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                SKILLS
+              </h2>
+
+              <section class="mb-4.5 break-inside-avoid">
+                <header>
+                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                    JavaScript
+                  </h3>
+                  <p class="leading-normal text-md text-gray-600">
+                    Middle Level
+                  </p>
+                </header>
+                <p class="mt-2.1 text-md text-gray-700 leading-normal">
+                  Good parts: pure function, higher-order functions, factory functions, composition. Bad parts:
+                  inheritance, this, new.
+                </p>
+                <div class="my-3.2 last:pb-1.5">
+                  <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
+                    <li
+                      class="px-2.5 mr-1.6 mb-1.6 text-base text-stone-900 print:bg-white print:border-inset bg-stone-400">
+                      ES6
+                    </li>
+                    <li
+                      class="px-2.5 mr-1.6 mb-1.6 text-base text-stone-100 print:bg-white print:border-inset bg-stone-500">
+                      Vue
+                    </li>
+                    <li
+                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                      Functional Programming
+                    </li>
+                    <li
+                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                      Node
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+            </div>
 
             <section class="mb-4.5 break-inside-avoid">
               <header>
                 <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  JavaScript
+                  Other
                 </h3>
-                <p class="leading-normal text-md text-gray-600">
-                  Middle Level
-                </p>
               </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Good parts: pure function, higher-order functions, factory functions, composition. Bad parts:
-                inheritance, this, new.
-              </p>
               <div class="my-3.2 last:pb-1.5">
                 <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-stone-900 print:bg-white print:border-inset bg-stone-400">
-                    ES6
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    CSS
                   </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-stone-100 print:bg-white print:border-inset bg-stone-500">
-                    Vue
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Rust
                   </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                    Functional Programming
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Git
                   </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                    Node
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Go
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Linux Server
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    UI Design
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Photoshop
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Illustrator
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Figma
+                  </li>
+                  <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                    Typography
                   </li>
                 </ul>
               </div>
             </section>
 
-          </div>
-
-          <section class="mb-4.5 break-inside-avoid">
-            <header>
-              <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                Other
-              </h3>
-            </header>
-            <div class="my-3.2 last:pb-1.5">
-              <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  CSS
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Rust
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Git
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Go
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Linux Server
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  UI Design
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Photoshop
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Illustrator
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Figma
-                </li>
-                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
-                  Typography
-                </li>
-              </ul>
-            </div>
           </section>
 
-        </section>
+    
 
-        <section class="mt-8 first:mt-0">
-
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-
-            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-              CONTACT
-            </h2>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <ul class="list-inside pr-7">
-                <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="//webpraktikos.com" class="group">
-                    webpraktikos.com
-                    <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
-                  </a>
-                </li>
-                <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="//twitter.com/webpraktikos" class="group">
-                    twitter.com/webpraktikos
-                    <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
-                  </a>
-                </li>
-                <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  1020 Wien, Austria
-                </li>
-                <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  hi@webpraktikos.com
-                </li>
-                <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  (+43) 0699 77 33 77 55
-                </li>
-              </ul>
-            </section>
-
-          </div>
-
-        </section>
+        </div>
+        <!-- end Column -->
 
       </div>
-      <!-- end Column -->
-
-    </div>
+      </div>
     <!-- end Page -->
-
-  {# </div> #}
 </div>
-{# </main> #}
+
 
