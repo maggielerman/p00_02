@@ -47,6 +47,11 @@ module.exports = {
         "letter": "66.40625rem",
         "a4": "64.609375rem"
       },
+      minWidth: {
+        "digitalletter": "75rem",
+        "letter": "66.40625rem",
+        "a4": "64.609375rem"
+      },      
       height: {
         "letter": "85.9375rem",
         "letter-col": "71.625rem",

@@ -4,20 +4,10 @@ permalink : "{{page.fileSlug}}/"
 ---
 
     <div class="container mx-auto max-w-screen-xl h-full">
-      <div
-        id="wrapper"
-        class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl"
-      >
-        <div
-          id="sidebar"
-          class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
-        >
+      <div id="" class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl">
+        <div id="" class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white">
           <div class="px-2 mb-12">
-            <img
-              src={{author.avatar}}
-              alt="Profile Picture"
-              class="rounded-full w-48 mx-auto mb-2"
-            />
+            <img src={{author.avatar}} alt="Profile Picture" class="rounded-full w-48 mx-auto mb-2"/>
             <h1 class="text-center text-3xl font-semibold mb-2">{{author.name}}</h1>
             <h2 class="text-center text-xl font-light">{{author.occupation}}</h2>
           </div>
@@ -25,11 +15,8 @@ permalink : "{{page.fileSlug}}/"
           <div class="font-light text-lg px-2 mb-12">
             <h2 class="text-xl font-semibold mb-4">Contact</h2>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/mail-outline.svg"
-                class="inline w-6 mr-4"
-                alt="Mail icon"
-              />
+            
+              <img src="./assets/mail-outline.svg" class="inline w-6 mr-4" alt="Mail icon"/>
               <a href="mailto:">{{author.email}}</a>
             </div>
             <div class="flex items-center my-3">

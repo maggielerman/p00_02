@@ -4,71 +4,47 @@ permalink : "{{page.fileSlug}}/"
 ---
 
 <div class="bg-stone-200 print:bg-stone-200 hyphens-manual items-center h-full py-10">
-
     <!-- Page -->
+  {# <div class="shadow-md print:shadow-none rounded-md print:rounded-none pt-8 p-8 mx-auto xsm:p-8 sm:p-9 md:p-16 page max-w-2xl print:max-w-letter print:min-w-letter md:max-w-digitalletter md:h-letter print:bg-stone-500 bg-stone-200 md:bg-stone-100 "> #}
+  <div class="pt-8 p-8 mx-auto page max-w-2xl print:max-w-letter md:max-w-digitalletter md:h-letter xsm:p-8 sm:p-9 md:p-16 print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
+        <div class="md:col-count-2 print:col-count-2 col-gap-md col-fill-auto">
+            <section>
+                <img src={{author.avatar}} alt="Profile Picture" class="rounded-full w-48 mb-2"/>
+              
+                <h2 class="uppercase mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                  {{author.name}}
+                </h2>
+            </section>
 
-      <div class="shadow-lg rounded-lg pt-8 p-8 mx-auto xsm:p-8 sm:p-9 md:p-16 page max-w-2xl print:max-w-letter md:max-w-digitalletter md:h-letter print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
+            <section class="mb-4.5 break-inside-avoid">
+                  <ul class="list-inside pr-7">
+                    <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                      <a href="//webpraktikos.com" class="group">
+                        webpraktikos.com
+                        <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                      </a>
+                    </li>
+                    <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                      <a href="//twitter.com/webpraktikos" class="group">
+                        twitter.com/webpraktikos
+                        <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                      </a>
+                    </li>
+                    <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                      1020 Wien, Austria
+                    </li>
+                    <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                      hi@webpraktikos.com
+                    </li>
+                    <li class="mt-1.5 leading-normal text-gray-700 text-md">
+                      (+43) 0699 77 33 77 55
+                    </li>
+                  </ul>
+            </section>
+        </div>
+          {# </div> #}
 
-        <!-- Name -->
-        <header class="flex items-left mb-8 md:mb-11">
-          {# <div   class="initials-container mr-5 text-base leading-none"
-            style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
-             <a href="/#home">{%include "src/site/images/icons/logos/logo-black.svg"%}</a>
-          </div>
-          <h1 class="text-2xl font-semibold text-gray-800 pb-px">
-            {{author.name}}
-          </h1> #}
-          <div class="px-2 mb-12">
-            <img
-              src={{author.avatar}}
-              alt="Profile Picture"
-              class="rounded-full w-48 mb-2"
-            />
-            <h1 class="text-left text-3xl font-semibold mb-2">{{author.name}}</h1>
-            <h2 class="text-left text-xl font-light">{{author.occupation}}</h2>
-            <ul class="">
-              {%for item in author.summary %}
-                <li class=" ml-3 sm:ml-3.2 mt-2.1 text-md text-gray-700 leading-normal">
-                  <span class="-ml-3 sm:-ml-3.2 absolute select-none transform -translate-y-px">›</span>
-                  {{item}}
-                </li>
-              {%endfor%}
-            </ul>
 
-          </div>
-              <section class="mt-8 first:mt-0">
-
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-
-              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-                CONTACT
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <ul class="list-inside pr-7">
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    <a href="{{author.website}}" class="group">
-                      {{author.website}}
-                      <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
-                    </a>
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    {{author.location}}
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    {{author.email}}
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    {{author.telephone}}
-                  </li>
-                </ul>
-              </section>
-
-            </div>
-
-          </section>
-        </header>
         <!-- end Name -->
 
         <!-- Column -->
@@ -284,8 +260,7 @@ permalink : "{{page.fileSlug}}/"
         </div>
         <!-- end Column -->
 
-      </div>
-      </div>
+  </div>
     <!-- end Page -->
 </div>
 
