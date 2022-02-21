@@ -651,7 +651,8 @@ body.loaded::after {
     .description {
         left: 20px;
         bottom: 20px;
-        max-width: calc(44.6009389671vw + 57.7464788732px);
+        max-width: calc(40vw + 50px); */
+        /* max-width: calc(44.6009389671vw + 57.7464788732px); */
     }
 
     .toggle {
