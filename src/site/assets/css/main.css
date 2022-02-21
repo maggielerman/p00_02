@@ -1432,7 +1432,7 @@ body.loaded .svg-line-animation path {
 }
 
 #huawei.lazyloaded {
-    background: #f1f3f5 url(/images/gent/huawei/bg.svg) center center/84vw auto no-repeat;
+    background: #f1f3f5 url(/images/example/huawei/bg.svg) center center/84vw auto no-repeat;
 }
 #suzy {
     color: #fff
@@ -1509,11 +1509,11 @@ body.loaded .svg-line-animation path {
 
 #alcatel.lazyloaded .containerFixed::before {
     background-color: #ece8e4;
-    background-image: url(/images/gents/alcatel-bg.jpg);
+    background-image: url(/images/example/alcatel-bg.jpg);
 }
 
 #alcatel.lazyloaded .picture-container {
-    background-image: url(/images/gent/alcatel-clock.gif), url(/images/gent/alcatel-phone.png);
+    background-image: url(/images/example/alcatel-clock.gif), url(/images/example/alcatel-phone.png);
     background-position: center bottom, center bottom;
     background-size: contain, contain;
     background-repeat: no-repeat;
@@ -1521,15 +1521,15 @@ body.loaded .svg-line-animation path {
 
 @supports((-webkit-mask-size:100% 100%) or (mask-size:100% 100%)) {
     #alcatel.lazyloaded .picture-container {
-        background-image: url(/images/gent/alcatel-clock.gif), url(/images/gent/alcatel-phone.jpg);
-        -webkit-mask: url(/images/gent/alcatel-phone-mask.png) center bottom/contain no-repeat;
-        mask: url(/images/gent/alcatel-phone-mask.png) center bottom/contain no-repeat;
+        background-image: url(/images/example/alcatel-clock.gif), url(/images/example/alcatel-phone.jpg);
+        -webkit-mask: url(/images/example/alcatel-phone-mask.png) center bottom/contain no-repeat;
+        mask: url(/images/example/alcatel-phone-mask.png) center bottom/contain no-repeat;
     }
 
     @media(min-device-pixel-ratio:1.5),
     (min-width:769px) {
         #alcatel.lazyloaded .picture-container {
-            background-image: url(/images/gent/alcatel-clock.gif), url(/images/gent/alcatel-phone@2x.jpg);
+            background-image: url(/images/example/alcatel-clock.gif), url(/images/example/alcatel-phone@2x.jpg);
         }
     }
 }
@@ -1837,7 +1837,7 @@ body.loaded .svg-line-animation path {
     }
 
     #crazybaby.lazyloaded.containerFixed::after {
-        background-image: url(/images/gent/crazybaby-xs-led.png);
+        background-image: url(/images/example/crazybaby-xs-led.png);
         background-size: 100% auto;
         background-position: 0 bottom;
     }
