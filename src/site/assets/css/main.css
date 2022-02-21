@@ -1190,7 +1190,7 @@ a.action-button:active {
     z-index: 20;
 } */
 
-#dream {
+/* #dream {
     position: absolute;
     z-index: 15;
     top: 50%;
@@ -1198,7 +1198,7 @@ a.action-button:active {
     width: 100%;
     text-align: center;
     mix-blend-mode: difference;
-}
+} */
 
 #dream>h1 {
     margin-top: -1.5em;
