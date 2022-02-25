@@ -1172,46 +1172,6 @@ a.action-button:active {
     }
 }
 
-/* canvas#galaxy {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0%;
-    z-index: 0;
-} */
-
-/* canvas#wow {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 20;
-} */
-
-/* #dream {
-    position: absolute;
-    z-index: 15;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    mix-blend-mode: difference;
-} */
-
-#dream>h1 {
-    margin-top: -1.5em;
-}
-
-#dream-trigger {
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    top: 250vh;
-    z-index: 9999;
-}
-
 .scrolldown {
     background: rgba(255, 255, 255, 0);
     width: 2px;
