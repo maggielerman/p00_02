@@ -7,8 +7,8 @@ permalink : "{{page.fileSlug}}/"
 
         {# {% include "components/sections/nav-tmp.njk"%} #}
 
-
-        {% include "components/sections/intro.njk"%}
+<div class="max-w-screen overflow-clip">
+         {% include "components/sections/intro.njk"%}
 
         <div class="showcase" id="portfolio">
                 {% include "components/portfolio/suzy.njk"%}
@@ -29,6 +29,8 @@ permalink : "{{page.fileSlug}}/"
                 {# {% include "components/portfolio/oneplus.njk"%} #}
 
             {# <div id="about-trigger"></div> #}
-                {% include "components/sections/about.njk"%}
-                {# {% include "components/sections/about02.njk"%} #}
+                {# {% include "components/sections/about.njk"%} #}
+                {% include "components/sections/about02.njk"%}
+                {# {% include "components/sections/about03.njk"%} #}
         </div>
+</div>
