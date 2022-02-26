@@ -1,9 +1,0 @@
-{# {% if entries %} #}
-<ol class="entrylist" reversed>
-    {% for entry in entries | reverse %}
-    <li class=" {% if microformat %}{{ microformat }}{% endif %}">
-        {% include "entry.njk" %}
-    </li>
-    {% endfor %}
-</ol>
-{# {% endif %} #}

@@ -4,101 +4,88 @@ permalink : "{{page.fileSlug}}/"
 ---
 
 <div class="bg-stone-200 print:bg-stone-200 hyphens-manual items-center h-full py-10">
-    <!-- Page -->
-  {# <div class="shadow-md print:shadow-none rounded-md print:rounded-none pt-8 p-8 mx-auto xsm:p-8 sm:p-9 md:p-16 page max-w-2xl print:max-w-letter print:min-w-letter md:max-w-digitalletter md:h-letter print:bg-stone-500 bg-stone-200 md:bg-stone-100 "> #}
-  <div class="pt-8 p-8 mx-auto page max-w-2xl print:max-w-letter md:max-w-digitalletter md:h-letter xsm:p-8 sm:p-9 md:p-16 print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
-        <div class="mb-8 grid grid-cols-4 ">
-          <div class=" mb-4.5">
-                <img src={{author.avatar}} alt="Profile Picture" class="rounded-full w-48 mb-2"/>
-
-              {# <div class"container align-middle mb-4"> #}
-               
-              {# </div> #}
+  <div class="pt-8 p-8 mx-auto page print:max-w-letter md:max-w-digitalletter md:h-letter xsm:p-8 sm:p-9 md:p-16 print:bg-stone-200 bg-stone-200 md:bg-stone-100 ">
+    <div class="mb-8 grid grid-cols-4 ">
+          <div class="col-span-4 print:col-span-1 md:col-span-1 mb-4.5">
+                <img src={{author.avatar}} alt="Profile Picture" class="rounded-full w-20 md:w-48 mb-2"/>
           </div>
-          <div class="col-span-3 mb-4.5">
+          <div class="col-span-4 print:col-span-3 md:col-span-3 mb-4.5">
 
-           <div class="pt-2.5 text-4xl font-semibold leading-relaxed tracking-widest border-stone-400 border-t-2">
-                    Maggie Lerman
-                </div>
-                <div class="leading-relaxed flex flex-row align-bottom space-x-3 md:space-x-4">
+            <div class="pt-2.5 text-4xl font-semibold leading-relaxed tracking-widest border-stone-400 border-t-2">
+                Maggie Lerman
+            </div>
+            <div class="leading-relaxed flex flex-row align-bottom space-x-3 md:space-x-4">
 
-                    <a class="align-bottom" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a class="align-bottom" href="https://behance.net/maggielerman" target="_blank">
-                        <i class="fa-brands fa-behance"></i>
-                    </a>
-                    <a class="align-bottom" href="https://dribbble.com/maggielerman" target="_blank">
-                        <i class="fa-brands fa-dribbble"></i>
-                    </a>
-                    <a class="align-bottom" href="https://github.com/maggielerman" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>                              
-                    <a class="align-bottom" href="tel:+16464674522" target="_blank">
-                        <i class="fa-solid fa-phone"></i>                     
-                    </a>         
-                   <a class="align-bottom" href="mailto:lerman@magg1e.com" target="_blank">
-                        <i class="fa-solid fa-at"></i>
-                    </a>
-                </div>
-                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                    {{author.occupation}}
-                  </h3>
-            
-                  <ul class="">
-                    {%for item in author.summary %}
-                      <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                        <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                        {{item}}
-                      </li>
-                    {%endfor%}
-                  </ul>
+                      <a class="align-bottom" href="https://www.linkedin.com/in/maggielerman/" target="_blank"> 
+                          <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                      <a class="align-bottom" href="https://behance.net/maggielerman" target="_blank">
+                          <i class="fa-brands fa-behance"></i>
+                      </a>
+                      <a class="align-bottom" href="https://dribbble.com/maggielerman" target="_blank">
+                          <i class="fa-brands fa-dribbble"></i>
+                      </a>
+                      <a class="align-bottom" href="https://github.com/maggielerman" target="_blank">
+                          <i class="fa-brands fa-github"></i>
+                      </a>                              
+                      <a class="align-bottom" href="tel:+16464674522" target="_blank">
+                          <i class="fa-solid fa-phone"></i>                     
+                      </a>         
+                    <a class="align-bottom" href="mailto:lerman@magg1e.com" target="_blank">
+                          <i class="fa-solid fa-at"></i>
+                      </a>
+                  </div>
+                    <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                      {{author.occupation}}
+                    </h3>
+              
+                    <ul class="">
+                      {%for item in author.summary %}
+                        <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                          <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                          {{item}}
+                        </li>
+                      {%endfor%}
+                    </ul>
+            </div>
+
           </div>
-
-        </div>
-          {# </div> #}
-
-
-        <!-- end Name -->
-
-        <!-- Column -->
-        <div class="md:col-count-2 print:col-count-2 col-gap-md col-fill-auto border-stone-200 border-2">
-
-
+          
+      {% for section in resume.sections%}
           <section class="mt-8 first:mt-0">
 
             <!-- To keep in the same column -->
             <div class="break-inside-avoid">
-
-              <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
-                EXPERIENCE
+              <h2 class="uppercase mb-4 font-bold tracking-widest text-sm2 text-gray-500 print:font-normal">
+                {{section.header}}
               </h2>
-
             </div>
-            {%for job in resume.jobs%}
+            {%for item in section.content%}
               <section class="mb-4.5 break-inside-avoid">
                 <header>
                   <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                    {{job.title}}
+                    {{item.one}}
                   </h3>
                   <p class="leading-normal text-md text-gray-600">
-                    {{job.start}} – {{job.end}} | {{job.company}}, {{job.location}}
+                    {{item.five}} | {{item.two}} {%if item.four%}, {{item.four}} {%endif%}
                   </p>
                 </header>
+                {%if item.six%}
                 <ul class="">
-                  {%for duty in job.duties%}
+                  {%for six in item.six%}
                     <li class="mt-2.1 text-md text-gray-700 leading-normal">
                       <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                      {{duty}}
+                      {{six}}
                     </li>
                   {%endfor%}
                 </ul>
+                {%endif%}
               </section>
             {%endfor%}
 
           </section>
-
-          <section class="mt-8 first:mt-0">
+      {%endfor%}
+          {# <section class="mt-8 first:mt-0">
 
             <!-- To keep in the same column -->
             <div class="break-inside-avoid">
@@ -235,15 +222,15 @@ permalink : "{{page.fileSlug}}/"
                   </li>
                 </ul>
               </div>
-            </section>
+            </section> #}
 
           </section>
 
     
 
-        </div>
+        {# </div> #}
         <!-- end Column -->
-
+    </div>
   </div>
     <!-- end Page -->
 </div>
