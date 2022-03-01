@@ -25,9 +25,13 @@
           {# mobile only #}
             <div class="sm:hidden -ml-3 leading-loose">
               <p class="mt-1 max-w-2xl text-sm">{{job.date}}</p>
-              <a class="" href="{{job.companyUrl}}" target="_blank">
-                <p class="mt-1 max-w-2xl text-basefont-semi-bold text-decoration underline underline-offset-6 hover:text-black">{{job.company}} ↗ </p>
-              </a>
+              {%if job.companyUrl %}
+                <a class="" href="{{job.companyUrl}}" target="_blank">
+                  <p class="mt-1 max-w-2xl text-base font-semi-bold text-decoration underline underline-offset-6 hover:text-black">{{job.company}} ↗ </p>
+                </a>
+              {%else %}
+                <p class="mt-1 max-w-2xl text-base font-semi-bold">{{job.company}}</p>
+              {%endif%}
               <p class="mt-1 max-w-2xl text-sm">{{job.location}}</p>
             </div>
         {# end mobile only #}

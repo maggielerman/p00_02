@@ -11,20 +11,19 @@
   "scripts": {
     "fetchData": "src/fetchData.sh",
     "fetchData2": "src/fetchData_sft.sh",
-    "build:dev": "npm run clean && ELEVENTY_ENV=development eleventy",
-    "build": "npm run build:css && npm run clean && npm run build:html",
-    "build:css": "npm run clean:css && npm run build:tailwind && postcss src/site/assets/css/tailwind.css -o src/site/assets/css/tailwind.css",
+    "build": "npm run clean && npm run build:css && npm run build:html",
+    "build:css": "npm run build:tailwind && postcss src/site/assets/css/tailwind.css -o src/site/assets/css/tailwind.css",
     "build:tailwind": "npx tailwindcss -i src/site/assets/css/styles/production.css -o src/site/assets/css/tailwind.css",
     "build:html": "eleventy",
     "watch:dev": "npm run clean && ELEVENTY_ENV=development eleventy --serve --port=3000",
-    "watch": "npm-run-all --parallel watch:html",
-    "watch:html": "eleventy --serve --port=3000",
-    "start": "npm run watch",
-    "clean": "rimraf dist",
+    "watch": "npm run clean && npm run build:css && eleventy --serve --port=3000",
+    "clean": "npm run clean:html && npm run clean:css",
+    "clean:html": "rimraf dist",
     "clean:css": "rimraf src/site/assets/tailwind.css",
     "killall": "killall node",
     "kill3000": "npx kill-port 3000",
-    "debug": "DEBUG=* eleventy"
+    "debug": "DEBUG=* eleventy",
+    "clear-cache": "rimraf .cache"
   },
   "dependencies": {
     "-": "0.0.1",
