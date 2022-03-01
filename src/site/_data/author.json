@@ -1,6 +1,8 @@
 {
     "name": "Maggie Lerman",
     "occupation": "Visual Design & Creative Development, Creative Strategy & Innovation",
+    "headline": "Strategy. Design. Development",
+    "summary": "Creative technology generalist specializing in end-to-end strategy and execution. Passionate about roles that require entrepreneurial thinking and an interdisciplinary approach.",
     "location": "New York City, USA",
     "avatar": "/images/maggie-lerman-headshot.png",
     "pronouns": "she/her",
@@ -22,9 +24,6 @@
         "Art Direction",
         "Brand Identity",
         "Adobe Creative Suite"
-    ],
-    "summary": [
-        "Creative technology generalist specializing in end-to-end strategy and execution. I am passionate about roles that require entrepreneurial thinking and an interdisciplinary approach."
     ],
     "languages": [
         {
