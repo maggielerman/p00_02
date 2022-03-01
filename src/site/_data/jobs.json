@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Marketing Design Lead",
+    "company": "Suzy",
+    "companyUrl": "https://www.suzy.com/",
+    "location": "New York, NY",
+    "date": "05.2019 - 09.2020",
+    "details": [
+      "Owned all marketing collateral (one sheets, sales decks, landing pages) for sales and customer service teams",
+      "Conceptualized and executed on trade show & presentation designs, including large scale print materials (booth wraps, etc) ",
+      "Worked in collaboration with CEO, and others in the C-Suite, to build and design pitch deck that was used during Suzy's $34 Millon Series C Fundraise",
+      "Owned the creative direction and project management for the 2020 COVID Insight Hub, and executed on weekly deck designs and social media campaigns for successful COVID-focused webinar series.",
+      "Owned all Instagram and Facebook social media assets, in partnership with the in-house copy writer."
+    ]
+  },
+  {
+    "title": "Cross-Functional Designer (contract)",
+    "company": "Rocketrip",
+    "companyUrl": "https://www.rocketrip.com/",
+    "location": "New York, NY",
+    "date": "09.2018 - 04.2019",
+    "details": [
+      "Collaborated with marketing, product, executive team in conceptualization and execution of brand refresh ",
+      "Owned the design and execution of Rocketrip case studies in collaboration with sales team and enterprise customers (ex. Twitter, Kelloggs, H&M)"
+    ]
+  },
+  {
+    "title": "Freelance Graphic Designer",
+    "company": "Self Employed",
+    "location": "New York, NY",
+    "date": "10.2016 - 05.2019",
+    "details": [
+      "Strategized, designed, and executed on countless web, social media, and traditional print advertising projects for eCommerce and small business clients looking to expand marketplace reach"
+    ]
+  },
+  {
+    "title": "Freelance Consultant",
+    "company": "Ecommerce Operation and Brand Stratedy Consulting",
+    "companyUrl": null,
+    "location": "New York, NY",
+    "date": "08.2014 - 01.2016",
+    "details": [
+      "Worked with small businesses to improve web and marketplace presence",
+      "Developed and optimized private eCommerce websites",
+      "Collaborated with clients on white label brand development"
+    ]
+  }
+]

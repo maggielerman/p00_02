@@ -1,34 +1,85 @@
-            <h2 class="uppercase mb-4 font-bold tracking-widest text-gray-500 print:font-normal">
-                {{section.header}}
-              </h2>
-                {%for item in section.content%}
-
-            <div role="" class="p-12 divide-y divide-gray-200 bg-stone-200">
-                <li class="flex py-6">
-                    <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                        <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center"></div>
-
-                        <div class="ml-4 flex flex-1 flex-col">
-                            <div>
-                                <div class="flex justify-between font-medium">
-                                  
-                                    <h3 class="text-blue-500">
-                                        {{item.one}}
-                                    </h3>
-                                    <p class="ml-4 text-green-500">{{item.four}}</p>
-                                </div>
-                         
-                                <p class="text-red-900"><a href="{{item.three}}">{{item.two}}</a></p>
-                      
-                            </div>
-                            <div class="flex flex-1 items-end justify-between ">
-                                <p class="text-sm text-orange-500">Qty 1</p>
-
-                                <div class="flex">
-                                    <button type="button" class="text-xs font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-stone-200 sm:shadow overflow-x-hidden overflow-y-scroll sm:rounded">
+  <div class="px-4 py-5 sm:px-6">
+    <h3 class="-ml-3 sm:ml-0 uppercase text-lg leading-6 font-medium text-black">Experience</h3>
+    {# <p class="mt-1 max-w-2xl text-sm text-gray-500"></p> #}
+  </div>
+{%for job in jobs%}
+  <div class="border-t border-gray-200">
+    <dl>
+      <div class="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-12 sm:px-6">
+        <dt class="invisible sm:visible sm:pr-20 text-sm font-medium text-stone-500 sm:text-right">
+          <p class="mt-1 max-w-2xl text-sm text-stone-500">{{job.date}}</p>
+          {%if job.companyUrl %}
+           <a class="" href="{{job.companyUrl}}" target="_blank">
+            <p class="mt-1 max-w-2xl text-base text-stone-700 font-semi-bold text-decoration underline underline-offset-8 hover:text-black">{{job.company}} ↗ </p>
+          </a>
+          {%else %}
+            <p class="mt-1 max-w-2xl text-base text-stone-700 font-semi-bold">{{job.company}}</p>
+          {%endif%}
+          <p class="mt-2 max-w-2xl text-sm text-black">{{job.location}}</p>
+        </dt>
+        <dd class="-mt-28 font-normal text-sm text-black sm:mt-0 sm:col-span-2">
+  
+              <h3 class="-ml-3 sm:-ml-20 text-lg leading-6 mb-2 tracking-wider font-medium text-black">{{job.title}}</h3>
+          {# mobile only #}
+            <div class="sm:hidden -ml-3 leading-loose">
+              <p class="mt-1 max-w-2xl text-sm">{{job.date}}</p>
+              <a class="" href="{{job.companyUrl}}" target="_blank">
+                <p class="mt-1 max-w-2xl text-basefont-semi-bold text-decoration underline underline-offset-6 hover:text-black">{{job.company}} ↗ </p>
+              </a>
+              <p class="mt-1 max-w-2xl text-sm">{{job.location}}</p>
             </div>
-            {%endfor%}
+        {# end mobile only #}
+                <ul class="list-none mt-2">
+                  {%for detail in job.details%}
+                    <li class="sm:-ml-20 mb-2 text-md text-black leading-snug">
+                      <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                      {{detail}}
+                    </li>
+                  {%endfor%}
+                </ul>
+                {# <ol class="list-outside">
+                  {%for item in job.six%}
+                      <li>{{item}}</li>
+                  {%endfor%}
+                <ol > #}
+        </dd>
+
+      </div>
+   
+      {# <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+        <dt class="text-sm font-medium text-gray-500">Attachments</dt>
+        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+          <ul role="list" class="border border-gray-200 rounded-md divide-y divide-gray-200">
+            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+              <div class="w-0 flex-1 flex items-center">
+                <!-- Heroicon name: solid/paper-clip -->
+                <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                </svg>
+                <span class="ml-2 flex-1 w-0 truncate"> resume_back_end_developer.pdf </span>
+              </div>
+              <div class="ml-4 flex-shrink-0">
+                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Download </a>
+              </div>
+            </li>
+            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+              <div class="w-0 flex-1 flex items-center">
+                <!-- Heroicon name: solid/paper-clip -->
+                <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                </svg>
+                <span class="ml-2 flex-1 w-0 truncate"> coverletter_back_end_developer.pdf </span>
+              </div>
+              <div class="ml-4 flex-shrink-0">
+                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Download </a>
+              </div>
+            </li>
+          </ul>
+        </dd>
+      </div> #}
+    </dl>
+  </div>
+{%endfor%}
+</div>
