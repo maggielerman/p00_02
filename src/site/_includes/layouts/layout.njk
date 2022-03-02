@@ -2,15 +2,16 @@
 <html xml:lang="en" lang="en">
     {% include "layouts/head.njk" %}
     <body id="home" class="loaded webp" aria-live="polite">
-        {% include "components/sections/preloader.njk"%}
+        {% include "components/sections/preloader.njk" %}
         {# <div class="toggle">
             {% include "components/sections/light-dark-toggle.njk"%}
         </div> #}
-        {% include "components/sections/nav.njk"%}
+        {% include "components/sections/nav.njk" %}
         {{ content | safe }}
-        {# {% include "components/sections/footer.njk"%} #}
         <div id="progress-end"></div>
         <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+
             // rainbow text script start
 
             function _toArray(arr) {
@@ -21,7 +22,6 @@
                 var _document$querySelect = document.querySelectorAll(selector)
                 var _document$querySelect2 = _toArray(_document$querySelect)
                 var elements = _document$querySelect2.slice(0)
-
                 return elements.map(function (element) {
                     var text = element.innerText.split('')
                     var myColors = text.map(function (letter) {
@@ -36,14 +36,15 @@
             makeMyColors('a.rainbow');
             makeMyColors('div.rainbow2');
 
-
-        </script>
-        <script>
             function videofallback(video) {
                 var img = video.querySelector('img')
                 if (img) 
                     video.parentNode.replaceChild(img, video)
+
+
                 
+
+
                 document.querySelector('body').classList.add('no-webm')
             }
         </script>
