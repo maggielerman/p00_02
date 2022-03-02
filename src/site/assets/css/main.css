@@ -24,11 +24,19 @@ html {
     background: 0 0;
 }
 
+/* .print-only {
+    visibility: hidden;
+}
+
 @media print {
     .noprint {
        visibility: hidden;
     }
- }
+    
+    .print-only {
+        display: block;
+    }
+ } */
  
 *,
 :after,
