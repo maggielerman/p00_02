@@ -10,9 +10,9 @@ permalink : "{{page.fileSlug}}/"
           id="resume-sidebar"
           class="w-full sm:w-1/4 p-8 border-l-2 bg-gradient-to-b from-stone-200 via-stone-200 to-white">
           <div class="px-2 mb-12">
-            <img data-src="/images/headshots/maggie-lerman-headshot.png" alt="Maggie Lerman" src="/images/headshots/maggie-lerman-headshot.png"  class="rounded-full w-48 mx-auto mb-2"/>
-            <h1 class="text-center text-3xl font-semibold mb-2">Danny Dev</h1>
-            <h2 class="text-center text-xl font-light">Fullstack Developer</h2>
+            {% png "src/site/images/headshots/v02_no-fill.png", "suzy", "lazyloaded rounded-full bg-stone-200", '(min-width: 30em) 50vw, 100vw'%}
+            <h1 class="text-center text-3xl font-semibold mb-2">{{author.name}}</h1>
+            <h2 class="text-center text-xl font-light">{{author.headline}}</h2>
           </div>
 
           <div class="font-light text-lg px-2 mb-12">

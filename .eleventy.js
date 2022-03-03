@@ -17,7 +17,7 @@ async function pngShortcode(src, alt, cls, sizes) {
     widths: [400, 800, 1200, 1600, null],
     formats: ["webp", "avif", null],
     urlPath: "/images/responsive",
-    outputDir: "public/images/responsive",
+    outputDir: "dist/images/responsive",
     useCache: true,
   });
 
