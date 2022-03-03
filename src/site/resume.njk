@@ -2,7 +2,63 @@
 layout: layouts/layout.njk
 permalink: "{{page.fileSlug}}/"
 --- 
-<div class="bg-stone-200">
+
+<div class="flex-inline md:flex">
+	<div class="item w-full justify-center md:w-1/4 h-auto bg-stone-200 text-black">
+          <div class="mt-12 px-2 mb-12">
+            <img data-src="/images/headshots/maggie-lerman-headshot.png" alt="{{author.name}}" src="/images/headshots/maggie-lerman-headshot.png"  class="rounded-full w-48 mx-auto mb-2"/>
+           </div>
+           <div class="text-justify">
+            <h1 class="text-2xl font-semibold mb-2">{{author.name}}</h1>
+            <h2 class="text-xl font-light">{{author.headline}}</h2>
+          </div>
+        {# social and contact info START #}
+            <div class="space-y-1.5">
+                    <div class="px-4 pb-1.5 flex flex-row space-x-6">
+
+                        <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank">
+                            <span style="font-size: 1.5em; color: black;">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
+                        </a>
+                        <a class="" href="https://behance.net/maggielerman" target="_blank">
+                            <span style="font-size: 1.5em; color: black;">
+                                <i class="fa-brands fa-behance"></i>
+                            </span>
+                        </a>
+                        <a class="" href="https://dribbble.com/maggielerman" target="_blank">
+                            <span style="font-size: 1.5em; color: black;">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </span>
+                        </a>
+                        <a class="align-bottom" href="https://github.com/maggielerman" target="_blank">
+                            <span style="font-size: 1.5em; color: black;">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="">
+                      <button class="mr-6 text-sm font-semibold">
+                              <span style="font-size: 1em; color: black;">
+                                  <i class="fa-solid fa-phone"></i>
+                              </span>
+                          <a href="tel:+16464674522">+1(646)467-4522</a>
+                      </button>
+
+                      <button class="text-sm font-semibold">
+                              <span style="font-size: 1em; color: black;">
+                                  <i class="fa-solid fa-envelope"></i>
+                              </span>
+                          <a href="mailto:lerman@magg1e.com">lerman@magg1e.com</a>
+                      </button>
+                    </div>
+            </div>
+        {# social/contact info end #}
+    </div>
+	<div class="item w-full md:w-3/4 h-auto bg-green-500">2</div>
+</div>
+
+{# <div class="bg-stone-200">
 <div class="bg-stone-200 px-8 py-8 md:py-14 mx-auto hyphens-manual items-center h-full max-w-6xl">
     <div class="bg-stone-200 md:bg-white border-black border-t-8 mb-8 grid grid-cols-4 space-y-6">
     <div class="col-start-1 col-end-5">
@@ -12,4 +68,4 @@ permalink: "{{page.fileSlug}}/"
     </div>
 
 </div>
-</div>
+</div> #}

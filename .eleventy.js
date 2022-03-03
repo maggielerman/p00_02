@@ -12,7 +12,26 @@ const htmlmin = require('./src/utils/minify-html.js');
 const CleanCSS = require("clean-css");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 
+async function pngShortcode(src, alt, cls, sizes) {
+  let metadata = await Image(src, {
+    widths: [400, 800, 1200, 1600, null],
+    formats: ["webp", "avif", null],
+    urlPath: "/images/responsive",
+    outputDir: "public/images/responsive",
+    useCache: true,
+  });
 
+  let imageAttributes = {
+    alt,
+    class: cls,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 async function videoShortcode(src, alt, sizes, classes,) {
   let metadata = await Image(src, {
@@ -98,6 +117,10 @@ module.exports = function(eleventyConfig) {
 
 
     //image shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("png", pngShortcode);
+  eleventyConfig.addLiquidShortcode("png", pngShortcode);
+  eleventyConfig.addJavaScriptFunction("png", pngShortcode);
+
   eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode);
   eleventyConfig.addLiquidShortcode("video", videoShortcode);
   eleventyConfig.addJavaScriptFunction("video", videoShortcode);

@@ -3,22 +3,14 @@ layout: layouts/layout.njk
 permalink : "{{page.fileSlug}}/"
 ---
 
- <body class="font-sans antialiased w-full">
+ <body class="antialiased w-full">
     <div class="container mx-auto max-w-screen-xl">
-      <main
-        id="wrapper"
-        class="flex flex-col sm:flex-row sm:m-12 shadow-2xl"
-      >
+      <main id="resume-wrapper" class="flex flex-col sm:flex-row sm:m-12 shadow-sm  border-t-8 border-black bg-stone-50">
         <div
-          id="sidebar"
-          class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-stone-200 via-stone-200 to-white"
-        >
+          id="resume-sidebar"
+          class="w-full sm:w-1/4 p-8 border-l-2 bg-gradient-to-b from-stone-200 via-stone-200 to-white">
           <div class="px-2 mb-12">
-            <img
-              src="./assets/jack-finnigan-rriAI0nhcbc-unsplash.jpg"
-              alt="Profile Picture"
-              class="rounded-full w-48 mx-auto mb-2"
-            />
+            <img data-src="/images/headshots/maggie-lerman-headshot.png" alt="Maggie Lerman" src="/images/headshots/maggie-lerman-headshot.png"  class="rounded-full w-48 mx-auto mb-2"/>
             <h1 class="text-center text-3xl font-semibold mb-2">Danny Dev</h1>
             <h2 class="text-center text-xl font-light">Fullstack Developer</h2>
           </div>
@@ -190,7 +182,7 @@ permalink : "{{page.fileSlug}}/"
             <p>Fluent</p>
           </div>
         </div>
-        <div class="content w-full p-12">
+        <div class="content w-full sm:w-3/4 p-12">
           <div id="profile" class="prose">
             <h2 class="section-headline">Profile</h2>
             <p>
