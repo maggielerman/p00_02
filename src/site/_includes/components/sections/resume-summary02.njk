@@ -1,0 +1,83 @@
+
+
+     <div class="flex flex-col md:flex-row md:mt-10 ">
+        <div class="md:w-1/4">
+            <div class="pl-5 text-center py-8">
+            {# <h2 class="w-24 pb-4 md:inline-flex mx-auto font-semibold tracking-wider text-3xl">{{ author.name }}</h2> #}
+             {# <div class="md:inline-flex mx-auto h-1 w-24 bg-stone-200"></div> #}
+               {% png "src/site/images/headshots/v02_no-fill.png", "suzy", "lazyloaded hidden md:inline-flex mx-auto lg:w-48 lg:h-48 rounded-full bg-stone-200", '(min-width: 30em) 50vw, 100vw'%}
+
+            </div>
+        </div>
+     
+            <div class="md:bg-white md:w-2/3 md:pl-8 md:pt-8 text-left">
+
+                 <h2 class="pb-4 font-semibold tracking-wider text-3xl">{{ author.name }}</h2>
+                    
+                        <div class="h-1 w-24 bg-stone-200"></div>
+                    <h3 class="py-4 uppercase text-lg leading-6 font-medium text-black">Summary</h3>
+
+                    <div class="mb-6">
+                        <p class="font-normal md:text-xl tracking-widest leading-loose"> 
+                        {{ author.summary }} 
+                        </p>
+                    </div> 
+             
+            </div>
+           <div class="md:bg-white md:w-1/6 md:pl-8 text-right">
+ 
+                
+
+                        <div class=" space-y-1.5">
+                            <div class="pb-1.5 flex flex-row space-x-6">
+
+                                <a class="" href="https://www.linkedin.com/in/maggielerman/" target="_blank">
+                                    <span style="font-size: 1.5em; color: black;">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </span>
+                                </a>
+                                <a class="" href="https://behance.net/maggielerman" target="_blank">
+                                    <span style="font-size: 1.5em; color: black;">
+                                        <i class="fa-brands fa-behance"></i>
+                                    </span>
+                                </a>
+                                <a class="" href="https://dribbble.com/maggielerman" target="_blank">
+                                    <span style="font-size: 1.5em; color: black;">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                    </span>
+                                </a>
+                                <a class="align-bottom" href="https://github.com/maggielerman" target="_blank">
+                                    <span style="font-size: 1.5em; color: black;">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                </a>
+                                <a class="align-bottom" href="https://vimeo.com/maggielerman" target="_blank">
+                                    <span style="font-size: 1.5em; color: black;">
+                                        <i class="fa-brands fa-vimeo"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="">
+                            <button class="px-6 pb-1 text-sm font-semibold">
+                                    <span style="font-size: 1em; color: black;">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                <a href="tel:+16464674522">+1(646)467-4522</a>
+                            </button>
+
+                            <button class="px-6 text-sm font-semibold">
+                                    <span style="font-size: 1em; color: black;">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                <a href="mailto:lerman@magg1e.com">lerman@magg1e.com</a>
+                            </button>
+                            </div>
+                        </div>
+                   
+        </div>
+                {# <div class=" space-x-6 sm:space-x-10"> 
+                    <p class="font-semibold text-lg py-4"> scroll for responsive or <span> <a href="/resume" class="button " target="_blank"> Download & Print Resume ↗ </a> </span> </p> 
+                </div>  #}
+            </div> 
+        </div>
+    </div> 
