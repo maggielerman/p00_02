@@ -3,17 +3,20 @@
       <div class="containerFixed"></div>
       <div class="description">
         <div class="h2">rocketrip</div>
-        <div class="h6">marketing design <span style="margin-left: 10px"> |</span> <span style="text-transform: lowercase; margin-left: 10px;">case study coming soon. </span> </div>
+        {# <div class="h6">marketing design <span style="margin-left: 10px"> |</span> <span style="text-transform: lowercase; margin-left: 10px;">case study coming soon. </span> </div> #}
+        <div class="h6">marketing design</div>
         <div class="h3">Corporate travel startup.</div>
-        <a href="http://rocketrip.com/" class="button h5 inverted" target="_blank">view website ↗</a>
+        <a href="http://rocketrip.com/" class="button h5 inverted" target="_blank">view website↗</a>
       </div>
       <div class="composition">
         <div class="picture-container">
-          <picture>
-          {# {% image "src/site/images/sections/prefix/prefix.jpg", "Prefix", '(min-width: 30em) 50vw, 100vw', 'absolute w-full rounded shadow-md' %} #}
-           <img data-src="/images/rocketrip/rocketrip01.png" alt="rocketrip" class="dynamic-images lazyloaded" src="/images/rocketrip/rocketrip01.png">
-          </picture>
-        </div>
+          {# <picture class=""> #}
+          {% png "src/site/images/rocketrip/rocketrip.png", "rocketrip", "dynamic-images lazyloaded", '50vw, 100vw'%}
+
+          {# {% png "src/site/images/rocketrip/rocketrip02.png", "Prefix", '50vw, 100vw', 'lazyloaded' %} #}
+           {# <img data-src="/images/rocketrip/rocketrip01.png" alt="rocketrip" class="dynamic-images lazyloaded" src="/images/rocketrip/rocketrip01.png"> #}
+          {# </picture> #}
+        </div> 
       </div>
     </div>
   </div>

@@ -1415,28 +1415,42 @@ body.loaded .svg-line-animation path {
 }
 
 #rock-paper-scissors {
-    color: #fff
+    color: #000
 }
 
 #rock-paper-scissors .containerFixed {
-    background-image: linear-gradient( #1B6348 0%, #1B6348 100%);
+    background-image: linear-gradient( #D8D0C8 0%, #F2E9D7 100%);
 }
 
 #rock-paper-scissors .picture-container {
     margin: auto 0
 }
 
-#rocketrip {
-    color: #fff
-}
+#rocketrip .containerCrop {
+    color: #fff;
+    background-image: linear-gradient( #46AAD0 0%, #5195C4 100%);
+    /* background-image: linear-gradient( #5195C4 0%, #96B0C4 100%); */
 
-#rocketrip .containerFixed {
-    background-image: linear-gradient( #CB402B 0%, #CB402B 100%);
-}
 
+
+}
 #rocketrip .picture-container {
+    width: auto;
     margin: auto 0
 }
+
+/* #rocketrip .picture-container {
+
+    height: 100%;
+    width: 100%;
+}
+
+#rocketrip .picture-container img {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+} */
 
 #loop {
     color: #fff;
@@ -1588,7 +1602,9 @@ body.loaded .svg-line-animation path {
 #crowdtap .containerCrop {
     color: #fff;
     background-color: #242034;
+    /* background-color: #FFB9C8; */
 }
+
 #logo .containerCrop {
     color: #fff;
     background-color: #749668;
