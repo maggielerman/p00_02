@@ -3,8 +3,15 @@ body {
 }
 
 body,
+html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+
+body,
 html {
-    font-family: Manrope, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; */
     font-size: 18px;
     background: #fff;
     padding: 0;
@@ -90,7 +97,7 @@ html {
     width: 100%;
 }
 
-@font-face {
+/* @font-face {
     font-family: Manrope;
     src: url(/assets/fonts/manrope/manrope-bold.woff2) format("woff2"), url(/assets/fonts/manrope/manrope-bold.woff) format("woff"), url(/assets/fonts/manrope/manrope-bold.otf?) format("truetype");
     font-style: normal;
@@ -102,6 +109,24 @@ html {
     src: url(/assets/fonts/manrope/manrope-medium.woff2) format("woff2"), url(/assets/fonts/manrope/manrope-medium.woff) format("woff"), url(/assets/fonts/manrope/manrope-medium.otf) format("truetype");
     font-style: normal;
     font-weight: 400;
+}  */
+
+
+@font-face {
+font-family: 'Inter var';
+font-weight: 100 900;
+font-display: swap;
+font-style: normal;
+font-named-instance: 'Regular';
+src: url("assets/fonts/inter/inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+font-family: 'Inter var';
+font-weight: 100 900;
+font-display: swap;
+font-style: italic;
+font-named-instance: 'Italic';
+src: url("assets/fonts/inter/inter-italic.var.woff2?v=3.19") format("woff2");
 }
 
 body {

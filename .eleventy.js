@@ -173,6 +173,8 @@ module.exports = function(eleventyConfig) {
 
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
+  eleventyConfig.addPassthroughCopy("./src/site/assets/fonts");
+
   // eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
 
   eleventyConfig.addNunjucksFilter('dateDisplay', function (date) {
