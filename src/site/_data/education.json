@@ -1,0 +1,23 @@
+[
+  {
+    "institution": "42 Silicon Valley",
+    "degree": "Continuing Education, Computer Science",
+    "year": "2017",
+    "details": "Six month intensive in the fundamentals of computer science taught in the C programming language.",
+    "location": "Fremont, California"
+
+  },
+  { 
+      "institution": "Fordham University, Lincoln Center",
+      "degree": "BS, Cognitive Psychology",
+      "year": "2011",
+      "location": "New York, New York"
+  },
+  {
+    "institution": "Cambridge University",
+    "degree": "Art Criticism",
+    "year": "2008",
+    "details": "Study Abroad",
+    "location": "Cambridge, England"
+  }
+]

@@ -1,34 +1,52 @@
-            <h2 class="uppercase mb-4 font-bold tracking-widest text-gray-500 print:font-normal">
-                {{section.header}}
-              </h2>
-                {%for item in section.content%}
 
-            <div role="" class="p-12 divide-y divide-gray-200 bg-stone-200">
-                <li class="flex py-6">
-                    <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                        <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center"></div>
+    <div class=" px-4 md:px-6 md:grid md:grid-cols-3 md:gap-12">
+        <dt class="invisible md:visible md:pr-20 text-sm font-medium text-stone-500 md:text-right">
+        </dt>
+          <dd class="mt-0 -md:mt-28 font-normal text-sm text-black md:mt-0 md:col-span-2">
+           <h3 class="-ml-3 md:-ml-20 mr-4 my-8  text-lg leading-6 md:mb-2 tracking-wider font-semibold uppercase  border-b-4 border-stone-200">
+            education
+           </h3>
+        </dd>
+    </div>
+           
+{%for item in education%}
+  <div>
+    <dl>
+      <div class="pb-12 md:pb-6 px-4 md:px-6 md:grid md:grid-cols-3 md:gap-12">
+        <dt class="invisible md:visible md:pr-20 text-sm font-medium text-stone-500 md:text-right">
+         <p class="mt-2 max-w-2xl text-sm text-black">{{item.year}}</p>
 
-                        <div class="ml-4 flex flex-1 flex-col">
-                            <div>
-                                <div class="flex justify-between font-medium">
-                                  
-                                    <h3 class="text-blue-500">
-                                        {{item.one}}
-                                    </h3>
-                                    <p class="ml-4 text-green-500">{{item.four}}</p>
-                                </div>
-                         
-                                <p class="text-red-900"><a href="{{item.three}}">{{item.two}}</a></p>
-                      
-                            </div>
-                            <div class="flex flex-1 items-end justify-between ">
-                                <p class="text-sm text-orange-500">Qty 1</p>
+          <p class="mt-2 max-w-2xl text-sm text-black">{{item.location}}</p>
 
-                                <div class="flex">
-                                    <button type="button" class="text-xs font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+        </dt>
+        <dd class="-mt-28 font-normal text-sm text-black md:mt-0 md:col-span-2">
+  
+              <h3 class="-ml-3 md:-ml-20 text-lg leading-6 mb-2 tracking-wider font-medium text-black">{{item.title}}</h3>
+        
+          {# mobile only #}
+            <div class="md:hidden -ml-3 leading-loose">
+              <p class="mt-12 md:mt-1 max-w-2xl text-sm">{{item.year}}</p>
+                {# <p class="mt-1 max-w-2xl text-base font-semi-bold">{{item.institution}}</p> #}
+              {# <p class="mt-1 max-w-2xl text-sm">{{item.location}}</p> #}
             </div>
-            {%endfor%}
+        {# end mobile only #}
+                <ul class="list-none mt-2 mb-2 md:mb-0">
+                    <li class="-ml-3 md:-ml-20 mb-2 text-base font-semi-bold">
+                    {{item.institution}}
+                    </li>
+                  <li class="-ml-3 md:-ml-20 mb-2 text-md font-semibold leading-snug">
+                      {{item.degree}}
+                    </li>
+                  {%if item.details%}
+                    <li class="-ml-3 md:-ml-20 mb-2 text-md text-black leading-snug">
+                      {{item.details}}
+                    </li>
+                  {%endif%}
+                </ul>
+          
+        </dd>
+
+      </div>
+    </dl>
+  </div>
+{%endfor%}
