@@ -1453,8 +1453,8 @@ body.loaded .svg-line-animation path {
 
 #rocketrip .containerCrop {
     color: #fff;
-    background-image: linear-gradient( #46AAD0 0%, #5195C4 100%);
-    /* background-image: linear-gradient( #5195C4 0%, #96B0C4 100%); */
+    /* background-image: linear-gradient( #46AAD0 0%, #5195C4 100%); */
+    background-image: linear-gradient( #5195C4 0%, #46AAD0 100%);
 
 
 
