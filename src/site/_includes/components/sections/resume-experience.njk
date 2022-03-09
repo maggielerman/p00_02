@@ -26,7 +26,13 @@
           <p class="mt-1 max-w-2xl text-sm text-stone-500">{{job.date}}</p>
           {%if job.companyUrl %}
            <a class="" href="{{job.companyUrl}}" target="_blank">
-            <p class="mt-1 max-w-2xl text-base text-stone-700 font-semi-bold text-decoration underline underline-offset-8 hover:text-black">{{job.company}} ↗ </p>
+            <p class="inline-flex mt-1 max-w-2xl text-base text-stone-700 font-semi-bold hover:text-black">{{job.company}} 
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8284 9.17158L14.3284 9.17158V8.67158H13.8284V9.17158ZM9.58578 9.67158H13.8284V8.67158H9.58578V9.67158ZM13.3284 9.17158L13.3284 13.4142H14.3284L14.3284 9.17158L13.3284 9.17158ZM13.4749 8.81802L7.81802 14.4749L8.52512 15.182L14.182 9.52513L13.4749 8.81802Z" fill="#151515"/>
+                </svg>
+              </span> 
+            </p>
           </a>
           {%else %}
             <p class="mt-1 max-w-2xl text-base text-stone-700 font-semi-bold">{{job.company}}</p>
@@ -42,7 +48,7 @@
               <p class="mt-1 max-w-2xl text-sm">{{job.date}}</p>
               {%if job.companyUrl %}
                 <a class="" href="{{job.companyUrl}}" target="_blank">
-                  <p class="mt-1 max-w-2xl text-base font-semi-bold text-decoration underline underline-offset-6 hover:text-black">{{job.company}} ↗ </p>
+                  <p class="mt-1 max-w-2xl text-base font-semi-bold text-decoration underline underline-offset-6 hover:text-black">{{job.company}}</p>
                 </a>
               {%else %}
                 <p class="mt-1 max-w-2xl text-base font-semi-bold">{{job.company}}</p>
