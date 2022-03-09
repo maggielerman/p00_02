@@ -10,20 +10,14 @@
     "telephone": "+1 646 467 4522",
     "website": "https://magg1e.com",
     "skills": [
-        "Expert Level Adobe Creative Suite (Photoshop, InDesign, Illustrator)",
-        "Fluency in HTML5 & CSS3",
-        "Fluency in the standard product design tools (Figma, Sketch, Webflow, etc.)",
-        "Modern bootstrap frameworks"
-    ],
-    "skills02": [
-        "Git/Version Control",
-        "Sketch",
-        "Invision",
-        "Shopify",
-        "Responsive Design",
-        "Art Direction",
-        "Brand Identity",
-        "Adobe Creative Suite"
+        "CSS Frameworks: Tailwind, Bootstrap",
+        "Static Site Generators: Eleventy, Gatsby",
+        "Visual Design, Brand Identity, Deck Design",
+        "Product Design: Figma, Sketch, Invision",
+        "Adobe Creative Suite: Photoshop, InDesign Illustrator",
+        "Javascript: Next.js, React",
+        "Html Templating Languages: Nunjucks, Handlebars, Liquid",
+        "Version Control and Web Hosting: Github, Vercel, Netfliy"
     ],
     "languages": [
         {

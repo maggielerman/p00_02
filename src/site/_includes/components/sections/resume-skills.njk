@@ -1,0 +1,15 @@
+ <div class=" px-4 md:px-6 md:grid md:grid-cols-3 md:gap-12">
+        <dt class="invisible md:visible md:pr-20 text-sm font-medium text-stone-500 md:text-right">
+        </dt>
+          <dd class="mt-0 -md:mt-28 font-normal text-sm text-black md:mt-0 md:col-span-2">
+           <h3 class="-ml-3 md:-ml-20 mr-4 my-8  text-lg leading-6 md:mb-2 tracking-wider font-semibold uppercase  border-b-4 border-stone-200">
+            skills
+           </h3>
+        </dd>
+    </div>
+    <div class="pl-0  mr-1 md:pl-72 grid grid-cols-2 md:grid-cols-3 gap-4">
+        {%for skill in author.skills%}
+            <div class=""> {{skill}} </div>
+        {%endfor%}
+    </div>
+
