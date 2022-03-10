@@ -135,8 +135,6 @@ module.exports = function(eleventyConfig) {
 
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/layout.njk');
-  eleventyConfig.addLayoutAlias('resume-base', 'layouts/resume-base.njk');
-  eleventyConfig.addLayoutAlias('resume', 'layouts/resume.njk');
 
   // a debug utility
   eleventyConfig.addFilter('dump', obj => {
@@ -174,6 +172,7 @@ module.exports = function(eleventyConfig) {
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/assets/fonts");
+  eleventyConfig.addPassthroughCopy("./src/site/assets/resume");
 
   // eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
 
