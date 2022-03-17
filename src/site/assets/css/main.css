@@ -1531,6 +1531,11 @@ body.loaded .svg-line-animation path {
     margin: auto 0
 }
 
+#suzy_case_study .first {
+    color: #fff;
+    background-image: linear-gradient( #4C06B7 0%, #351E58 100%);
+}
+
 #rock-paper-scissors {
     color: #000
 }
@@ -1723,6 +1728,7 @@ body.loaded .svg-line-animation path {
     background-color: #749668;
     /* background-color: #5051F0; */
 }
+
 /* #logo .containerCrop {
     color: #fff;
 }
