@@ -3,16 +3,18 @@ layout: "layouts/layout.njk"
 title: Suzy
 permalink : "{{page.fileSlug}}/"
 ---
-<div id="suzy_case_study">
+<div id="suzy_case_study" class="bg-zinc-200">
    
 {%include "components/portfolio/case-studies/suzy/00-cover.njk"%}
-<div class="bg-stone-100">
+{# <div class="bg-stone-100"> #}
   {%include "components/portfolio/case-studies/suzy/01-intro.njk"%}
-</div>
+{# </div> #}
+  {# {%include "components/portfolio/case-studies/suzy/02-gallery.njk"%} #}
+{%include "components/portfolio/case-studies/suzy/0x-print-collateral.njk"%}
+
 {%include "components/portfolio/case-studies/suzy/0x-video.njk"%}
 
 {# {%include "components/portfolio/case-studies/suzy/three-columns.njk"%} #}
-{%include "components/portfolio/case-studies/suzy/twgrid01.njk"%}
 
   <div class="flex md:mt-4 mt-6" style="color: #4A09AF;">
               <div class="mb-6" style="color: #4A09AF;">

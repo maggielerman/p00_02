@@ -369,6 +369,7 @@ body.loaded #preloader svg {
     top: 0;
     bottom: 0;
     right: 0;
+    border-radius: 20px;
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
 }
@@ -841,7 +842,7 @@ body.loaded::after {
     .containerCrop {
         border-radius: 20px;
     }
-
+ 
     .fullHeight {
         margin-bottom: 20px;
         box-shadow: 0 0 0 20px #fff;
@@ -967,6 +968,7 @@ body.loaded::after {
         bottom: 20px;
         width: calc(100% - 40px);
         height: calc(100vh - 40px);
+        border-radius: 20px;
     }
 
     .composition {
@@ -1266,7 +1268,7 @@ a.action-button:active {
 
 #intro-wrapper {
     height: 100vh;
-    /* height: calc(100vh - 40px); */
+    height: calc(100vh - 40px);
     /* background: #000; */
     position: relative;
     color: #fff;
@@ -1533,7 +1535,7 @@ body.loaded .svg-line-animation path {
 
 #suzy_case_study .first {
     color: #fff;
-    background-image: linear-gradient( #4C06B7 0%, #351E58 100%);
+    background-image: linear-gradient( #4C06B7 0%, #601cc7 100%);
 }
 
 #rock-paper-scissors {
@@ -1893,7 +1895,7 @@ body.loaded .svg-line-animation path {
         overflow: hidden;
     }
 
-    #oneplus {
+    /* #oneplus {
         border-radius: 0 0 25px 25px;
     }
 
@@ -1907,7 +1909,7 @@ body.loaded .svg-line-animation path {
 
     #oneplus .composition {
         left: 20%;
-    }
+    } */
 
     #huawei.lazyloaded .composition {
         height: 55vh;
