@@ -33,6 +33,37 @@
         stroke-dashoffset: -134;
         stroke-width: 6;
     }
+
+    .scroll-line{
+  background: red;
+  width:1px;
+  height: 80px;
+}
+.scroll-line .scroll-bar{
+  background: blue;
+  width:1px;
+  height: 80px;
+  animation: scroll 2s infinite;
+}
+@keyframes scroll {
+
+    0%,
+    to {
+      clip-path: inset(0 0 100% 0);
+        
+    }
+
+    33% {
+        clip-path: inset(0 0 0 0);
+    }
+    66% {
+        clip-path: inset(100% 0 0 0);
+    }
+
+    100% {
+      clip-path: inset(0 0 100% 0);
+  }
+}
 </style>
 {# <nav class="scroll-smooth hover:scroll-auto flex items-center justify-between noprint" #}
 
@@ -124,13 +155,15 @@
     {# popout-end - relavant rn #}
 
 {# COPYRIGHT TEXT - ITEM3 #}
-    <div class="copy text-stone-400">
+    <div class="copy text-zinc-300">
         <span><i>© 2020-2022 Maggie Lerman
                 All rights reserved.</i>
         </span>
     </div>
+   
 {# COPYRIGHT TEXT END - ITEM3 #}
 
+</div>
 {# LOGO (ITEM 3) #}
     <li class="">
         <a href="/#home">
