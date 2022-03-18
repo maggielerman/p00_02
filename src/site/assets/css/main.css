@@ -1256,9 +1256,9 @@ a.action-button:active {
     margin-bottom: 0;
 }
 
-/* #header.fullHeight::after {
+#header.fullHeight::after {
     display: none !important;
-} */
+}
 
 @media(max-width:359.5px) {
 
