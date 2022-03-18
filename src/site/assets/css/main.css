@@ -1254,9 +1254,9 @@ a.action-button:active {
     margin-bottom: 0;
 }
 
-#header.fullHeight::after {
+/* #header.fullHeight::after {
     display: none !important;
-}
+} */
 
 @media(max-width:359.5px) {
 
@@ -1725,21 +1725,13 @@ body.loaded .svg-line-animation path {
     /* background-color: #FFB9C8; */
 }
 
-#logo .containerCrop {
+#logo-branding .containerCrop {
     color: #fff;
     background-color: #749668;
     /* background-color: #5051F0; */
 }
 
-/* #logo .containerCrop {
-    color: #fff;
-}
-#logo.lazyloaded .containerFixed {
-    background-color: #000;
-    background-image: url(/images/branding/01.jpg);
-    background-size: contain;
-    background-position: center bottom;
-}
+/*
 #ecommerce.lazyloaded .containerFixed {
     background-color: #000;
     background-image: url(/images/ecommerce/01.png);
@@ -2100,7 +2092,7 @@ body.loaded .svg-line-animation path {
 
 @media(max-width:359.5px) {
     #about {
-        border-radius: 0 !important;
+        /* border-radius: 0 !important; */
     }
 }
 
