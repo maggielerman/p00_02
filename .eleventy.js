@@ -12,6 +12,7 @@ const htmlmin = require('./src/utils/minify-html.js');
 const CleanCSS = require("clean-css");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 
+
 async function pngShortcode(src, alt, cls, sizes) {
   let metadata = await Image(src, {
     widths: [400, 800, 1200, 1600, null],
@@ -33,32 +34,11 @@ async function pngShortcode(src, alt, cls, sizes) {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
-async function videoShortcode(src, alt, sizes, classes,) {
-  let metadata = await Image(src, {
-    widths: [400],
-    formats: ["webp"],
-    urlPath: "/videos/responsive",
-    outputDir: "dist/videos/responsive",
-    loop: true,
-    animated: true,
-    useCache: true,
-  });
-
-  let imageAttributes = {
-    alt,
-    class: classes,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  return Image.generateHTML(metadata, imageAttributes);
-}
 
 async function imageShortcode(src, alt, sizes, cls, style) {
   let metadata = await Image(src, {
     widths: [ 800, 1200],
-    formats: ["jpeg", "webp", "png"],
+    formats: ["jpeg", "webp", "png", "avif"],
     urlPath: "/images/responsive",
     outputDir: "dist/images/responsive",
    
@@ -120,10 +100,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("png", pngShortcode);
   eleventyConfig.addLiquidShortcode("png", pngShortcode);
   eleventyConfig.addJavaScriptFunction("png", pngShortcode);
-
-  eleventyConfig.addNunjucksAsyncShortcode("video", videoShortcode);
-  eleventyConfig.addLiquidShortcode("video", videoShortcode);
-  eleventyConfig.addJavaScriptFunction("video", videoShortcode);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
