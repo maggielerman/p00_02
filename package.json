@@ -15,7 +15,7 @@
     "build:css": "npm run build:tailwind && postcss src/site/assets/css/tailwind.css -o src/site/assets/css/tailwind.css",
     "build:tailwind": "npx tailwindcss -i src/site/assets/css/styles/production.css -o src/site/assets/css/tailwind.css",
     "build:html": "eleventy",
-    "watch:dev": "npm run clean && ELEVENTY_ENV=development eleventy --serve --port=3000",
+    "watch:dev": "ELEVENTY_ENV=development eleventy --serve --port=3000",
     "watch": "npm run clean && npm run build:css && eleventy --serve --port=3000",
     "clean": "npm run clean:html && npm run clean:css",
     "clean:html": "rimraf dist",
