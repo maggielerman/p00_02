@@ -14,11 +14,6 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="pinterest" content="nopin" />
-        <!--fonts - inter -->
-        {# <link rel="preconnect" href="https://fonts.googleapis.com"> #}
-        {# <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> #}
-        {# <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> #}
-        <!-- Font Awesome Icons -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <script src="https://kit.fontawesome.com/6c6143f336.js" crossorigin="anonymous"></script>
@@ -32,6 +27,9 @@
         {% else %}
             {% include "css-prod.njk" %}
         {% endif %}
+        {# lottie #}
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        {# vimeo #}
         <script src="https://player.vimeo.com/api/player.js"></script>
 
     </head>
