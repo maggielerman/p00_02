@@ -1,0 +1,23 @@
+ <div class="container mx-auto px-4 mt-4" x-data="{ image: 'image1' }">
+            <div>
+                <div x-show="image === 'image1'">
+                 {% png "src/site/images/branding/case-study/58williams.png", "suzy", ' 50vw, 100vw', 'w-full object-center object-cover rounded-lg' %}
+                </div>
+                 <div x-show="image === 'image2'">
+                 {% png "src/site/images/branding/case-study/bar-cart-love.png", "suzy", ' 50vw, 100vw', 'h-full object-center object-cover rounded-lg' %}
+                </div>
+                  <div x-show="image === 'image3'">
+                 {% png "src/site/images/branding/case-study/branch-textiles.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                </div>
+            <div class="flex items-center mt-4">
+                <a href="#" class="w-24 border border-transparent hover:border-blue-500" :class="{ 'border-blue-500' : image === 'image1'}" @click.prevent="image = 'image1'"\>
+                    {% png "src/site/images/branding/case-study/58williams.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                </a>
+                <a href="#" class="w-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image2' }" @click.prevent="image = 'image2'">
+                    {% png "src/site/images/branding/case-study/bar-cart-love.png", "suzy", ' 50vw, 100vw', 'h-full object-center object-cover rounded-lg' %}
+                </a>
+                <a href="#" class="w-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image3'">
+                 {% png "src/site/images/branding/case-study/branch-textiles.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                </a>
+            </div>
+</div>

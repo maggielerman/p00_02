@@ -1,0 +1,21 @@
+<section>
+  <div x-data="{open: false}">
+  
+      <div class="cursor-pointer w-full p-10" @click="open =! open" aria-label="Modal"> 
+                    {% image "src/site/images/suzy/case-study/social-graphics.jpg", "suzy", ' 50vw, 100vw', 'w-full h-full object-center object-cover rounded-lg' %}
+      </div>
+
+      <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
+          class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
+          <div class="bg-white w-full max-w-screen-lg max-h-lg grid grid-cols-1 md:grid-cols-2"
+              @mousedown.away="open = false" @keydown.window.escape="open = false" >
+        
+              <div class"container align-middle">
+                {% include "./brand01.njk" %}
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+</section>

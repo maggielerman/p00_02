@@ -18,6 +18,7 @@
         stroke-dasharray: 50 207;
         stroke-width: 6;
     }
+
     .change .line1 {
         stroke-dasharray: 90 207;
         stroke-dashoffset: -134;
@@ -34,42 +35,10 @@
         stroke-width: 6;
     }
 
-    .scroll-line{
-  background: red;
-  width:1px;
-  height: 80px;
-}
-.scroll-line .scroll-bar{
-  background: blue;
-  width:1px;
-  height: 80px;
-  animation: scroll 2s infinite;
-}
-@keyframes scroll {
-
-    0%,
-    to {
-      clip-path: inset(0 0 100% 0);
-        
-    }
-
-    33% {
-        clip-path: inset(0 0 0 0);
-    }
-    66% {
-        clip-path: inset(100% 0 0 0);
-    }
-
-    100% {
-      clip-path: inset(0 0 100% 0);
-  }
-}
 </style>
-{# <nav class="scroll-smooth hover:scroll-auto flex items-center justify-between noprint" #}
 
-<nav class=" flex-row-reverse md:flex-col scroll-smooth hover:scroll-auto items-center justify-between"
-    x-data="{open: false}">
-{# BUTTON (ITEM 1) #}
+<nav class=" flex-row-reverse md:flex-col scroll-smooth hover:scroll-auto items-center justify-between" x-data="{open: false}">
+
     <li class="z-20">
         <a 
         id="hb" 
@@ -83,9 +52,8 @@
             </svg>
         </a>
     </li>
-{# BUTTON END #}
+
     
-    {# popout - not relavant rn #}
     <div x-cloak x-ref="menu"x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
         class="bg-stone-200 text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
         {# <div class="toggle">
@@ -152,19 +120,15 @@
             </div>
         </div>
     </div>
-    {# popout-end - relavant rn #}
 
-{# COPYRIGHT TEXT - ITEM3 #}
     <div class="copy text-zinc-300">
         <span><i>© 2020-2022 Maggie Lerman
                 All rights reserved.</i>
         </span>
     </div>
    
-{# COPYRIGHT TEXT END - ITEM3 #}
 
-</div>
-{# LOGO (ITEM 3) #}
+
     <li class="">
         <a href="/#home">
             <svg width="40" height="40" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,7 +136,6 @@
             </svg>
         </a>
     </li>
-{# LOGO END #}
 </nav>
 <script>
   function buttonChange() {
