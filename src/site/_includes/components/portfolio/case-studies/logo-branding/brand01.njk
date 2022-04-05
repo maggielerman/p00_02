@@ -1,23 +1,30 @@
- <div class="container mx-auto px-4 mt-4" x-data="{ image: 'image1' }">
-            <div>
+ <div class="container w-full h-full object-cover mx-auto px-4 mt-4" x-data="{ image: 'image1' }">
+            <div class="">
                 <div x-show="image === 'image1'">
-                 {% png "src/site/images/branding/case-study/58williams.png", "suzy", ' 50vw, 100vw', 'w-full object-center object-cover rounded-lg' %}
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl01a.png", "suzy", ' 50vw, 100vw', 'w-full object-cover rounded-lg' %}
                 </div>
                  <div x-show="image === 'image2'">
-                 {% png "src/site/images/branding/case-study/bar-cart-love.png", "suzy", ' 50vw, 100vw', 'h-full object-center object-cover rounded-lg' %}
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl05a.png", "suzy", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
                 </div>
                   <div x-show="image === 'image3'">
-                 {% png "src/site/images/branding/case-study/branch-textiles.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl02a.png", "suzy", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
                 </div>
+                  <div x-show="image === 'image4'">
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl04a.png", "suzy", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
+                </div>
+            </div>
             <div class="flex items-center mt-4">
-                <a href="#" class="w-24 border border-transparent hover:border-blue-500" :class="{ 'border-blue-500' : image === 'image1'}" @click.prevent="image = 'image1'"\>
-                    {% png "src/site/images/branding/case-study/58williams.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                <a href="#" class="w-24 h-24 border border-transparent hover:border-blue-500" :class="{ 'border-blue-500' : image === 'image1'}" @click.prevent="image = 'image1'"\>
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl01a.png", "bar cart love - one", ' 50vw, 100vw', 'w-full object-cover rounded-lg' %}
                 </a>
-                <a href="#" class="w-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image2' }" @click.prevent="image = 'image2'">
-                    {% png "src/site/images/branding/case-study/bar-cart-love.png", "suzy", ' 50vw, 100vw', 'h-full object-center object-cover rounded-lg' %}
+                <a href="#" class="w-24 h-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image2' }" @click.prevent="image = 'image2'">
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl05a.png", "bar cart love - two", ' 50vw, 100vw', 'w-full object-cover rounded-lg' %}
                 </a>
-                <a href="#" class="w-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image3'">
-                 {% png "src/site/images/branding/case-study/branch-textiles.png", "suzy", ' 50vw, 100vw', 'object-center object-cover rounded-lg' %}
+                <a href="#" class="w-24 h-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image3'">
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl02a.png", "bar cart love - three", ' 50vw, 100vw', 'w-full object-cover rounded-lg' %}
+                </a>
+                 <a href="#" class="w-24 h-24 border border-transparent hover:border-blue-500 ml-2" :class="{ 'border-blue-500' : image === 'image3' }" @click.prevent="image = 'image4'">
+                 {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl04a.png", "bar cart love - four", ' 50vw, 100vw', 'w-full object-cover rounded-lg' %}
                 </a>
             </div>
-</div>
+{# </div> #}

@@ -13,7 +13,7 @@ const CleanCSS = require("clean-css");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 
 
-async function pngShortcode(src, alt, cls, sizes) {
+async function pngShortcode(src, alt, sizes, cls) {
   let metadata = await Image(src, {
     widths: [400, 800, 1200, 1600, null],
     formats: ["webp", "avif", null],
