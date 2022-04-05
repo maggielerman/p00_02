@@ -1,17 +1,23 @@
 <div class="grid grid-cols-2 gap-2 md:gap-6 p-2 md:p-6">
  
 
-  <section class="">
+  <section class="col-span-1">
     <div x-data="{open: false}">
     
         <div class="cursor-pointer object-cover h-full " @click="open =! open" aria-label="Modal"> 
             {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl01b.png", "bar cart love ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
         </div>
+        
 
         <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
-            class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
-            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden"
+            class="modal bg-black bg-opacity-50 p-4 md:p-8 text-left ease-in-out duration-300 fixed top-0 right-0 w-screen h-screen flex place-content-center">
+            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden relative"
                 @mousedown.away="open = false" @keydown.window.escape="open = false" >
+  
+                  <button class="absolute top-0 right-0 cursor-pointer py-2 px-4 hover:opacity-70"  @click="open =! open" @mousedown.away="open = false" @keydown.window.escape="open = false">
+                    <i class="fa-solid fa-xmark"></i> 
+                  </button>
+           
                       {% png "src/site/images/logo-branding/case-study/bar-cart-love/bcl01a.png", "bar cart love ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
             </div>
         </div>
@@ -20,18 +26,22 @@
     </div>
   </section>
 
-  <section class="">
+  <section class="col-span-1">
     <div x-data="{open: false}">
     
         <div class="cursor-pointer object-cover h-full" @click="open =! open" aria-label="Modal"> 
             {% png "src/site/images/logo-branding/case-study/branch-textiles/branch-textiles01c.png", "my dear watson ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
         </div>
-
         <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
-            class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
-            <div class="max-w-full max-h-full grid grid-cols-1 rounded-lg overflow-hidden"
+            class="modal bg-black bg-opacity-50 p-4 md:p-8 text-left ease-in-out duration-300 fixed top-0 right-0 w-screen h-screen flex place-content-center">
+            <div class="bg-white max-w-full max-h-full grid grid-cols-1 overflow-hidden relative"
                 @mousedown.away="open = false" @keydown.window.escape="open = false" >
-                            {% png "src/site/images/logo-branding/case-study/branch-textiles/branch-textiles01.png", "my dear watson ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
+  
+                  <button class="absolute top-0 right-0 cursor-pointer py-2 px-4 hover:opacity-70"  @click="open =! open" @mousedown.away="open = false" @keydown.window.escape="open = false">
+                    <i class="fa-solid fa-xmark"></i> 
+                  </button>
+           
+            {% png "src/site/images/logo-branding/case-study/branch-textiles/branch-textiles01.png", "branch textiles", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
             </div>
         </div>
 
@@ -46,55 +56,70 @@
             {% png "src/site/images/logo-branding/case-study/vectors/vector05.png", "dinosaur artwork", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
         </div>
 
-      <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
-            class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
-            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden"
+        <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
+            class="modal bg-black bg-opacity-50 p-4 md:p-8 text-left ease-in-out duration-300 fixed top-0 right-0 w-screen h-screen flex place-content-center">
+            <div class="bg-white max-w-full max-h-full grid grid-cols-1 overflow-hidden relative"
                 @mousedown.away="open = false" @keydown.window.escape="open = false" >
-            {% png "src/site/images/logo-branding/case-study/vectors/vector05.png", "dinosaur artwork", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
+  
+                  <button class="absolute top-0 right-0 cursor-pointer py-2 px-4 hover:opacity-70"  @click="open =! open" @mousedown.away="open = false" @keydown.window.escape="open = false">
+                    <i class="fa-solid fa-xmark"></i> 
+                  </button>
+           
+                      {% png "src/site/images/logo-branding/case-study/vectors/vector05.png", "dinosaur wall art", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
             </div>
         </div>
     </div>
   </section>
 
-   <section class="">
+    <section class="col-span-1">
     <div x-data="{open: false}">
     
         <div class="cursor-pointer object-cover h-full " @click="open =! open" aria-label="Modal"> 
-            {% png "src/site/images/logo-branding/case-study/58williams/58williams01b.png", "58 williams ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
+            {% png "src/site/images/logo-branding/case-study/58williams/58williams01b.png", "58 williams", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
         </div>
+        
 
         <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
-            class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
-            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden"
+            class="modal bg-black bg-opacity-50 p-4 md:p-8 text-left ease-in-out duration-300 fixed top-0 right-0 w-screen h-screen flex place-content-center">
+            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden relative"
                 @mousedown.away="open = false" @keydown.window.escape="open = false" >
-          
-                    {% png "src/site/images/logo-branding/case-study/58williams/58williams01c.png", "58 williams ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
-
+  
+                  <button class="absolute top-0 right-0 cursor-pointer py-2 px-4 hover:opacity-70"  @click="open =! open" @mousedown.away="open = false" @keydown.window.escape="open = false">
+                    <i class="fa-solid fa-xmark"></i> 
+                  </button>
+           
+                      {% png "src/site/images/logo-branding/case-study/58williams/58williams01c.png", "58 williams", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
             </div>
         </div>
 
 
     </div>
   </section>
-  <section class="">
+
+  <section class="col-span-1">
     <div x-data="{open: false}">
     
-        <div class="container cursor-pointer" @click="open =! open" aria-label="Modal"> 
-            {% png "src/site/images/logo-branding/case-study/vectors/vector03c.png", "my dear watson ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
+        <div class="cursor-pointer object-cover h-full" @click="open =! open" aria-label="Modal"> 
+            {% png "src/site/images/logo-branding/case-study/vectors/vector03c.png", "ice cream", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
         </div>
-
         <div x-show.transition.slide="open" x-transition x-transition.duration.500ms role="gallery" aria-modal="true"
-            class="modal bg-black bg-opacity-50 p-12 text-left ease-in-out duration-300 fixed top-0 right-0 w-full h-screen flex place-content-center">
-            <div class="bg-blue-500 max-w-full max-h-full grid grid-cols-1 overflow-hidden"
+            class="modal bg-black bg-opacity-50 p-4 md:p-8 text-left ease-in-out duration-300 fixed top-0 right-0 w-screen h-screen flex place-content-center">
+            <div class="bg-white max-w-full max-h-full grid grid-cols-1 overflow-hidden relative"
                 @mousedown.away="open = false" @keydown.window.escape="open = false" >
-          
-            {% png "src/site/images/logo-branding/case-study/vectors/vector03a.png", "my dear watson ", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
-
+  
+                  <button class="absolute top-0 right-0 cursor-pointer py-2 px-4 hover:opacity-70"  @click="open =! open" @mousedown.away="open = false" @keydown.window.escape="open = false">
+                    <i class="fa-solid fa-xmark"></i> 
+                  </button>
+           
+            {% png "src/site/images/logo-branding/case-study/vectors/vector03a.png", "ice cream", ' 50vw, 100vw', 'h-full w-full object-cover rounded-lg' %}
             </div>
         </div>
 
 
     </div>
   </section>
+
+
+
 
 </div>
