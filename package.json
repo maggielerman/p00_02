@@ -28,7 +28,7 @@
   "dependencies": {
     "-": "0.0.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "^1.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@lottiefiles/lottie-interactivity": "^0.1.3",
