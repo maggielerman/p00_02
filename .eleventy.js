@@ -109,6 +109,7 @@ module.exports = function(eleventyConfig) {
   // plugins
   eleventyConfig.addPlugin(pluginRss);
 
+
   // Layout aliases for convenience
   eleventyConfig.addLayoutAlias('default', 'layouts/layout.njk');
 
@@ -156,24 +157,44 @@ module.exports = function(eleventyConfig) {
     return date.toISOString()
   })
 
+  
   //browserSync settings
-  eleventyConfig.setBrowserSyncConfig({
-      callbacks: {
-        ready: function(err, browserSync) {
-          const content_404 = fs.readFileSync('dist/404.html');
+  // eleventyConfig.setBrowserSyncConfig({
+  //     callbacks: {
+  //       ready: function(err, browserSync) {
+  //         const content_404 = fs.readFileSync('dist/404.html');
 
-          browserSync.addMiddleware("*", (req, res) => {
-            // Provides the 404 content without redirect.
-            res.write(content_404);
-            res.end();
-          });
-        },
-      },
-      syncscroll: false,
-      ui: false,
-      ghostMode: false
-    });
+  //         browserSync.addMiddleware("*", (req, res) => {
+           
+  //           res.write(content_404);
+  //           res.end();
+  //         });
+  //       },
+  //     },
+  //     syncscroll: false,
+  //     ui: false,
+  //     ghostMode: false
+  //   });
 
+  eleventyConfig.setServerOptions({
+    // Show the server version number on the command line
+    showVersion: false,
+
+    // Change the name of the folder name used for injected scripts
+    injectedScriptsFolder: ".11ty",
+
+    // Number of times to increment a port is already in use
+    portReassignmentRetryCount: 10,
+
+    // Alias for backwards compatibility, renamed to `injectedScriptsFolder` in Dev Server 1.0+
+    folder: ".11ty",
+
+    // Alias for backwards compatibility, renamed to `liveReload` in Dev Server 1.0+
+    enabled: true,
+
+    // Alias for backwards compatibility, renamed to `domDiff` in Dev Server 1.0+
+    domdiff: true,
+  });
   return  {
     dir: {
       input: "src/site",
