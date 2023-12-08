@@ -6,7 +6,7 @@ const Cache = require("@11ty/eleventy-cache-assets");
 const filters = require('./src/utils/filters.js');
 const transforms = require('./src/utils/transforms.js');
 const shortcodes = require('./src/utils/shortcodes.js');
-const iconsprite = require('./src/utils/iconsprite.js');
+// const iconsprite = require('./src/utils/iconsprite.js');
 const htmlmin = require('./src/utils/minify-html.js');
 
 const CleanCSS = require("clean-css");
@@ -33,8 +33,6 @@ async function pngShortcode(src, alt, sizes, cls) {
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   return Image.generateHTML(metadata, imageAttributes);
 }
-
-
 async function imageShortcode(src, alt, sizes, cls, style) {
   let metadata = await Image(src, {
     widths: [ 800, 1200],
@@ -72,7 +70,7 @@ module.exports = function(eleventyConfig) {
     })
 
     // Icon Sprite
-    eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite)
+    // eleventyConfig.addNunjucksAsyncShortcode('iconsprite', iconsprite)
 
     //deepmerge!
   eleventyConfig.setDataDeepMerge(true);
@@ -119,7 +117,8 @@ module.exports = function(eleventyConfig) {
   });
   
   // Icon Sprite
-  eleventyConfig.addNunjucksAsyncShortcode('iconsprite', require("./src/utils/iconsprite.js") );
+  // eleventyConfig.addNunjucksAsyncShortcode('iconsprite', require("./src/utils/iconsprite.js") );
+  
   // grab excerpts and sections from a file
   eleventyConfig.addFilter("section", require("./src/utils/grabSection.js") );
 
