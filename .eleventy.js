@@ -148,7 +148,7 @@ module.exports = function(eleventyConfig) {
   // static assets to pass through
   eleventyConfig.addPassthroughCopy("./src/site/images");
   eleventyConfig.addPassthroughCopy("./src/site/assets/fonts");
-  eleventyConfig.addPassthroughCopy("./src/site/assets/resume");
+  eleventyConfig.addPassthroughCopy({ "./src/site/assets/resume": "/" });
 
   // eleventyConfig.addPassthroughCopy("./src/site/assets/css/*.css");
 
