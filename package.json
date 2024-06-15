@@ -17,7 +17,7 @@
     "build:html": "npx @11ty/eleventy",
     "watch:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve --port=3000",
     "watch": "npm run clean && npm run build:css && npx @11ty/eleventy --serve --port=3000",
-    "clean": "npm run clean:html && npm run clean:css",
+    "clean": "npm run clear-cache && npm run clean:html && npm run clean:css",
     "clean:html": "rimraf dist",
     "clean:css": "rimraf src/site/assets/tailwind.css",
     "killall": "killall node",

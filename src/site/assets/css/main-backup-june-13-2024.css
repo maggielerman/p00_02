@@ -568,7 +568,7 @@ body.loaded::before {
     top: 0;
     border-right: 20px;
     border-radius: 20px;
-    /*background-color: purple;*/
+    background-color: purple;
 }
 
 body.loaded::after {
@@ -1341,7 +1341,7 @@ a.action-button:active {
     border-radius: 1px;
     -webkit-animation: scrolldown 1.5s cubic-bezier(.77, 0, .175, 1) infinite;
     animation: scrolldown 1.5s cubic-bezier(.77, 0, .175, 1) infinite;
-    background: #fff;
+    background: purple;
 }
 
 .animated .scrolldown {

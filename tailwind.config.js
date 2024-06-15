@@ -6,7 +6,7 @@ module.exports = {
     './src/site/**/**/**/*.njk'
   ],
   theme: {
-  extend: {},
+  extend: { },
   plugins: [require('@tailwindcss/typography'), 
             require('@tailwindcss/forms'),
             ]
