@@ -362,7 +362,6 @@ body.loaded #preloader svg {
     overflow: visible;
     height: calc(100vh - 40px);
     z-index: 5;
-    /*border-radius: 20px;*/
 }
 
 .showcase>.shown:nth-child(1) {
@@ -403,7 +402,7 @@ body.loaded #preloader svg {
     align-items: center;
     -webkit-transform-style: preserve-3d;
     z-index: 4;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 .picture-container {
@@ -414,8 +413,6 @@ body.loaded #preloader svg {
     text-align: center;
     height: 100%;
     width: 100%;
-    border-radius: 20px;
-
 }
 
 .picture-container img {
@@ -423,7 +420,6 @@ body.loaded #preloader svg {
     max-width: 100%;
     display: inline-block;
     vertical-align: top;
-    border-radius: 20px;
 }
 
 .containerFixed::after,
@@ -1235,7 +1231,7 @@ a.action-button:hover {
     border-color: #D9C6BE;
     color: #D9C6BE;
     /*background-color: #fff;*/
-    background-color: magenta;
+    /*background-color: magenta;*/
 
 }
 
@@ -1435,43 +1431,6 @@ body.loaded .svg-line-animation path {
     opacity: 0;
 }
 
-.aboutActive a.about-link:link,
-.aboutActive a.about-link:visited {
-    /* color: #D9C6``BE; */
-    color: black;
-}
-
-.aboutActive #intro {
-    visibility: visible !important;
-    height: auto;
-    border-radius: 20px;
-
-}
-
-/*.aboutActive #intro .containerCrop {*/
-/*    position: relative;*/
-/*    border-radius: 20px;*/
-/*}*/
-
-.aboutActive #intro .description {
-    transform: translate(-50vw, 0);
-}
-
-.aboutActive #intro article {
-    transition: transform 1.5s cubic-bezier(.66, 0, .34, 1);
-    transform: translate(0, 0);
-    opacity: 1;
-}
-
-.aboutActive #intro .composition {
-    transform: translate(-42vw, 0);
-}
-
-.aboutActive #intro .composition #intro-img {
-    opacity: 1;
-}
-
-
 .showcase {
     position: relative;
     z-index: 4;
@@ -1620,15 +1579,6 @@ body.loaded .svg-line-animation path {
         }
     }
 
-    .aboutActive #intro .description {
-        transform: translate(-75vw, 0);
-    }
-
-    .aboutActive #intro .composition {
-        transform: translate(-77%, 0);
-    }
-
-    
 
     #oneplusTrigger {
         margin-top: -50%;
@@ -1723,26 +1673,6 @@ body.loaded .svg-line-animation path {
             transform: translate(0, 0);
         }
     }
-}
-
-#about {
-    /* background: #000; */
-    position: relative;
-    padding: var(--content-padding);
-}
-
-#about .toggle {
-    position: absolute;
-     color: pink;
-}
-
-#about-portrait-trigger {
-    position: absolute;
-    margin-top: -33vh;
-}
-
-#about-intro {
-    height: 90vh;
 }
 
 #about-intro>div {
