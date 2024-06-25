@@ -655,6 +655,10 @@ html {
   z-index: 20;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .z-50 {
   z-index: 50;
 }
