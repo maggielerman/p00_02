@@ -8,9 +8,8 @@ permalink : "{{page.fileSlug}}/"
         <div class="fixed top-0 left-0 right-0 start-0 z-50 flex justify-between w-full h-4 bg-white"></div>
         <div class="fixed bottom-0 left-0 right-0 start-0 z-50 flex justify-between w-full h-4 bg-white"></div>
 
-
+        {% include "components/sections/intro.njk"%}
         <div class="showcase" id="portfolio">
-                {% include "components/sections/intro.njk"%}
                 {% include "components/portfolio/citi.njk"%}
                 {% include "components/portfolio/citi-alt.njk"%}
                 {% include "components/portfolio/suzy.njk"%}
@@ -18,7 +17,7 @@ permalink : "{{page.fileSlug}}/"
                 {% include "components/portfolio/crowdtap.njk"%}
                 {% include "components/portfolio/rocketrip.njk"%}
                 {% include "components/portfolio/logo-branding.njk"%}
-                {% include "components/sections/about.njk"%}
         </div>
+        {% include "components/sections/about.njk"%}
 
 </div>
