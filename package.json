@@ -41,7 +41,7 @@
     "cssnano": "^4.1.11",
     "eleventy-plugin-embed-everything": "^1.14.0",
     "eleventy-plugin-purgecss": "^0.4.0",
-    "engine.io-client": "^3.5.1",
+    "engine.io-client": "^6.0.0",
     "fs": "^0.0.1-security",
     "html-minifier": "^4.0.0",
     "mime": "^1.4.1",
