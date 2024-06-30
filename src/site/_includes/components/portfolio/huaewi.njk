@@ -1,0 +1,76 @@
+<style>
+
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translatey(-20px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-one {
+        background-color: #255BE3;
+        width:300px;
+        height: auto;
+        box-sizing: border-box;
+        /*border: 5px white solid;*/
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img { width: 100%; height: auto; }
+    }
+</style>
+
+<div id="crazybaby" class="fullHeight lazyloaded"
+     style="color: #fff; background-color: #101630;">
+    <div class="containerCrop">
+        <div class="containerFixed"></div>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+        <dotlottie-player src="https://lottie.host/55b2917b-4c16-4b6e-b07f-e068d5d77039/vY9kyuWDgq.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <div class="description">
+            <div class="h2">citigroup</div>
+            <div class="h6">avp design, global user experience
+            </div>
+            <div class="h3">lorem ipsum dolor amt sit. second sentence placeholder text words.</div>
+            <div class="items-center space-x-6 sm:space-x-10">
+              <a href="/suzy" class="button h5 inverted" target="">
+                               View Case Study
+               </a>
+               <a href="https://citi.com/" class="button h5 inverted" target="_blank">
+                               View Website
+               </a>
+            </div>
+        </div>
+        <div class="composition">
+            <div class="picture-container">
+                <div class="container">
+                    <div class="item-one">
+                        {% png "src/site/images/citi/item01a.png", "citi terminal chart element", "dynamic-images lazyloaded", '(min-width: 30em) 50vw, 100vw'%}
+                    </div>
+                </div>
+<!--                <div class="avatar">-->
+<!--                {% png "https://s3-us-west-2.amazonaws.com/s.cdpn.io/751678/skytsunami.png", "citi", "dynamic-images lazyloaded", '(min-width: 30em) 50vw, 100vw'%}-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<!--1-->
+   <div class="bg-white max-w-lg my-auto mx-auto text-sm">
+      <ul class="shadow-box">
+        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+          <button type="button" class="w-full px-8 py-2 " @click="selected !== 1 ? selected = 1 : selected = null">
+            <div class="flex items-center justify-between">
+              Strategy and Operations:
+            </div>
+          </button>
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+            <div class="px-8 py-2 ">
+              Collaborating directly with senior UX leadership to establish a UX Center of Excellence “boots on the ground”
+            </div>
+            <div>
+              Roles and Responsibilities:
+              As part of the Global UX Team, I was deeply involved in formulating and executing design strategies that ensured brand cohesion and a seamless user experience across Citigroup’s digital properties. This included: <br> • Collaborating closely with project managers and senior leadership to align design initiatives with business goals. <br> • Ensuring consistency in design language and user experience across all touchpoints.
+
+              Collaboration:
+              I worked with various teams across the organization, including marketing, development, and product management, to ensure our design strategies were effectively implemented.
+
+              Impact:
+              The strategies I helped develop led to more cohesive and intuitive user interfaces, contributing to improved user satisfaction and engagement across Citigroup’s digital platforms.
+
+            </div>
+
+          </div>
+
+        </li>
+
+
+        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+          <button type="button" class="w-full px-8 py-2" @click="selected !== 2 ? selected = 2 : selected = null">
+            <div class="flex items-center justify-between">
+              Hands-on Design:
+            </div>
+          </button>
+
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+            <div class="px-8 py-2 ">
+              I have selected two projects to walk through:
+              <ul>
+                <ol>
+                  Project One
+                </ol>
+                <ol>
+                  Project Two
+                </ol>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+
+
+        <li class="relative border-b border-gray-200" x-data="{selected:null}">
+
+          <button type="button" class="w-full px-8 py-2" @click="selected !== 3 ? selected = 3 : selected = null">
+            <div class="flex items-center justify-between">
+              UX Mentorship
+            </div>
+          </button>
+
+          <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+            <div class="px-8 py-2">
+              teaching actionable UX solutions to non-uxers across numerous teams.            </div>
+          </div>
+
+        </li>
+
+      </ul>
+    </div>
+<!--end 1-->

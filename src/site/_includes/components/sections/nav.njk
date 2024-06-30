@@ -7,7 +7,7 @@
     }
     .line1 {
         stroke-dasharray: 50 207;
-        
+
         stroke-width: 6;
     }
     .line2 {
@@ -34,10 +34,9 @@
         stroke-dashoffset: -134;
         stroke-width: 6;
     }
-
 </style>
 
-<nav class=" flex-row-reverse md:flex-col scroll-smooth hover:scroll-auto items-center justify-between" x-data="{open: false}">
+<nav class="text-left flex-row-reverse md:flex-col scroll-smooth hover:scroll-auto items-center justify-between" x-data="{open: false}">
 
     <li class="z-20">
         <a 
@@ -54,25 +53,22 @@
     </li>
 
     
-    <div x-cloak x-ref="menu"x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true"
-        class="bg-stone-200 text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
-        {# <div class="toggle">
-        {% include "components/sections/light-dark-toggle.njk"%}
-        </div> #}
-        <div class="grid grid-cols-1 md:grid-cols-2 divide-stone-400 md:divide-x-2 place-content-center md:place-items-start">
-            <div @click="open =! open"  onclick="buttonChange()"class="container align-middle items-center md:pl-20">
-                <li><a class="rainbow" href="/#about-maggie-lerman">About</a> </li>
-            <li><a class="rainbow" href="/resume-2024.pdf" target="_blank">C.V.</a> </li>
+    <div x-cloak x-ref="menu"x-show.transition.slide="open" x-transition x-transition.duration.500ms role="menu" aria-modal="true" class="bg-white text-left ease-in-out duration-300 fixed z-10 top-0 right-0 w-full h-screen flex place-content-center">
+        <div class="text-left grid grid-cols-1 md:grid-cols-2 divide-stone-200 md:divide-x-2 place-content-center md:place-items-start">
+            <div
+            @click="open =! open"
+            onclick="buttonChange()"
+            class="container align-middle items-left md:pl-20">
+                <li><a class="rainbow text-left" href="/#about-maggie-lerman">About</a> </li>
+                <li><a class="rainbow text-left" href="/resume-2024.pdf" target="_blank">C.V.</a> </li>
                 <li class="pb-5 md:pb-0"><a class="rainbow" href="/#portfolio">Select Work</a></li>
-                {# <li class="pb-5"><a class="rainbow" href="/contact">Contact</a> </li> #}
-
             </div>
-            <div class"container align-middle">
+            <div class"text-left container align-middle">
                 <div>
-                    <h2 class="pb-1 md:pb-2 pt-5 md:pt-0 md:mx-32 text-4xl font-semibold tracking-widest border-stone-400 border-t-2 md:border-t-0">
+                    <h2 class="normal-case pb-1 md:pb-2 pt-5 md:pt-0 md:mx-32 text-4xl font-semibold tracking-wide border-stone-200 border-t-2 md:border-t-0">
                         Maggie Lerman
                     </h2>
-                    <h3 class="pb-2 md:mx-32 text-xl font-semibold tracking-wide">  Strategy. Design. Development. </h3>
+<!--                    <h3 class="pb-2 md:mx-32 text-xl font-semibold tracking-wide">  Strategy. Design. Development. </h3>-->
                 </div>
                 <div class="space-y-1.5">
                     <div @click="open =! open"  onclick="buttonChange()" class="pb-1.5 md:pb-0 md:mx-32 flex flex-row space-x-6">
@@ -108,7 +104,7 @@
                         {# <a class="align-bottom" href="tel:+16464674522" target="_blank">
                             <i class="fa-solid fa-phone"></i>                     
                         </a>         
-                    <a class="align-bottom" href="mailto:lerman@magg1e.com" target="_blank">
+                        <a class="align-bottom" href="mailto:lerman@magg1e.com" target="_blank">
                             <i class="fa-solid fa-at"></i>
                         </a> #}
                     </div>
@@ -122,7 +118,7 @@
     </div>
 
     <div class="copy text-zinc-300">
-        <span><i>© 2020-2022 Maggie Lerman
+        <span><i>© 2020-2024 Maggie Lerman
                 All rights reserved.</i>
         </span>
     </div>
