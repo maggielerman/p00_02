@@ -585,24 +585,24 @@ body.loaded::after {
 
   }
 
-  
+
   .rainbow myColor:hover {
     transition: color 0s;
 
     /* color:#a11414; */
   }
-  
-  
+
+
   .rainbow myColor:nth-child(1n):hover{
 
     color: #ff5202;
   }
-  
+
   .rainbow myColor:nth-child(2n):hover{
 
     color: #0fdf81;
   }
-  
+
   .rainbow myColor:nth-child(3n):hover{
     color: #185bd6;
   }
@@ -611,12 +611,12 @@ body.loaded::after {
     color: hsl(54, 79%, 38%);
 
   }
-  
+
   .rainbow myColor:nth-child(4n):hover{
     color: #22bd14;
 
   }
-  
+
 
 
   /* rainbow2 start */
@@ -625,12 +625,12 @@ body.loaded::after {
 
     color: #b44b1a;
   }
-  
+
   .rainbow2 myColor:nth-child(2n){
 
     color: #128551;
   }
-  
+
   .rainbow2 myColor:nth-child(3n){
     color: #184394;
   }
@@ -639,7 +639,7 @@ body.loaded::after {
     color: hsl(54, 79%, 38%);
 
   }
-  
+
   .rainbow2 myColor:nth-child(4n){
     color: #128551;
 
@@ -673,7 +673,7 @@ body.loaded::after {
 	width: 1em;
 	height: 1em;
 	transform: translate(-1em,-1em);
-} 
+}
 #error404 container span {
 	display: inline-block;
 	margin: 0 2em;
@@ -771,7 +771,7 @@ body.loaded::after {
         width: 34px;
         padding: 10px 0 10px 0;
     }
-/* 
+/*
     nav svg {
     left: 50%;
     } */
@@ -865,7 +865,7 @@ body.loaded::after {
     .containerCrop {
         border-radius: 20px;
     }
- 
+
     .fullHeight {
         margin-bottom: 20px;
         /*box-shadow: 0 0 0 20px blue;*/
@@ -985,7 +985,7 @@ body.loaded::after {
 }
 
 
-#scrollTrigger 
+#scrollTrigger
 {
     position: absolute;
     top: 0;
@@ -1252,7 +1252,7 @@ a.action-button:active {
 }
 #header div:hover {
     transition: color 0s;
-    color: #5E64F0;   
+    color: #5E64F0;
 }
 #header div {
     color: white;
@@ -1616,7 +1616,7 @@ body.loaded .svg-line-animation path {
     /*    -o-object-fit: 50% 0;*/
     /*    object-fit: 50% 0;*/
     /*}*/
-   
+
     #kudolo.lazyloaded .containerFixed::before {
         background-color: #000;
         background-image: url(/images/brandings/01.jpg);
